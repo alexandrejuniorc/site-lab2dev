@@ -1,0 +1,40 @@
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+import Logo from "../../assets/logo.svg";
+
+export const Header = () => {
+  return (
+    <header className="flex pt-10 justify-center">
+      <div className="flex justify-evenly w-full">
+        <div className="pr-36">
+          <Link href="/">
+            <Image src={Logo} alt="Logo Lab2dev" />
+          </Link>
+        </div>
+
+        <div className="text-base text-gray-gray-300 ">
+          <Link className="pr-8" href="quem-somos">
+            Quem somos
+          </Link>
+          <Link className="pr-8" href="o-que-fazemos">
+            O que fazemos
+          </Link>
+          <Link className="pr-8" href="btp">
+            BTP
+          </Link>
+          <Link className="pr-8" href="ams">
+            AMS
+          </Link>
+          <Link className="pr-8" href="blog">
+            Blog
+          </Link>
+          <Link className="last:pr-0" href="#">
+            ENG/SPA
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+};
