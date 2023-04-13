@@ -13,7 +13,11 @@ module.exports = {
       xl: "75rem",
     },
     colors: {
-      blue: "#1fb6ff",
+      white: "#FFFF",
+      blue: {
+        "blue-100": "#1fb6ff",
+        "blue-300": "#388DC7",
+      },
       purple: {
         "purple-100": "#712782",
         "purple-200": "#3D1A4A",
@@ -24,15 +28,24 @@ module.exports = {
       yellow: "#ffc82c",
 
       gray: {
+        "gray-50": "#DDDDDD",
         "gray-100": "#d3dce6",
-        "gray-200": "#8492a6",
-        "gray-300": "#868585",
-        "gray-400": "#273444",
+        "gray-200": "rgba(255, 255, 255, 0.5)",
+        "gray-300": "#8492a6",
+        "gray-400": "#868585",
+        "gray-500": "#273444",
       },
     },
     fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
+      sans: ["Varela Round", "sans-serif"],
+      serif: ["Varela Round", "serif"],
+    },
+    fontSize: {
+      "10/px": ".625rem",
+      "14/px": ".875rem",
+      "16/px": "1rem",
+      "18/px": "1.125rem",
+      "30/px": "1.875rem",
     },
     container: {
       center: true,
@@ -42,6 +55,9 @@ module.exports = {
         lg: "4rem",
         xl: "5rem",
       },
+    },
+    minHeight: {
+      "69/vh": "69vh",
     },
   },
   plugins: [],
