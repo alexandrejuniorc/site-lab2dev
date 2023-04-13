@@ -2,19 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 
 export const Header = () => {
   return (
-    <header className="flex pt-10 justify-center">
-      <div className="flex justify-evenly w-full">
+    <header className="flex pt-10 justify-center container">
+      <div className="flex justify-between w-full">
         <div className="pr-36">
           <Link href="/">
             <Image src={Logo} alt="Logo Lab2dev" />
           </Link>
         </div>
 
-        <div className="text-base text-gray-gray-300 ">
+        <div className="font-normal text-16/px leading-6 not-italic text-gray-gray-300 ">
           <Link className="pr-8" href="quem-somos">
             Quem somos
           </Link>
