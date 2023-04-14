@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+import { ClientFeedback } from "@/components/Carrousel/ClientFeedback";
+import { ClientsCarrousel } from "@/components/Carrousel/ClientsCarrousel";
+
 import PartnerSAPImage from "../assets/bg-partner-sap.png";
 import RealTimeImage from "../assets/bg-real-time.png";
 import TrophieHackaton from "../assets/bg-trophies.png";
@@ -9,9 +12,9 @@ export default function Home() {
     <>
       <section className="grid grid-cols-2 items-center justify-center">
         <div>
-          <strong className=" not-italic font-normal text-purple-purple-200 leading-10 text-30/px uppercase">
+          <h1 className=" not-italic font-normal text-purple-purple-200 leading-10 text-30/px uppercase">
             Inovação e Tecnologia através do sap btp
-          </strong>
+          </h1>
 
           <p className="not-italic font-normal text-16/px leading-7 text-gray-gray-400 pt-8">
             A Lab2Dev é a primeira startup brasileira focada em inovação por
@@ -36,9 +39,9 @@ export default function Home() {
         </div>
 
         <div>
-          <strong className="not-italic font-normal text-purple-purple-200 leading-10 text-30/px uppercase">
+          <h1 className="not-italic font-normal text-purple-purple-200 leading-10 text-30/px uppercase">
             Somos parceiros Gold SAP!
-          </strong>
+          </h1>
 
           <p className="not-italic font-normal text-16/px leading-7 text-gray-gray-400 pt-8">
             Para se tornar um parceiro Gold SAP, a empresa parceira precisa
@@ -57,9 +60,9 @@ export default function Home() {
 
       <section className="mt-20 grid grid-cols-2">
         <div className="mr-28">
-          <strong className="font-normal text-purple-purple-200 leading-10 text-30/px uppercase">
+          <h1 className="font-normal text-purple-purple-200 leading-10 text-30/px uppercase">
             Somos premiados
-          </strong>
+          </h1>
           <p className="font-normal text-16/px leading-7 text-gray-gray-400 pt-8 not-italic">
             Ao longo de nossa jornada, tivemos o privilégio de receber diversos
             prêmios que reconhecem a qualidade de nossos produtos e serviços.
@@ -102,6 +105,33 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col items-center text-center mt-20">
+        <div>
+          <h1 className="not-italic font-normal text-purple-purple-200 leading-10 text-30/px uppercase">
+            Nossos clientes
+          </h1>
+          <p className="font-normal text-16/px leading-7 text-gray-gray-500 mt-5 not-italic">
+            Atendemos no Brasil, na América Latina e na Ásia
+          </p>
+        </div>
+
+        <div className="mt-16 block w-full">
+          <ClientsCarrousel />
+        </div>
+
+        <div className="mt-20">
+          <p className="font-normal text-16/px leading-7 text-gray-gray-500 mt-20 not-italic">
+            Veja também alguns dos depoimentos deixados por representantes dos
+            nossos
+            <br /> clientes.
+          </p>
+        </div>
+
+        <div className=" w-full">
+          <ClientFeedback />
         </div>
       </section>
     </>

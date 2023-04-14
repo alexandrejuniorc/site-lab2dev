@@ -19,6 +19,7 @@ module.exports = {
         "blue-300": "#388DC7",
       },
       purple: {
+        "purple-50": "rgba(113, 38, 130, 0.5)",
         "purple-100": "#712782",
         "purple-200": "#3D1A4A",
       },
@@ -42,9 +43,11 @@ module.exports = {
     },
     fontSize: {
       "10/px": ".625rem",
+      "12/px": ".75rem",
       "14/px": ".875rem",
       "16/px": "1rem",
       "18/px": "1.125rem",
+      "20/px": "1.25rem",
       "30/px": "1.875rem",
     },
     container: {
