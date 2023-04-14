@@ -83,7 +83,7 @@ footer {
 }
 
 img {
-  max-width: max-content;
+  max-width: 100%;
   /* height: auto; significa que ele irá crescer de acordo com o tamanho da imagem
    */
   height: auto;
