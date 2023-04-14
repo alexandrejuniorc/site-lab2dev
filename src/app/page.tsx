@@ -56,13 +56,15 @@ export default function Home() {
       </section>
 
       <section className="mt-20 grid grid-cols-2">
-        <div>
+        <div className="mr-28">
           <strong className="font-normal text-purple-purple-200 leading-10 text-30/px uppercase">
             Somos premiados
           </strong>
           <p className="font-normal text-16/px leading-7 text-gray-gray-400 pt-8 not-italic">
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-            ipsum Lorem ipsum Lorem ipsum Lorem ipsum{" "}
+            Ao longo de nossa jornada, tivemos o privilégio de receber diversos
+            prêmios que reconhecem a qualidade de nossos produtos e serviços.
+            Essas conquistas nos motivam a continuar trabalhando com excelência
+            e comprometimento, em busca da satisfação de nossos clientes.
           </p>
         </div>
 
