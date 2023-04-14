@@ -134,6 +134,118 @@ export default function Home() {
           <ClientFeedback />
         </div>
       </section>
+
+      <section className="mt-20">
+        <div>
+          <h1 className="font-normal text-30/px leading-10 text-purple-purple-200 not-italic uppercase text-center">
+            Confira nosso blog!
+          </h1>
+          <p className="font-normal text-16/px leading-7 text-gray-gray-500 not-italic text-center mt-5">
+            Últimas postagens
+          </p>
+        </div>
+
+        <div className="mt-16 grid grid-cols-3">
+          <div className="w-80 h-[30.125rem] max-h-[30.125rem] rounded-md shadow-md p-[1.625rem] flex flex-col justify-evenly">
+            <div className="w-[16.875rem] h-[6.25rem] bg-gray-gray-60 ">
+              {/* <Image src={} alt="" /> */}
+            </div>
+
+            <div className="mt-7">
+              <h1 className="font-normal text-20/px leading-7 text-purple-purple-200 not-italic">
+                Por que HANA é o banco de dados mais rápido?
+              </h1>
+              <p className="font-normal text-12/px leading-4 text-gray-gray-500 not-italic mt-5">
+                Lançado em 2011 pela SAP, o SAP HANA veio para revolucionar a
+                forma de como os dados empresariais são gerenciados, desde então
+                todos os produtos lançados pela SAP [...]
+              </p>
+            </div>
+
+            <div className="flex justify-between items-center mt-14">
+              <div className="flex gap-3 items-center ">
+                <div className="rounded-[50%] w-max border-2 border-blue-blue-50">
+                  <div className="bg-blue-blue-100 w-6 h-6 flex items-center justify-center rounded-[50%]"></div>
+                </div>
+
+                <p className="font-normal text-12/px leading-4 text-gray-gray-500 not-italic">
+                  Bruno Vianna
+                </p>
+              </div>
+
+              <p className="font-normal text-12/px leading-4 text-gray-gray-500 not-italic text-right">
+                Leitura: 3 min
+              </p>
+            </div>
+          </div>
+
+          <div className="w-80 h-[30.125rem] max-h-[30.125rem] rounded-md shadow-md p-[1.625rem] flex flex-col justify-evenly">
+            <div className="w-[16.875rem] h-[6.25rem] bg-gray-gray-60 ">
+              {/* <Image src={} alt="" /> */}
+            </div>
+
+            <div className="mt-7">
+              <h1 className="font-normal text-20/px leading-7 text-purple-purple-200 not-italic">
+                Por que HANA é o banco de dados mais rápido?
+              </h1>
+              <p className="font-normal text-12/px leading-4 text-gray-gray-500 not-italic mt-5">
+                Lançado em 2011 pela SAP, o SAP HANA veio para revolucionar a
+                forma de como os dados empresariais são gerenciados, desde então
+                todos os produtos lançados pela SAP [...]
+              </p>
+            </div>
+
+            <div className="flex justify-between items-center mt-14">
+              <div className="flex gap-3 items-center ">
+                <div className="rounded-[50%] w-max border-2 border-blue-blue-50">
+                  <div className="bg-blue-blue-100 w-6 h-6 flex items-center justify-center rounded-[50%]"></div>
+                </div>
+
+                <p className="font-normal text-12/px leading-4 text-gray-gray-500 not-italic">
+                  Bruno Vianna
+                </p>
+              </div>
+
+              <p className="font-normal text-12/px leading-4 text-gray-gray-500 not-italic text-right">
+                Leitura: 3 min
+              </p>
+            </div>
+          </div>
+
+          <div className="w-80 h-[30.125rem] max-h-[30.125rem] rounded-md shadow-md p-[1.625rem] flex flex-col justify-evenly">
+            <div className="w-[16.875rem] h-[6.25rem] bg-gray-gray-60 ">
+              {/* <Image src={} alt="" /> */}
+            </div>
+
+            <div className="mt-7">
+              <h1 className="font-normal text-20/px leading-7 text-purple-purple-200 not-italic">
+                Por que HANA é o banco de dados mais rápido?
+              </h1>
+              <p className="font-normal text-12/px leading-4 text-gray-gray-500 not-italic mt-5">
+                Lançado em 2011 pela SAP, o SAP HANA veio para revolucionar a
+                forma de como os dados empresariais são gerenciados, desde então
+                todos os produtos lançados pela SAP [...]
+              </p>
+            </div>
+
+            <div className="flex justify-between items-center mt-14">
+              <div className="flex gap-3 items-center ">
+                <div className="rounded-[50%] w-max border-2 border-blue-blue-50">
+                  <div className="bg-blue-blue-100 w-6 h-6 flex items-center justify-center rounded-[50%]"></div>
+                </div>
+
+                <p className="font-normal text-12/px leading-4 text-gray-gray-500 not-italic">
+                  Bruno Vianna
+                </p>
+              </div>
+
+              <p className="font-normal text-12/px leading-4 text-gray-gray-500 not-italic text-right">
+                Leitura: 3 min
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

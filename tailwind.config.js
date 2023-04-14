@@ -15,6 +15,7 @@ module.exports = {
     colors: {
       white: "#FFFF",
       blue: {
+        "blue-50": "rgba(56, 141, 199, 0.5)",
         "blue-100": "#1fb6ff",
         "blue-300": "#388DC7",
       },
@@ -30,6 +31,7 @@ module.exports = {
 
       gray: {
         "gray-50": "#DDDDDD",
+        "gray-60": "#D9D9D9",
         "gray-100": "#d3dce6",
         "gray-200": "rgba(255, 255, 255, 0.5)",
         "gray-300": "#8492a6",
