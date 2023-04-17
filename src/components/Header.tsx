@@ -6,7 +6,7 @@ import Logo from "../../public/logo.png";
 
 export const Header = () => {
   return (
-    <header className="flex pt-10 justify-center container">
+    <header className="flex pt-10 justify-center container text">
       <div className="flex justify-between w-full">
         <div className="pr-36">
           <Link href="/">
@@ -15,6 +15,9 @@ export const Header = () => {
         </div>
 
         <div className="font-normal text-16/px leading-6 not-italic text-gray-gray-300 ">
+          <Link className="pr-8" href="/">
+            Home
+          </Link>
           <Link className="pr-8" href="quem-somos">
             Quem somos
           </Link>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import BuildingPageImage from "../../assets/building-page.png";
+import BuildingPageImage from "../../public/building-page.png";
 
 export const BuildingPage = () => {
   return (
