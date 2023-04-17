@@ -29,21 +29,21 @@ export function ClientFeedback() {
       >
         <SwiperSlide>
           <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6">
-            <div className="rounded-[50%] w-20 h-20 border-8 border-purple-purple-50">
-              <div className="bg-purple-purple-100 h-full flex items-center justify-center rounded-[50%]">
+            <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200">
+              <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">
                 {/* <Image src={TrophieHackaton} alt="" /> */}
               </div>
             </div>
 
             <div>
-              <h1 className="font-normal text-20/px leading-7 text-purple-purple-200  not-italic">
+              <h1 className="font-normal text-20 leading-7 text-purple-300 not-italic">
                 NOME
               </h1>
-              <p className="font-normal text-14/px leading-7 text-purple-purple-200  not-italic">
+              <p className="font-normal text-14 leading-7 text-purple-300 not-italic">
                 Cargo - Empresa
               </p>
 
-              <p className="font-normal text-12/px leading-4 text-gray-gray-500  not-italic">
+              <p className="font-normal text-12 leading-4 text-gray-800 not-italic">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a
                 neque tincidunt, finibus purus vel, vehicula risus. Aliquam
                 faucibus velit ac sollicitudin ultricies.”
@@ -51,24 +51,23 @@ export function ClientFeedback() {
             </div>
           </div>
         </SwiperSlide>
-
         <SwiperSlide>
           <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6">
-            <div className="rounded-[50%] w-20 h-20 border-8 border-purple-purple-50">
-              <div className="bg-purple-purple-100 h-full flex items-center justify-center rounded-[50%]">
+            <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200">
+              <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">
                 {/* <Image src={TrophieHackaton} alt="" /> */}
               </div>
             </div>
 
             <div>
-              <h1 className="font-normal text-20/px leading-7 text-purple-purple-200  not-italic">
+              <h1 className="font-normal text-20 leading-7 text-purple-300 not-italic">
                 NOME
               </h1>
-              <p className="font-normal text-14/px leading-7 text-purple-purple-200  not-italic">
+              <p className="font-normal text-14 leading-7 text-purple-300 not-italic">
                 Cargo - Empresa
               </p>
 
-              <p className="font-normal text-12/px leading-4 text-gray-gray-500  not-italic">
+              <p className="font-normal text-12 leading-4 text-gray-800 not-italic">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a
                 neque tincidunt, finibus purus vel, vehicula risus. Aliquam
                 faucibus velit ac sollicitudin ultricies.”
@@ -76,24 +75,23 @@ export function ClientFeedback() {
             </div>
           </div>
         </SwiperSlide>
-
         <SwiperSlide>
           <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6">
-            <div className="rounded-[50%] w-20 h-20 border-8 border-purple-purple-50">
-              <div className="bg-purple-purple-100 h-full flex items-center justify-center rounded-[50%]">
+            <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200">
+              <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">
                 {/* <Image src={TrophieHackaton} alt="" /> */}
               </div>
             </div>
 
             <div>
-              <h1 className="font-normal text-20/px leading-7 text-purple-purple-200  not-italic">
+              <h1 className="font-normal text-20 leading-7 text-purple-300 not-italic">
                 NOME
               </h1>
-              <p className="font-normal text-14/px leading-7 text-purple-purple-200  not-italic">
+              <p className="font-normal text-14 leading-7 text-purple-300 not-italic">
                 Cargo - Empresa
               </p>
 
-              <p className="font-normal text-12/px leading-4 text-gray-gray-500  not-italic">
+              <p className="font-normal text-12 leading-4 text-gray-800 not-italic">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a
                 neque tincidunt, finibus purus vel, vehicula risus. Aliquam
                 faucibus velit ac sollicitudin ultricies.”
@@ -101,24 +99,23 @@ export function ClientFeedback() {
             </div>
           </div>
         </SwiperSlide>
-
         <SwiperSlide>
           <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6">
-            <div className="rounded-[50%] w-20 h-20 border-8 border-purple-purple-50">
-              <div className="bg-purple-purple-100 h-full flex items-center justify-center rounded-[50%]">
+            <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200">
+              <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">
                 {/* <Image src={TrophieHackaton} alt="" /> */}
               </div>
             </div>
 
             <div>
-              <h1 className="font-normal text-20/px leading-7 text-purple-purple-200  not-italic">
+              <h1 className="font-normal text-20 leading-7 text-purple-300 not-italic">
                 NOME
               </h1>
-              <p className="font-normal text-14/px leading-7 text-purple-purple-200  not-italic">
+              <p className="font-normal text-14 leading-7 text-purple-300 not-italic">
                 Cargo - Empresa
               </p>
 
-              <p className="font-normal text-12/px leading-4 text-gray-gray-500  not-italic">
+              <p className="font-normal text-12 leading-4 text-gray-800 not-italic">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a
                 neque tincidunt, finibus purus vel, vehicula risus. Aliquam
                 faucibus velit ac sollicitudin ultricies.”
