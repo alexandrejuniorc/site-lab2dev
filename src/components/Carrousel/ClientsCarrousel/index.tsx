@@ -5,11 +5,11 @@ import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import GerdauImage from "../../../assets/clients/gerdau.png";
-import MercedesImage from "../../../assets/clients/mercedes.png";
-import TranspetroImage from "../../../assets/clients/transpetro.png";
-import UolImage from "../../../assets/clients/uol.png";
-import WhirlpoolImage from "../../../assets/clients/whirlpool.png";
+import GerdauImage from "../../../../public/clients/gerdau.png";
+import MercedesImage from "../../../../public/clients/mercedes.png";
+import TranspetroImage from "../../../../public/clients/transpetro.png";
+import UolImage from "../../../../public/clients/uol.png";
+import WhirlpoolImage from "../../../../public/clients/whirlpool.png";
 
 import "swiper/css";
 import "swiper/css/pagination";

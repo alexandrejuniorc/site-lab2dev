@@ -3,9 +3,9 @@ import Image from "next/image";
 import { ClientFeedback } from "@/components/Carrousel/ClientFeedback";
 import { ClientsCarrousel } from "@/components/Carrousel/ClientsCarrousel";
 
-import PartnerSAPImage from "../assets/bg-partner-sap.png";
-import RealTimeImage from "../assets/bg-real-time.png";
-import TrophieHackaton from "../assets/bg-trophies.png";
+import PartnerSAPImage from "../../public//bg-partner-sap.png";
+import RealTimeImage from "../../public//bg-real-time.png";
+import TrophieHackaton from "../../public/bg-trophies.png";
 
 export default function Home() {
   return (

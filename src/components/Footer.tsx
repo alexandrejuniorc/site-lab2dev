@@ -7,8 +7,8 @@ import {
   AiOutlineFacebook,
 } from "react-icons/ai";
 
-import BackgroundFooter from "../../assets/bg-footer.png";
-import SapPartner from "../../assets/bg-partner-sap-footer.png";
+import BackgroundFooter from "../../public/bg-footer.png";
+import SapPartner from "../../public/bg-partner-sap-footer.png";
 export const Footer = () => {
   return (
     <footer className="bg-purple-purple-200">
