@@ -13,6 +13,7 @@ export const metadata = {
 const varela = Varela_Round({
   subsets: ["latin"],
   weight: ["400"],
+  variable: "--varela-font",
 });
 
 export default function RootLayout({
@@ -22,9 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={varela.className}>
+      <body className={varela.variable}>
         <Header />
-        <main className="py-24 container">{children}</main>
+        <main className="py-24 container text">{children}</main>
         <Footer />
       </body>
     </html>

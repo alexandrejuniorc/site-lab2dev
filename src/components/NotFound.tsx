@@ -11,10 +11,10 @@ export const PageNotFound = () => {
       </div>
 
       <div>
-        <strong className="text-purple-purple-200 uppercase">
+        <strong className="text-purple-300 uppercase">
           página não encontrada!
         </strong>
-        <p className="text-gray-gray-400 mt-8 whitespace-nowrap flex w-full">
+        <p className="text-gray-800 mt-8 whitespace-nowrap flex w-full">
           O link que você tentou acessar está incorreto ou a página foi movida.
         </p>
       </div>
