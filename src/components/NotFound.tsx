@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import NotFoundImage from "../../assets/not-found.png";
+import NotFoundImage from "../../public/not-found.png";
 
 export const PageNotFound = () => {
   return (
