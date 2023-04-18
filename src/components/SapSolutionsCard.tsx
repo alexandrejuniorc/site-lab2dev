@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import HanaImage from "../../../../public/bg-hana.png";
+import HanaImage from "../../public/bg-icon-hana.png";
 
 export const SapSolutionsCard = () => {
   return (

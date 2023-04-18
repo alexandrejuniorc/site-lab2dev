@@ -1,18 +1,11 @@
-"use client";
-import React, { useRef, useState } from "react";
+import React from "react";
 
-// Import Swiper React components
+import { FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
-import "./styles.css";
-
-// import required modules
-import { FreeMode, Pagination } from "swiper";
 
 export function ClientFeedback() {
   return (

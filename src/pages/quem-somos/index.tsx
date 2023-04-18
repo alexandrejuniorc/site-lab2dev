@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 import { Button } from "@/components/Button";
-import { TeamCarrousel } from "@/components/Carrousel/TeamCarrousel";
-import { MissionCard } from "@/components/Pages/WhoWeAre/MissionCard";
+import { TeamCarrousel } from "@/components/Carrousel/Team";
+import { MissionCard } from "@/components/MissionCard";
 
 import Video from "../../../public/bg-video.png";
 

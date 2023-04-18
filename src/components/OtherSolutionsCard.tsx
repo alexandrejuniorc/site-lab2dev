@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import NextJsImage from "../../../../public/bg-next.png";
+import NextJsImage from "../../public/bg-icon-nextjs.png";
 
 export const OtherSolutionsCard = () => {
   return (

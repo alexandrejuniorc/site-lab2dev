@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-import { TeamCarrousel } from "@/components/Carrousel/TeamCarrousel";
-import { InfosCard } from "@/components/Pages/WhatWeDo/InfosCard";
-import { OtherSolutionsCard } from "@/components/Pages/WhatWeDo/OtherSolutionsCard";
-import { SapSolutionsCard } from "@/components/Pages/WhatWeDo/SapSolutionsCard";
+import { TeamCarrousel } from "@/components/Carrousel/Team";
+import { InfosCard } from "@/components/InfosCard";
+import { OtherSolutionsCard } from "@/components/OtherSolutionsCard";
+import { SapSolutionsCard } from "@/components/SapSolutionsCard";
 
 import SapPartnerImage from "../../../public/bg-partner-sap.png";
 

@@ -1,25 +1,21 @@
-"use client";
-
 import Image from "next/image";
 import React from "react";
 
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import GerdauImage from "../../../../public/clients/gerdau.png";
-import MercedesImage from "../../../../public/clients/mercedes.png";
-import TranspetroImage from "../../../../public/clients/transpetro.png";
-import UolImage from "../../../../public/clients/uol.png";
-import WhirlpoolImage from "../../../../public/clients/whirlpool.png";
+import GerdauImage from "../../../public/client-gerdau.png";
+import MercedesImage from "../../../public/client-mercedes.png";
+import TranspetroImage from "../../../public/client-transpetro.png";
+import UolImage from "../../../public/client-uol.png";
+import WhirlpoolImage from "../../../public/client-whirlpool.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "./styles.css";
+// import "./styles.css";
 
-// import required modules
-import { Pagination } from "swiper";
-
-export function ClientsCarrousel() {
+export function Clients() {
   return (
     <>
       <Swiper

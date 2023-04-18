@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import TrophieHackaton from "../../../public/bg-trophies.png";
+import TrophieHackaton from "../../public/bg-trophies.png";
 
 export const CardTrophie = () => {
   return (

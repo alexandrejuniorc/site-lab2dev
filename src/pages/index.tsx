@@ -1,12 +1,12 @@
 import Image from "next/image";
 
+import { CardBlog } from "@/components/CardBlog";
+import { CardTrophie } from "@/components/CardTrophie";
 import { ClientFeedback } from "@/components/Carrousel/ClientFeedback";
-import { ClientsCarrousel } from "@/components/Carrousel/ClientsCarrousel";
-import { CardBlog } from "@/components/Home/CardBlog";
-import { CardTrophie } from "@/components/Home/CardTrophie";
+import { Clients } from "@/components/Carrousel/Clients";
 
-import PartnerSAPImage from "../../public//bg-partner-sap.png";
-import RealTimeImage from "../../public//bg-real-time.png";
+import PartnerSAPImage from "../../public/bg-partner-sap.png";
+import RealTimeImage from "../../public/bg-real-time.png";
 
 export default function Home() {
   return (
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
 
         <div className="mt-16 block w-full">
-          <ClientsCarrousel />
+          <Clients />
         </div>
 
         <div className="mt-20">

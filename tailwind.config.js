@@ -66,5 +66,6 @@ module.exports = {
       69: "69vh",
     },
   },
+
   plugins: [],
 };
