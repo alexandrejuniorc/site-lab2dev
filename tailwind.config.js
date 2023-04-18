@@ -1,3 +1,5 @@
+const { mauve, violet } = import("@radix-ui/colors");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -30,6 +32,7 @@ module.exports = {
       yellow: "#ffc82c",
 
       gray: {
+        50: "#F2F2F2",
         100: "#DDDDDD",
         200: "#D9D9D9",
         300: "#D3DCE6",
@@ -38,6 +41,10 @@ module.exports = {
         600: "#868585",
         700: "#273444",
         800: "#333333",
+      },
+
+      shadow: {
+        100: "0px 0px 4px rgba(134, 133, 133, 0.5)",
       },
     },
     fontFamily: {
@@ -64,6 +71,26 @@ module.exports = {
     },
     minHeight: {
       69: "69vh",
+    },
+    extend: {
+      colors: {
+        ...mauve,
+        ...violet,
+      },
+      keyframes: {
+        slideDown: {
+          from: { height: 0 },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        slideUp: {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: 0 },
+        },
+      },
+      animation: {
+        slideDown: "slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)",
+        slideUp: "slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)",
+      },
     },
   },
 
