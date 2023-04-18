@@ -16,43 +16,43 @@ export const Header = () => {
 
         <div className="">
           <Link
-            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8"
+            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8"
+            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
             href="quem-somos"
           >
             Quem somos
           </Link>
           <Link
-            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8"
+            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
             href="o-que-fazemos"
           >
             O que fazemos
           </Link>
           <Link
-            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8"
+            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
             href="btp"
           >
             BTP
           </Link>
           <Link
-            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8"
+            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
             href="ams"
           >
             AMS
           </Link>
           <Link
-            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8"
+            className="font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
             href="blog"
           >
             Blog
           </Link>
           <Link
-            className="font-normal text-16 leading-6 not-italic text-gray-600 last:pr-0"
+            className="font-normal text-16 leading-6 not-italic text-gray-600 last:pr-0 hover:text-purple-300"
             href="#"
           >
             ENG/SPA
