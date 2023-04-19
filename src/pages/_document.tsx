@@ -19,12 +19,8 @@ export default function Document() {
         />
       </Head>
       <body>
-        <Header />
-        <main className="py-24 container">
-          <Main />
-          <NextScript />
-        </main>
-        <Footer />
+        <Main />
+        <NextScript />
       </body>
     </Html>
   );
