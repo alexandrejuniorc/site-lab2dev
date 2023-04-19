@@ -25,7 +25,16 @@ export default function WhoWeAre() {
           </p>
         </div>
         <div className="flex justify-center">
-          <Image src={Video} alt="" />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/jcsZGBnBlIo"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+          {/* <Image src={Video} alt="" /> */}
         </div>
       </section>
 
