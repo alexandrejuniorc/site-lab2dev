@@ -105,6 +105,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/*
+      NEW FEATURE COMING SOON
+
       <section className="mt-20">
         <div>
           <h1 className="font-normal text-30 leading-10 text-purple-300 not-italic uppercase text-center">
@@ -120,7 +123,7 @@ export default function Home() {
           <CardBlog />
           <CardBlog />
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

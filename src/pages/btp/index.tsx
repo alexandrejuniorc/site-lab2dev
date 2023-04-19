@@ -72,7 +72,10 @@ export default function WhoWeAre() {
         </div>
       </section>
 
-      <section className="mt-20">
+      {/*
+      NEW FEATURE COMING SOON
+
+     <section className="mt-20">
         <div className="flex flex-col items-center text-center">
           <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase">
             Confira nosso blog!
@@ -87,7 +90,7 @@ export default function WhoWeAre() {
           <CardBlog />
           <CardBlog />
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
