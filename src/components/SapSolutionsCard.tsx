@@ -1,19 +1,25 @@
 import Image from "next/image";
 import React from "react";
 
-import HanaImage from "../../public/bg-icon-hana.png";
+interface SapSolutionsCardProps {
+  image: string | any;
+  title: string;
+  content: string;
+}
 
-export const SapSolutionsCard = () => {
+export const SapSolutionsCard = ({
+  title,
+  content,
+  image,
+}: SapSolutionsCardProps) => {
   return (
     <div className="bg-purple-100 flex flex-col w-[14.6875rem] h-[15.625rem] p-6 rounded">
-      <Image src={HanaImage} alt="" />
+      <Image src={image} alt="" />
       <h1 className="not-italic font-normal text-16 leading-5 text-white mt-5">
-        SAP Hana
+        {title}
       </h1>
       <p className="not-italic font-normal text-10 leading-3 text-white mt-4">
-        Com uma base sólida e rápida, a solução é escalável e conta com tudo que
-        o HANA tem a oferecer. Trabalhamos com o que há de inovador na
-        plataforma para prover a melhor solução.
+        {content}
       </p>
     </div>
   );

@@ -19,19 +19,10 @@ export function TeamCarrousel() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className="pb-6">
           <Image src={Team} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image src={Team} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={Team} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={Team} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="pb-6">
           <Image src={Team} alt="" />
         </SwiperSlide>
       </Swiper>

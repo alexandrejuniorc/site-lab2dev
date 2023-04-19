@@ -6,6 +6,13 @@ import { InfosCard } from "@/components/InfosCard";
 import { OtherSolutionsCard } from "@/components/OtherSolutionsCard";
 import { SapSolutionsCard } from "@/components/SapSolutionsCard";
 
+import FigmaImage from "../../../public/bg-icon-figma.png";
+import SapFioriImage from "../../../public/bg-icon-fiori.png";
+import SapHanaImage from "../../../public/bg-icon-hana.png";
+import NextJsImage from "../../../public/bg-icon-nextjs.png";
+import ReactNativeImage from "../../../public/bg-icon-react-native.png";
+import SapBuildImage from "../../../public/bg-icon-sap-build.png";
+import Ui5Image from "../../../public/bg-icon-ui5.png";
 import SapPartnerImage from "../../../public/bg-partner-sap.png";
 
 export default function WhatWeDo() {
@@ -28,14 +35,62 @@ export default function WhatWeDo() {
         </div>
 
         <div className="grid grid-cols-4 gap-5 mt-16">
-          <SapSolutionsCard />
-          <SapSolutionsCard />
-          <SapSolutionsCard />
-          <SapSolutionsCard />
-          <SapSolutionsCard />
-          <SapSolutionsCard />
-          <SapSolutionsCard />
-          <SapSolutionsCard />
+          <SapSolutionsCard
+            image={SapBuildImage}
+            title={"SAP Build"}
+            content={
+              "Acreditamos em uma UX renovada! Trazemos o usuário para construir a aplicação juntamente com o time de desenvolvedores, afinal, ninguém melhor do que ele para desenhar a UX da solução."
+            }
+          />
+          <SapSolutionsCard
+            image={SapHanaImage}
+            title={"SAP Hana"}
+            content={
+              "Com uma base sólida e rápida, a solução é escalável e conta com tudo que o HANA tem a oferecer. Trabalhamos com o que há de inovador na plataforma para prover a melhor solução."
+            }
+          />
+          <SapSolutionsCard
+            image={SapFioriImage}
+            title={"SAP Fiori"}
+            content={
+              "Com mais de 12 mil horas e 28 projetos entregues pelo nosso time, acreditamos que o SAP Fiori será a tecnologia central de todas as interfaces de produtos da SAP, trazendo intuitividade, robustez e flexibilidade para aplicações SAP por meio da poderosa linguagem SAPUI5."
+            }
+          />
+          <SapSolutionsCard
+            image={SapHanaImage}
+            title={"SAP BTP Workflow"}
+            content={
+              "Serviço de Workflow Cloud da SAP, que visa a comunicação de toda a cadeia de sistemas da empresa, permitindo uma gestão dos processos de negócio unificada e visual."
+            }
+          />
+          <SapSolutionsCard
+            image={SapHanaImage}
+            title={"SAP Business Rules Cloud"}
+            content={
+              "Serviço de Business Rules Cloud da SAP, que visa a criação de lógica de aprovação, alçadas, regras de negócio e inteligência para tomada de decisões sem a necessidade de conhecimento em codificação. O próprio usuário é capaz de criar as regras de negócio."
+            }
+          />
+          <SapSolutionsCard
+            image={SapHanaImage}
+            title={"SAP Document Service"}
+            content={
+              "Serviço de gerenciamento de documentos dentro do SCP, desenvolvido a fim de controlar acessos e versionamento de arquivos por meio de APIs seguras."
+            }
+          />
+          <SapSolutionsCard
+            image={SapHanaImage}
+            title={"SAP API Management"}
+            content={
+              "Serviço que permite publicar, desenvolver e gerenciar APIs em um ambiente seguro e escalável de forma fácil e intuitiva."
+            }
+          />
+          <SapSolutionsCard
+            image={SapHanaImage}
+            title={"SAP BTP Integration"}
+            content={
+              "Serviço de gerenciamento de documentos dentro do SCP, desenvolvido a fim de controlar acessos e versionamento de arquivos por meio de APIs seguras."
+            }
+          />
         </div>
       </section>
 
@@ -75,18 +130,42 @@ export default function WhatWeDo() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-8">
-            <OtherSolutionsCard />
-            <OtherSolutionsCard />
-            <OtherSolutionsCard />
-            <OtherSolutionsCard />
+          <div className="flex flex-col gap-8 items-end">
+            <OtherSolutionsCard
+              title={"SAP UI5"}
+              image={Ui5Image}
+              content={
+                "O OpenUI5 é uma estrutura de aplicativo JavaScript projetada para criar aplicativos prontos para a empresa, compatíveis com várias plataformas."
+              }
+            />
+            <OtherSolutionsCard
+              title={"Next.js"}
+              image={NextJsImage}
+              content={
+                "Next.js é uma estrutura da web de desenvolvimento front-end React criada por Vercel que permite funcionalidades como renderização do lado do servidor e sites estáticos."
+              }
+            />
+            <OtherSolutionsCard
+              title={"React Native"}
+              image={ReactNativeImage}
+              content={
+                "React Native é uma biblioteca Javascript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa."
+              }
+            />
+            <OtherSolutionsCard
+              title={"UI/UX Design"}
+              image={FigmaImage}
+              content={
+                "UI trata dos elementos com os quais o usuário interage, ao passo que o UX procura entender os comportamentos e emoções dessas pessoas no uso do produto."
+              }
+            />
           </div>
         </div>
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-2">
-          <div className="w-[25.3125rem] h-[14.25rem]">
+        <div className="grid grid-cols-2 gap-[6.5625rem] items-center">
+          <div className="">
             <TeamCarrousel />
           </div>
           <div>
@@ -106,9 +185,21 @@ export default function WhatWeDo() {
 
       <section className="mt-20">
         <div className="grid grid-cols-3">
-          <InfosCard />
-          <InfosCard />
-          <InfosCard />
+          <InfosCard
+            title={"PRESENÇA"}
+            info={"+25"}
+            content={"clientes atendidos"}
+          />
+          <InfosCard
+            title={"DEDICAÇÃO"}
+            info={"+130"}
+            content={"colaboradores"}
+          />
+          <InfosCard
+            title={"EXPERIÊNCIA"}
+            info={"+550k horas"}
+            content={"em projetos de inovação"}
+          />
         </div>
       </section>
     </>
