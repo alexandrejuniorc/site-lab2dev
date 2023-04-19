@@ -90,7 +90,7 @@ const AccordionTrigger = React.forwardRef(
     <Accordion.Header className="flex">
       <Accordion.Trigger
         className={classNames(
-          "text-purple-300 hover:bg-mauve2 group flex h-[45px] flex-1 cursor-default items-center justify-between bg-gray-50 px-5 text-16 leading-7 outline-none",
+          "text-purple-300 bg-white hover:bg-mauve2 group flex h-[45px] flex-1 cursor-default items-center justify-between px-5 text-16 leading-7 outline-none",
           className
         )}
         {...props}
@@ -110,7 +110,7 @@ const AccordionContent = React.forwardRef(
   ({ children, className, ...props }: any, forwardedRef) => (
     <Accordion.Content
       className={classNames(
-        "text-gray-800 bg-gray-50 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden text-16 leading-7",
+        "text-gray-800 bg-gray-50 hover:bg-mauve3 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden text-16 leading-7",
         className
       )}
       {...props}
