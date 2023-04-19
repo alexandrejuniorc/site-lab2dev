@@ -18,9 +18,9 @@ export function ClientFeedback() {
           clickable: true,
         }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper pt-7 pb-20"
+        className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className="pb-12">
           <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6">
             <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200">
               <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">
@@ -44,7 +44,7 @@ export function ClientFeedback() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="pb-12">
           <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6">
             <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200">
               <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">
@@ -68,7 +68,7 @@ export function ClientFeedback() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="pb-12">
           <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6">
             <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200">
               <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">
@@ -92,7 +92,8 @@ export function ClientFeedback() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+
+        <SwiperSlide className="pb-12">
           <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6">
             <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200">
               <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">

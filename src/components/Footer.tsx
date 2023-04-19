@@ -9,10 +9,11 @@ import {
 
 import BackgroundFooter from "../../public/bg-footer.png";
 import SapPartner from "../../public/bg-partner-sap-footer.png";
+import TwoFooter from "../../public/bg-two-footer.svg";
 
 export const Footer = () => {
   return (
-    <footer className="bg-purple-300 text">
+    <footer className="bg-purple-300 text mt-20">
       <div className="container">
         <div className="grid grid-cols-3 gap-x-7 m-auto p-0 pt-20 pb-10">
           <div>
@@ -107,6 +108,14 @@ export const Footer = () => {
       </div>
 
       <div>
+        {/*  <div className="">
+          <Image
+            className="w-[10.3125rem] h-[14.6875rem]"
+            src={TwoFooter}
+            alt=""
+          />
+        </div>
+ */}
         <Image className="w-full" src={BackgroundFooter} alt="" />
       </div>
     </footer>

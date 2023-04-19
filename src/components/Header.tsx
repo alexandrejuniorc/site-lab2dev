@@ -17,7 +17,7 @@ export const Header = () => {
           </Link>
         </div>
 
-        <div className="">
+        <div className="mb-24">
           <Link
             className={
               router.pathname === "/"

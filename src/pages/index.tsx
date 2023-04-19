@@ -7,6 +7,7 @@ import { Clients } from "@/components/Carrousel/Clients";
 
 import PartnerSAPImage from "../../public/bg-partner-sap.png";
 import RealTimeImage from "../../public/bg-real-time.png";
+import TrophieHackaton from "../../public/bg-trophies.png";
 
 export default function Home() {
   return (
@@ -73,8 +74,8 @@ export default function Home() {
         </div>
 
         <div className="flex flex-1 gap-x-5">
-          <CardTrophie />
-          <CardTrophie />
+          <CardTrophie image={TrophieHackaton} content="Hackaton Odebrecht" />
+          <CardTrophie image={TrophieHackaton} content="Hackaoec 2019" />
         </div>
       </section>
 
@@ -92,7 +93,7 @@ export default function Home() {
           <Clients />
         </div>
 
-        <div className="mt-20">
+        <div className="mt-11">
           <p className="font-normal text-16 leading-7 text-gray-800 mt-20 not-italic">
             Veja também alguns dos depoimentos deixados por representantes dos
             nossos
@@ -100,7 +101,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className=" w-full">
+        <div className="w-full mt-8">
           <ClientFeedback />
         </div>
       </section>
