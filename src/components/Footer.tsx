@@ -71,21 +71,21 @@ export const Footer = () => {
             <div className="flex flex-col gap-2 pb-2 font-normal text-16 leading-7 not-italic text-white">
               <Link
                 className="w-max hover:underline underline-offset-4"
-                href=""
+                href="politica-de-privacidade"
               >
                 Política de privacidade
               </Link>
 
               <Link
                 className="w-max hover:underline underline-offset-4"
-                href=""
+                href="termos-de-uso"
               >
                 Termos de uso
               </Link>
 
               <Link
                 className="w-max hover:underline underline-offset-4"
-                href=""
+                href="cookies"
               >
                 Cookies
               </Link>
