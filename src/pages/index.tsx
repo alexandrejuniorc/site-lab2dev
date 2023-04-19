@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { Button } from "@/components/Button";
 import { CardBlog } from "@/components/CardBlog";
 import { CardTrophie } from "@/components/CardTrophie";
 import { ClientFeedback } from "@/components/Carrousel/ClientFeedback";
@@ -25,9 +26,9 @@ export default function Home() {
             digital.
           </p>
 
-          <button className="bg-purple-100 py-3 px-12 rounded-md font-normal text-center leading-6 not-italic text-18 text-white mt-14">
-            Saiba mais
-          </button>
+          <div className="mt-14">
+            <Button color="purple" content="Saiba mais" />
+          </div>
         </div>
 
         <div className="flex">
@@ -54,9 +55,9 @@ export default function Home() {
             metas de vendas e receita.
           </p>
 
-          <button className="bg-purple-100 py-3 px-12 rounded-md font-normal text-center leading-6 not-italic text-18 text-white mt-14">
-            Saiba mais
-          </button>
+          <div className="mt-14">
+            <Button color="purple" content="Saiba mais" />
+          </div>
         </div>
       </section>
 
