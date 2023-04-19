@@ -64,11 +64,31 @@ export default function WhoWeAre() {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 mt-14">
-          <CardTeam />
-          <CardTeam />
-          <CardTeam />
-          <CardTeam />
+        <div className="grid grid-cols-4 gap-5 mt-14">
+          <CardTeam
+            title={"Consultores"}
+            content={
+              "Profissionais que têm conhecimento em várias soluções oferecidas pela plataforma SAP BTP, como integração, analytics, internet das coisas (IoT), inteligência artificial (IA), entre outras."
+            }
+          />
+          <CardTeam
+            title={"Desenvolvedores"}
+            content={
+              "Profissionais que trabalham com as tecnologias e ferramentas de desenvolvimento disponíveis na plataforma SAP BTP, incluindo desenvolvimento de aplicativos, construções de bancos de dados, microsserviços, entre outros."
+            }
+          />
+          <CardTeam
+            title={"Arquitetos"}
+            content={
+              "Profissionais que desenham e projetam soluções personalizadas usando diferentes serviços da plataforma SAP BTP para atender às necessidades dos clientes."
+            }
+          />
+          <CardTeam
+            title={"Analista de dados"}
+            content={
+              "Profissionais que possuem conhecimentos em soluções de análise de dados oferecidas pela plataforma SAP BTP, como SAP Data Intelligence (antigo Data Hub), SAP Data Warehouse Cloud (DWC) e SAP Analytics Cloud (SAC)."
+            }
+          />
         </div>
       </section>
 
