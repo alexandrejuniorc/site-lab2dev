@@ -97,25 +97,24 @@ export const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div>
-          <div className="flex justify-center py-5">
-            <p className="font-normal text-10/px leading-4 not-italic text-white">
-              © 2023 Lab2Dev. Todos os direitos reservados.
-            </p>
-          </div>
+      <div>
+        <div className="flex justify-center py-5">
+          <p className="font-normal text-10/px leading-4 not-italic text-white">
+            © 2023 Lab2Dev. Todos os direitos reservados.
+          </p>
         </div>
       </div>
 
       <div>
-        {/*  <div className="">
+        {/* <div>
           <Image
             className="w-[10.3125rem] h-[14.6875rem]"
             src={TwoFooter}
             alt=""
           />
-        </div>
- */}
+        </div> */}
         <Image className="w-full" src={BackgroundFooter} alt="" />
       </div>
     </footer>

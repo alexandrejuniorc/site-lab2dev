@@ -62,7 +62,7 @@ export default function Home() {
       </section>
 
       <section className="mt-20 grid grid-cols-2">
-        <div className="mr-28">
+        <div className="mr-28 lg:mr-0">
           <h1 className="font-normal text-purple-300 leading-10 text-30 uppercase">
             Somos premiados
           </h1>

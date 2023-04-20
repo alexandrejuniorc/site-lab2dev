@@ -4,20 +4,21 @@ import { useRouter } from "next/router";
 import React from "react";
 
 import Logo from "../../public/logo.png";
+import Menubar from "./Menubar";
 
 export const Header = () => {
   const router = useRouter();
 
   return (
     <header className="flex pt-10 justify-center container text">
-      <div className="flex justify-between w-full">
-        <div className="pr-36">
+      <div className="flex justify-between w-full max-md:justify-end md:justify-center">
+        <div className="pr-36 max-md:hidden max-lg:pr-3">
           <Link href="/">
             <Image src={Logo} alt="Logo Lab2dev" />
           </Link>
         </div>
 
-        <div className="mb-24">
+        <div className="mb-24 flex items-center whitespace-nowrap max-md:hidden">
           <Link
             className={
               router.pathname === "/"
@@ -90,6 +91,10 @@ export const Header = () => {
           >
             ENG/SPA
           </Link>
+        </div>
+
+        <div className="hidden max-md:flex ">
+          <Menubar />
         </div>
       </div>
     </header>
