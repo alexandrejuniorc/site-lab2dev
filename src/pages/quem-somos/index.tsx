@@ -9,7 +9,7 @@ import Video from "../../../public/bg-video.png";
 export default function WhoWeAre() {
   return (
     <>
-      <section className="grid grid-cols-2 gap-5">
+      <section className="grid grid-cols-2 gap-5 max-md:flex max-md:flex-col">
         <div className="flex flex-col">
           <h1 className="text-purple-300 leading-10 text-30 font-normal not-italic uppercase">
             nossa história
@@ -19,9 +19,12 @@ export default function WhoWeAre() {
             inovação por meio do SAP BTP (Business Technology Platform). Somos
             especialistas em criar soluções, utilizando o que há de mais
             avançado em tecnologia para apoiar a transformação digital dos
-            nossos clientes. Temos no nosso DNA a agilidade, inovação e paixão
-            por desenvolver sistemas para transformar empresas e,
-            consequentemente, pessoas.
+            nossos clientes.
+          </p>
+
+          <p className="text-gray-800 text-16 leading-7 font-normal not-italic mt-2">
+            Temos no nosso DNA a agilidade, inovação e paixão por desenvolver
+            sistemas para transformar empresas e, consequentemente, pessoas.
           </p>
         </div>
         <div className="flex justify-center">
@@ -38,7 +41,7 @@ export default function WhoWeAre() {
         </div>
       </section>
 
-      <section className="grid grid-cols-3 gap-5 mt-20">
+      <section className="grid grid-cols-3 gap-5 mt-20 max-md:flex max-md:flex-col items-center">
         <MissionCard
           title="MISSÃO"
           content="Maximizar o resultado dos nossos clientes, criando soluções inteligentes, auxiliando na jornada de transformação digital."
@@ -64,12 +67,12 @@ export default function WhoWeAre() {
           empresas que buscam melhorar seus processos de negócios.
         </p>
 
-        <div className="w-[41.25rem] h-[23rem] mt-16">
+        <div className="w-[41.25rem] h-[23rem] mt-16 max-md:w-[20rem] max-md:h-[8.75rem]">
           <TeamCarrousel />
         </div>
       </section>
 
-      <section>
+      <section className="max-md:flex max-md:flex-col">
         <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-20">
           em que acreditamos
         </h1>
