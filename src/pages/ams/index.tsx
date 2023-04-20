@@ -46,7 +46,7 @@ export default function WhoWeAre() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-4 max-md:grid-cols-2 max-md:gap-2">
+        <div className="grid grid-cols-4 gap-5 max-md:grid-cols-2 max-md:gap-2">
           <CardSupport
             title="Comprovação de habilidades"
             content="A empresa deve demonstrar um alto nível de habilidade na implementação de soluções SAP em várias áreas, como ERP, CRM, gestão da cadeia de suprimentos, analytics, entre outras."
