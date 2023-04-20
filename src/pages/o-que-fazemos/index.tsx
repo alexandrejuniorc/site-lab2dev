@@ -34,7 +34,7 @@ export default function WhatWeDo() {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-5 mt-16">
+        <div className="grid grid-cols-4 gap-5 mt-16 max-md:grid-cols-2">
           <SapSolutionsCard
             image={SapBuildImage}
             title={"SAP Build"}
@@ -95,14 +95,16 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-2 text-left">
-          <Image src={SapPartnerImage} alt="" />
+        <div className="grid grid-cols-2 text-left max-md:flex max-md:flex-col max-md:text-center">
+          <div className="max-md:flex max-md:justify-center max-md:items-center">
+            <Image src={SapPartnerImage} alt="" />
+          </div>
 
           <div className="flex flex-col">
-            <h1 className="font-normal not-italic text-30 leading-10 text-purple-300">
+            <h1 className="font-normal not-italic text-30 leading-10 text-purple-300 mt-7">
               Somos PARCEIROS GOLD SAP
             </h1>
-            <p className="font-normal not-italic text-16 leading-7 text-gray-800 mt-8">
+            <p className="font-normal not-italic text-16 leading-7 text-gray-800 mt-8 max-md:text-left">
               Para se tornar um parceiro Gold SAP, a empresa parceira precisa
               atender a certos requisitos estabelecidos pela SAP, como
               demonstrar um alto nível de competência técnica e de negócios, ter
@@ -115,7 +117,7 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 max-md:flex max-md:flex-col">
           <div className="flex  flex-col">
             <p className="not-italic font-normal text-14 leading-4 text-blue-200 uppercase">
               Expertise
@@ -130,7 +132,7 @@ export default function WhatWeDo() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-8 items-end">
+          <div className="flex flex-col gap-8 items-end max-md:justify-center max-md:items-center max-md:mt-7">
             <OtherSolutionsCard
               title={"SAP UI5"}
               image={Ui5Image}
@@ -164,8 +166,8 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-2 gap-[6.5625rem] items-center">
-          <div className="">
+        <div className="grid grid-cols-2 gap-[6.5625rem] items-center max-md:flex max-md:flex-col-reverse max-md:gap-0">
+          <div className="max-md:w-[20rem] max-md:h-[8.75rem] max-md:mt-16">
             <TeamCarrousel />
           </div>
           <div>
@@ -184,7 +186,7 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-3 max-md:flex max-md:flex-col max-md:gap-1 max-md:items-center">
           <InfosCard
             title={"PRESENÇA"}
             info={"+25"}
