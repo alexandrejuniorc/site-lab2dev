@@ -76,9 +76,9 @@ export default function Home() {
             e comprometimento, em busca da satisfação de nossos clientes.
           </p>
         </div>
-
-        <div className="flex flex-1 gap-x-5 max-lg:flex-none max-lg:block max-lg:mt-7">
-          <div className="lg:block max-lg:hidden">
+        {/* flex flex-1 gap-x-5 max-lg:flex-none max-lg:flex max-md:mt-7 */}
+        <div className="">
+          <div className="lg:flex lg:gap-5 max-lg:hidden">
             <CardTrophie image={TrophieHackaton} content="Hackaton Odebrecht" />
             <CardTrophie image={TrophieHackaton} content="Hackaoec 2019" />
           </div>

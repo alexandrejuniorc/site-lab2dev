@@ -13,7 +13,7 @@ export const OtherSolutionsCard = ({
   image,
 }: OtherSolutionsCardProps) => {
   return (
-    <div className="bg-purple-100 w-[25.1875rem] min-h-[10.75rem] px-7 pt-6 pb-9 rounded">
+    <div className="bg-purple-100 w-[25.1875rem] min-h-[10.75rem] px-7 pt-6 pb-9 rounded max-lg:w-auto">
       <Image src={image} alt="" />
       <h1 className="not-italic font-normal text-16 leading-7 text-white mt-5">
         {title}

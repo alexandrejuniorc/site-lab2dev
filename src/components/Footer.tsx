@@ -13,7 +13,7 @@ import TwoFooter from "../../public/bg-two-footer.svg";
 
 export const Footer = () => {
   return (
-    <footer className="bg-purple-300 text mt-20">
+    <footer className="bg-purple-300 text mt-20 relative">
       <div className="container">
         <div className="grid grid-cols-3 gap-x-7 m-auto p-0 pt-20 pb-10 max-md:flex max-md:flex-col">
           <div className="max-md:text-center">
@@ -108,13 +108,13 @@ export const Footer = () => {
       </div>
 
       <div>
-        {/* <div>
+        <div className="absolute right-0">
           <Image
-            className="w-[10.3125rem] h-[14.6875rem]"
+            className="w-[10.3125rem] h-[14.6875rem] absolute right-0"
             src={TwoFooter}
             alt=""
           />
-        </div> */}
+        </div>
         <Image className="w-full" src={BackgroundFooter} alt="" />
       </div>
     </footer>

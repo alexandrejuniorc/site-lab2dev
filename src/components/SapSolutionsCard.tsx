@@ -13,7 +13,7 @@ export const SapSolutionsCard = ({
   image,
 }: SapSolutionsCardProps) => {
   return (
-    <div className="bg-purple-100 flex flex-col w-[14.6875rem] h-[15.625rem] p-6 rounded">
+    <div className="bg-purple-100 flex flex-col min-h-[15.625rem] p-6 rounded">
       <Image src={image} alt="" />
       <h1 className="not-italic font-normal text-16 leading-5 text-white mt-5">
         {title}

@@ -36,7 +36,7 @@ export default function WhoWeAre() {
         </p>
       </section>
 
-      <section className="mt-20 grid grid-cols-2">
+      <section className="mt-20 grid grid-cols-2 max-md:flex max-md:flex-col">
         <div>
           <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase">
             benefícios sap btp
@@ -47,7 +47,7 @@ export default function WhoWeAre() {
           </p>
         </div>
 
-        <div className="">
+        <div className="max-md:mt-5">
           <AccordionSap />
         </div>
       </section>
@@ -64,7 +64,7 @@ export default function WhoWeAre() {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-5 mt-14">
+        <div className="grid grid-cols-4 gap-5 max-md:grid-cols-2">
           <CardTeam
             title={"Consultores"}
             content={

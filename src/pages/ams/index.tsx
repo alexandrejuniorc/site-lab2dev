@@ -27,7 +27,7 @@ export default function WhoWeAre() {
         </p>
       </section>
 
-      <section className="mt-20 grid grid-cols-2">
+      <section className="mt-20 grid grid-cols-2 max-md:flex max-md:flex-col">
         <div>
           <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase">
             SAP BTP
@@ -40,13 +40,13 @@ export default function WhoWeAre() {
           </p>
         </div>
 
-        <div>
+        <div className="max-md:mt-5">
           <AccordionSap />
         </div>
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-4 max-md:grid-cols-2 max-md:gap-2">
           <CardSupport
             title="Comprovação de habilidades"
             content="A empresa deve demonstrar um alto nível de habilidade na implementação de soluções SAP em várias áreas, como ERP, CRM, gestão da cadeia de suprimentos, analytics, entre outras."

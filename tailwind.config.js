@@ -70,9 +70,6 @@ module.exports = {
         xl: "5rem",
       },
     },
-    minHeight: {
-      69: "69vh",
-    },
     extend: {
       colors: {
         ...mauve,

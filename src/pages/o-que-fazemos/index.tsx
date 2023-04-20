@@ -26,7 +26,7 @@ export default function WhatWeDo() {
           <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase mt-9">
             Nossas soluções SAP
           </h1>
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5 w-[30rem]">
+          <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5">
             Nossa atuação é focada no mercado SAP. Trazemos inovação e
             tendências tecnológicas dentro do portfólio de produtos SAP e também
             trabalhamos na simplificação das integrações de outros sistemas
@@ -118,14 +118,14 @@ export default function WhatWeDo() {
 
       <section className="mt-20">
         <div className="grid grid-cols-2 max-md:flex max-md:flex-col">
-          <div className="flex  flex-col">
+          <div className="flex flex-col">
             <p className="not-italic font-normal text-14 leading-4 text-blue-200 uppercase">
               Expertise
             </p>
             <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase mt-9">
               Outras soluções
             </h1>
-            <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5 w-[30rem]">
+            <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5">
               Nosso principal foco sempre foi SAP, somos líder e referências no
               mercado. Porém isso não significa que não somos os melhores nas
               outras tecnologias também.
@@ -186,7 +186,7 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-3 max-md:flex max-md:flex-col max-md:gap-1 max-md:items-center">
+        <div className="grid grid-cols-3 gap-5 max-md:flex max-md:flex-col">
           <InfosCard
             title={"PRESENÇA"}
             info={"+25"}
