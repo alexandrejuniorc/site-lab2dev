@@ -16,13 +16,13 @@ import TrophieHackaton from "../../public/bg-trophies.png";
 export default function Home() {
   return (
     <>
-      <section className="grid grid-cols-2 items-center justify-center">
+      <section className="grid grid-cols-2 items-center justify-center max-md:flex max-md:flex-col max-md:text-center">
         <div>
           <h1 className=" not-italic font-normal text-purple-300 leading-10 text-30 uppercase">
             Inovação e Tecnologia através do sap btp
           </h1>
 
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 pt-8">
+          <p className="not-italic font-normal text-16 leading-7 text-gray-800 pt-8 max-md:text-left">
             A Lab2Dev é a primeira startup brasileira focada em inovação por
             meio do SAP BTP (Business Technology Platform). Através de soluções
             inteligentes, apoiamos a sua empresa na jornada da transformação
@@ -34,22 +34,22 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex max-md:hidden">
           <Image src={RealTimeImage} alt="" />
         </div>
       </section>
 
-      <section className="grid grid-cols-2 items-center justify-center mt-20">
-        <div className="flex w-full h-max">
+      <section className="grid grid-cols-2 items-center justify-center mt-20 max-md:flex max-md:flex-col max-md:text-center">
+        <div className="flex w-full h-max max-md:justify-center">
           <Image src={PartnerSAPImage} alt="" />
         </div>
 
         <div>
-          <h1 className="not-italic font-normal text-purple-300 leading-10 text-30 uppercase">
+          <h1 className="not-italic font-normal text-purple-300 leading-10 text-30 uppercase max-md:mt-7">
             Somos parceiros Gold SAP!
           </h1>
 
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 pt-8">
+          <p className="not-italic font-normal text-16 leading-7 text-gray-800 pt-8 max-lg:text-left">
             Para se tornar um parceiro Gold SAP, a empresa parceira precisa
             atender a certos requisitos estabelecidos pela SAP, como demonstrar
             um alto nível de competência técnica e de negócios, ter um bom
@@ -69,7 +69,7 @@ export default function Home() {
           <h1 className="font-normal text-purple-300 leading-10 text-30 uppercase">
             Somos premiados
           </h1>
-          <p className="font-normal text-16 leading-7 text-gray-800 pt-8 not-italic">
+          <p className="font-normal text-16 leading-7 text-gray-800 pt-8 not-italic max-lg:text-left">
             Ao longo de nossa jornada, tivemos o privilégio de receber diversos
             prêmios que reconhecem a qualidade de nossos produtos e serviços.
             Essas conquistas nos motivam a continuar trabalhando com excelência
@@ -77,10 +77,13 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex flex-1 gap-x-5">
-          <CardTrophie image={TrophieHackaton} content="Hackaton Odebrecht" />
-          <CardTrophie image={TrophieHackaton} content="Hackaoec 2019" />
-          {/*  <CardTrophieMobile /> */}
+        <div className="flex flex-1 gap-x-5 max-lg:flex-none max-lg:block max-lg:mt-7">
+          <div className="lg:block max-lg:hidden">
+            <CardTrophie image={TrophieHackaton} content="Hackaton Odebrecht" />
+            <CardTrophie image={TrophieHackaton} content="Hackaoec 2019" />
+          </div>
+
+          <CardTrophieMobile />
         </div>
       </section>
 

@@ -17,7 +17,7 @@ import WhirlpoolImage from "../../../public/client-whirlpool.png";
 export default function ClientsMobile() {
   return (
     <>
-      <div className="max-lg:block">
+      <div className="lg:hidden max-md:block">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}

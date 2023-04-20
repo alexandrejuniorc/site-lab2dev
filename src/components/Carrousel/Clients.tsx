@@ -18,7 +18,7 @@ import "swiper/css/pagination";
 export function Clients() {
   return (
     <>
-      <div className="max-lg:hidden">
+      <div className="lg:block max-lg:hidden">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
