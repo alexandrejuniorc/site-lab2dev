@@ -3,8 +3,11 @@ import Image from "next/image";
 import { Button } from "@/components/Button";
 import { CardBlog } from "@/components/CardBlog";
 import { CardTrophie } from "@/components/CardTrophie";
+import CardTrophieMobile from "@/components/Carrousel/CardTrophieMobile";
 import { ClientFeedback } from "@/components/Carrousel/ClientFeedback";
+import ClientFeedbackMobile from "@/components/Carrousel/ClientFeedbackMobile";
 import { Clients } from "@/components/Carrousel/Clients";
+import ClientsMobile from "@/components/Carrousel/ClientsMobile";
 
 import PartnerSAPImage from "../../public/bg-partner-sap.png";
 import RealTimeImage from "../../public/bg-real-time.png";
@@ -61,8 +64,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-20 grid grid-cols-2">
-        <div className="mr-28 lg:mr-0">
+      <section className="mt-20 grid grid-cols-2 max-lg:flex max-lg:flex-col">
+        <div className="mr-28 lg:mr-0 max-lg:text-center max-lg:m-0">
           <h1 className="font-normal text-purple-300 leading-10 text-30 uppercase">
             Somos premiados
           </h1>
@@ -77,6 +80,7 @@ export default function Home() {
         <div className="flex flex-1 gap-x-5">
           <CardTrophie image={TrophieHackaton} content="Hackaton Odebrecht" />
           <CardTrophie image={TrophieHackaton} content="Hackaoec 2019" />
+          {/*  <CardTrophieMobile /> */}
         </div>
       </section>
 
@@ -92,6 +96,7 @@ export default function Home() {
 
         <div className="mt-16 block w-full">
           <Clients />
+          <ClientsMobile />
         </div>
 
         <div className="mt-11">
@@ -102,8 +107,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="w-full mt-8">
+        <div className="w-full mt-8 ">
           <ClientFeedback />
+          <ClientFeedbackMobile />
         </div>
       </section>
 

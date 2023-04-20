@@ -1,8 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-import { Pagination } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import GerdauImage from "../../../public/client-gerdau.png";
 import MercedesImage from "../../../public/client-mercedes.png";
@@ -10,15 +14,10 @@ import TranspetroImage from "../../../public/client-transpetro.png";
 import UolImage from "../../../public/client-uol.png";
 import WhirlpoolImage from "../../../public/client-whirlpool.png";
 
-import "swiper/css";
-import "swiper/css/pagination";
-
-// import "./styles.css";
-
-export function Clients() {
+export default function ClientsMobile() {
   return (
     <>
-      <div className="max-lg:hidden">
+      <div className="max-lg:block">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -51,19 +50,33 @@ export function Clients() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <Image src={WhirlpoolImage} alt="Whirlpool" />
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={WhirlpoolImage} alt="Whirlpool" />
+            </div>
           </SwiperSlide>
+
           <SwiperSlide>
-            <Image src={MercedesImage} alt="Mercedes" />
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={MercedesImage} alt="Mercedes" />
+            </div>
           </SwiperSlide>
+
           <SwiperSlide>
-            <Image src={TranspetroImage} alt="Transpetro" />
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={TranspetroImage} alt="Transpetro" />
+            </div>
           </SwiperSlide>
+
           <SwiperSlide>
-            <Image src={GerdauImage} alt="Gerdau" />
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={GerdauImage} alt="Gerdau" />
+            </div>
           </SwiperSlide>
+
           <SwiperSlide>
-            <Image src={UolImage} alt="Uol" />
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={UolImage} alt="Uol" />
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
