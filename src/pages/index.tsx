@@ -115,26 +115,6 @@ export default function Home() {
           <ClientFeedbackMobile />
         </div>
       </section>
-
-      {/*
-      NEW FEATURE COMING SOON
-
-      <section className="mt-20">
-        <div>
-          <h1 className="font-normal text-30 leading-10 text-purple-300 not-italic uppercase text-center">
-            Confira nosso blog!
-          </h1>
-          <p className="font-normal text-16 leading-7 text-gray-800 not-italic text-center mt-5">
-            Últimas postagens
-          </p>
-        </div>
-
-        <div className="mt-16 grid grid-cols-3">
-          <CardBlog />
-          <CardBlog />
-          <CardBlog />
-        </div>
-      </section> */}
     </>
   );
 }

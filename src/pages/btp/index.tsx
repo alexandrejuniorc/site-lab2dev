@@ -91,26 +91,6 @@ export default function WhoWeAre() {
           />
         </div>
       </section>
-
-      {/*
-      NEW FEATURE COMING SOON
-
-     <section className="mt-20">
-        <div className="flex flex-col items-center text-center">
-          <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase">
-            Confira nosso blog!
-          </h1>
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5">
-            Últimas postagens sobre BTP
-          </p>
-        </div>
-
-        <div className="grid grid-cols-3">
-          <CardBlog />
-          <CardBlog />
-          <CardBlog />
-        </div>
-      </section> */}
     </>
   );
 }

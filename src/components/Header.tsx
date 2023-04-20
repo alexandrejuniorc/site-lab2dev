@@ -70,27 +70,6 @@ export const Header = () => {
           >
             AMS
           </Link>
-
-          {/*
-          NEW FEATURE COMING SOON
-          
-          <Link
-            className={
-              router.pathname === "/blog"
-                ? "font-normal text-16 leading-6 not-italic text-purple-300 pr-8 "
-                : "font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
-            }
-            href="blog"
-          >
-            Blog
-          </Link> */}
-
-          <Link
-            className="font-normal text-16 leading-6 not-italic text-gray-600 last:pr-0 hover:text-purple-300"
-            href="#"
-          >
-            ENG/SPA
-          </Link>
         </div>
 
         <div className="hidden max-md:flex ">
