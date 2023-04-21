@@ -5,68 +5,110 @@ import * as Accordion from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import classNames from "classnames";
 
-export const AccordionSap = () => (
+interface AccordionSapProps {
+  title: {
+    title1?: string;
+    title2?: string;
+    title3?: string;
+    title4?: string;
+    title5?: string;
+    title6?: string;
+    title7?: string;
+  };
+  content: {
+    content1?: string;
+    content2?: string;
+    content3?: string;
+    content4?: string;
+    content5?: string;
+    content6?: string;
+    content7?: string;
+  };
+}
+
+export const AccordionSap = ({ content, title }: AccordionSapProps) => (
   <Accordion.Root
-    className="shadow-md rounded-lg"
+    className="shadow-md rounded-lg text-left "
     type="single"
     defaultValue="item-1"
     collapsible
   >
-    <AccordionItem value="item-1">
-      <AccordionTrigger>
-        Agilidade no desenvolvimento de aplicativos
-      </AccordionTrigger>
-      <AccordionContent>
-        Com o SAP BTP, os desenvolvedores podem criar aplicativos personalizados
-        rapidamente usando uma variedade de linguagens de programação e
-        ferramentas disponíveis na plataforma. Além da facilidade da integração
-        com sistemas SAP, como o S/4HANA, ECC, Ariba, SFSF e outros,
-        diferentemente de outras plataformas.
-      </AccordionContent>
-    </AccordionItem>
+    {title.title1 && content.content1 && (
+      <AccordionItem value="item-1">
+        <div className="mt-2 mb-2">
+          <AccordionTrigger>
+            <p className="text-left">{title.title1}</p>
+          </AccordionTrigger>
+        </div>
+        <AccordionContent>{content.content1}</AccordionContent>
+      </AccordionItem>
+    )}
 
-    <AccordionItem value="item-2">
-      <AccordionTrigger>Integração de sistemas</AccordionTrigger>
-      <AccordionContent>
-        Yes. {"It's"} unstyled by default, giving you freedom over the look and
-        feel.
-      </AccordionContent>
-    </AccordionItem>
+    {title.title2 && content.content2 && (
+      <AccordionItem value="item-2">
+        <div className="mt-2 mb-2">
+          <AccordionTrigger>
+            <p className="text-left">{title.title2}</p>
+          </AccordionTrigger>
+        </div>
+        <AccordionContent>{content.content2}</AccordionContent>
+      </AccordionItem>
+    )}
 
-    <AccordionItem value="item-3">
-      <AccordionTrigger>Análise de dados avançada</AccordionTrigger>
-      <AccordionContent>
-        Yes! You can animate the Accordion with CSS or JavaScript.
-      </AccordionContent>
-    </AccordionItem>
+    {title.title3 && content.content3 && (
+      <AccordionItem value="item-3">
+        <div className="mt-2 mb-2">
+          <AccordionTrigger>
+            <p className="text-left">{title.title3}</p>
+          </AccordionTrigger>
+        </div>
+        <AccordionContent>{content.content3}</AccordionContent>
+      </AccordionItem>
+    )}
 
-    <AccordionItem value="item-4">
-      <AccordionTrigger>Segurança e conformidade</AccordionTrigger>
-      <AccordionContent>
-        Yes! You can animate the Accordion with CSS or JavaScript.
-      </AccordionContent>
-    </AccordionItem>
+    {title.title4 && content.content4 && (
+      <AccordionItem value="item-4">
+        <div className="mt-2 mb-2">
+          <AccordionTrigger>
+            <p className="text-left">{title.title4}</p>
+          </AccordionTrigger>
+        </div>
+        <AccordionContent>{content.content4}</AccordionContent>
+      </AccordionItem>
+    )}
 
-    <AccordionItem value="item-5">
-      <AccordionTrigger>Escalabilidade</AccordionTrigger>
-      <AccordionContent>
-        Yes! You can animate the Accordion with CSS or JavaScript.
-      </AccordionContent>
-    </AccordionItem>
+    {title.title5 && content.content5 && (
+      <AccordionItem value="item-5">
+        <div className="mt-2 mb-2">
+          <AccordionTrigger>
+            <p className="text-left">{title.title5}</p>
+          </AccordionTrigger>
+        </div>
+        <AccordionContent>{content.content5}</AccordionContent>
+      </AccordionItem>
+    )}
 
-    <AccordionItem value="item-6">
-      <AccordionTrigger>Colaboração</AccordionTrigger>
-      <AccordionContent>
-        Yes! You can animate the Accordion with CSS or JavaScript.
-      </AccordionContent>
-    </AccordionItem>
+    {title.title6 && content.content6 && (
+      <AccordionItem value="item-6">
+        <div className="mt-2 mb-2">
+          <AccordionTrigger>
+            <p className="text-left">{title.title6}</p>
+          </AccordionTrigger>
+        </div>
+        <AccordionContent>{content.content6}</AccordionContent>
+      </AccordionItem>
+    )}
 
-    <AccordionItem value="item-7">
-      <AccordionTrigger>Acesso global</AccordionTrigger>
-      <AccordionContent>
-        Yes! You can animate the Accordion with CSS or JavaScript.
-      </AccordionContent>
-    </AccordionItem>
+    {title.title7 && content.content7 && (
+      <AccordionItem value="item-7">
+        <div className="mt-2 mb-2">
+          <AccordionTrigger>
+            <p className="text-left">{title.title7}</p>
+          </AccordionTrigger>
+        </div>
+        <AccordionContent>{content.content7}</AccordionContent>
+      </AccordionItem>
+    )}
   </Accordion.Root>
 );
 
@@ -90,7 +132,7 @@ const AccordionTrigger = React.forwardRef(
     <Accordion.Header className="flex">
       <Accordion.Trigger
         className={classNames(
-          "text-purple-300 bg-white hover:bg-mauve2 group flex h-[45px] flex-1 cursor-default items-center justify-between px-5 text-16 leading-7 outline-none",
+          "text-purple-300 bg-white group flex h-[45px] flex-1 cursor-default items-center justify-between px-5 text-16 leading-7 outline-none",
           className
         )}
         {...props}

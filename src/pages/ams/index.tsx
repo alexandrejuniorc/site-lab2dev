@@ -41,12 +41,32 @@ export default function WhoWeAre() {
         </div>
 
         <div className="max-md:mt-5">
-          <AccordionSap />
+          <AccordionSap
+            title={{
+              title1: "Suporte contínuo",
+              title2: "Monitoramento",
+              title3: "Manutenção",
+              title4: "Otimização",
+              title5: "Gerenciamento de mudanças",
+            }}
+            content={{
+              content1:
+                "Para resolver problemas e garantir que os aplicativos estejam sempre em execução.",
+              content2:
+                "Monitoramento contínuo do desempenho dos aplicativos e identificação de problemas antes que eles afetem os usuários.",
+              content3:
+                "Manutenção e atualizações regulares do software para garantir que os aplicativos estejam sempre atualizados e seguros.",
+              content4:
+                "Identificação de oportunidades de melhoria e otimização dos aplicativos para maximizar a eficiência e reduzir custos.",
+              content5:
+                "Gerenciamento eficiente de alterações para minimizar o tempo de inatividade e reduzir os riscos de falhas de sistema.",
+            }}
+          />
         </div>
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-4 gap-5 max-md:grid-cols-2 max-md:gap-2">
+        <div className="grid grid-cols-4 gap-5 max-md:grid-cols-2 max-md:gap-2 max-sm:flex max-sm:flex-col max-sm:items-center">
           <CardSupport
             title="Comprovação de habilidades"
             content="A empresa deve demonstrar um alto nível de habilidade na implementação de soluções SAP em várias áreas, como ERP, CRM, gestão da cadeia de suprimentos, analytics, entre outras."

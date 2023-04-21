@@ -4,7 +4,10 @@ import { Button } from "@/components/Button";
 import { TeamCarrousel } from "@/components/Carrousel/Team";
 import { MissionCard } from "@/components/MissionCard";
 
-import Video from "../../../public/bg-video.png";
+import Image1 from "../../../public/carrousel-1/IMG_0735-min.png";
+import Image2 from "../../../public/carrousel-1/IMG_6595-min.png";
+import Image3 from "../../../public/carrousel-1/IMG_6600-min.png";
+import Image4 from "../../../public/carrousel-1/IMG_6602-min.png";
 
 export default function WhoWeAre() {
   return (
@@ -67,8 +70,21 @@ export default function WhoWeAre() {
           empresas que buscam melhorar seus processos de negócios.
         </p>
 
-        <div className="w-[41.25rem] h-[23rem] mt-16 max-md:w-[20rem] max-md:h-[8.75rem]">
-          <TeamCarrousel />
+        <div className="w-[41.25rem] mt-16 max-md:w-[20rem]">
+          <TeamCarrousel
+            imageContent={{
+              imgContent1: true,
+              imgContent2: true,
+              imgContent3: true,
+              imgContent4: true,
+            }}
+            imageUrl={{
+              img1: Image1,
+              img2: Image2,
+              img3: Image3,
+              img4: Image4,
+            }}
+          />
         </div>
       </section>
 
@@ -89,7 +105,7 @@ export default function WhoWeAre() {
         </p>
 
         <div className="mt-11">
-          <Button color="purple" content="Trabalhe conosco" />
+          <Button color="purple" content="Trabalhe conosco" url={""} />
         </div>
       </section>
     </>

@@ -11,6 +11,7 @@ import ClientsMobile from "@/components/Carrousel/ClientsMobile";
 
 import PartnerSAPImage from "../../public/bg-partner-sap.png";
 import RealTimeImage from "../../public/bg-real-time.png";
+import TrophieHackaton2 from "../../public/bg-trophies-2.png";
 import TrophieHackaton from "../../public/bg-trophies.png";
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
           </p>
 
           <div className="mt-14">
-            <Button color="purple" content="Saiba mais" />
+            <Button color="purple" content="Saiba mais" url={"o-que-fazemos"} />
           </div>
         </div>
 
@@ -59,7 +60,7 @@ export default function Home() {
           </p>
 
           <div className="mt-14">
-            <Button color="purple" content="Saiba mais" />
+            <Button color="purple" content="Saiba mais" url={"btp"} />
           </div>
         </div>
       </section>
@@ -76,11 +77,19 @@ export default function Home() {
             e comprometimento, em busca da satisfação de nossos clientes.
           </p>
         </div>
-        {/* flex flex-1 gap-x-5 max-lg:flex-none max-lg:flex max-md:mt-7 */}
-        <div className="">
+
+        <div className="max-lg:mt-7">
           <div className="lg:flex lg:gap-5 max-lg:hidden">
-            <CardTrophie image={TrophieHackaton} content="Hackaton Odebrecht" />
-            <CardTrophie image={TrophieHackaton} content="Hackaoec 2019" />
+            <CardTrophie
+              image={TrophieHackaton}
+              content={"Hackaoec 2019"}
+              title={"1° Lugar"}
+            />
+            <CardTrophie
+              image={TrophieHackaton2}
+              content="Innovation Hackaton 2019"
+              title={"2° Lugar"}
+            />
           </div>
 
           <CardTrophieMobile />
@@ -97,13 +106,13 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-16 block w-full">
+        <div className="mt-16 block w-full max-lg:mt-6">
           <Clients />
           <ClientsMobile />
         </div>
 
         <div className="mt-11">
-          <p className="font-normal text-16 leading-7 text-gray-800 mt-20 not-italic">
+          <p className="font-normal text-16 leading-7 text-gray-800 mt-14 not-italic">
             Veja também alguns dos depoimentos deixados por representantes dos
             nossos
             <br /> clientes.

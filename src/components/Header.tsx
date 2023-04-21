@@ -11,7 +11,7 @@ export const Header = () => {
 
   return (
     <header className="flex pt-10 justify-center container text">
-      <div className="flex justify-between w-full max-md:justify-end md:justify-center">
+      <div className="flex justify-between w-full max-md:justify-end md:justify-center lg:justify-between">
         <div className="pr-36 max-md:hidden max-lg:pr-3">
           <Link href="/">
             <Image src={Logo} alt="Logo Lab2dev" />

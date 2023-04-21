@@ -6,14 +6,17 @@ import { InfosCard } from "@/components/InfosCard";
 import { OtherSolutionsCard } from "@/components/OtherSolutionsCard";
 import { SapSolutionsCard } from "@/components/SapSolutionsCard";
 
-import FigmaImage from "../../../public/bg-icon-figma.png";
-import SapFioriImage from "../../../public/bg-icon-fiori.png";
-import SapHanaImage from "../../../public/bg-icon-hana.png";
-import NextJsImage from "../../../public/bg-icon-nextjs.png";
-import ReactNativeImage from "../../../public/bg-icon-react-native.png";
-import SapBuildImage from "../../../public/bg-icon-sap-build.png";
-import Ui5Image from "../../../public/bg-icon-ui5.png";
 import SapPartnerImage from "../../../public/bg-partner-sap.png";
+import Image1 from "../../../public/carrousel-2/20230420_152412-min.png";
+import Image2 from "../../../public/carrousel-2/IMG_6609-min.png";
+import Image3 from "../../../public/carrousel-2/IMG_731-min.png";
+import FigmaImage from "../../../public/icons/bg-icon-figma.svg";
+import SapFioriImage from "../../../public/icons/bg-icon-fiori.svg";
+import NextJsImage from "../../../public/icons/bg-icon-nextjs.svg";
+import ReactNativeImage from "../../../public/icons/bg-icon-react-native.svg";
+import SapBuildImage from "../../../public/icons/bg-icon-sap-build.svg";
+import SapHanaImage from "../../../public/icons/bg-icon-sap-hana.svg";
+import Ui5Image from "../../../public/icons/bg-icon-ui5.svg";
 
 export default function WhatWeDo() {
   return (
@@ -36,56 +39,56 @@ export default function WhatWeDo() {
 
         <div className="grid grid-cols-4 gap-5 mt-16 max-md:grid-cols-2">
           <SapSolutionsCard
-            image={SapBuildImage}
+            image={""}
             title={"SAP Build"}
             content={
               "Acreditamos em uma UX renovada! Trazemos o usuário para construir a aplicação juntamente com o time de desenvolvedores, afinal, ninguém melhor do que ele para desenhar a UX da solução."
             }
           />
           <SapSolutionsCard
-            image={SapHanaImage}
+            image={""}
             title={"SAP Hana"}
             content={
               "Com uma base sólida e rápida, a solução é escalável e conta com tudo que o HANA tem a oferecer. Trabalhamos com o que há de inovador na plataforma para prover a melhor solução."
             }
           />
           <SapSolutionsCard
-            image={SapFioriImage}
+            image={""}
             title={"SAP Fiori"}
             content={
               "Com mais de 12 mil horas e 28 projetos entregues pelo nosso time, acreditamos que o SAP Fiori será a tecnologia central de todas as interfaces de produtos da SAP, trazendo intuitividade, robustez e flexibilidade para aplicações SAP por meio da poderosa linguagem SAPUI5."
             }
           />
           <SapSolutionsCard
-            image={SapHanaImage}
+            image={""}
             title={"SAP BTP Workflow"}
             content={
               "Serviço de Workflow Cloud da SAP, que visa a comunicação de toda a cadeia de sistemas da empresa, permitindo uma gestão dos processos de negócio unificada e visual."
             }
           />
           <SapSolutionsCard
-            image={SapHanaImage}
+            image={""}
             title={"SAP Business Rules Cloud"}
             content={
               "Serviço de Business Rules Cloud da SAP, que visa a criação de lógica de aprovação, alçadas, regras de negócio e inteligência para tomada de decisões sem a necessidade de conhecimento em codificação. O próprio usuário é capaz de criar as regras de negócio."
             }
           />
           <SapSolutionsCard
-            image={SapHanaImage}
+            image={""}
             title={"SAP Document Service"}
             content={
               "Serviço de gerenciamento de documentos dentro do SCP, desenvolvido a fim de controlar acessos e versionamento de arquivos por meio de APIs seguras."
             }
           />
           <SapSolutionsCard
-            image={SapHanaImage}
+            image={""}
             title={"SAP API Management"}
             content={
               "Serviço que permite publicar, desenvolver e gerenciar APIs em um ambiente seguro e escalável de forma fácil e intuitiva."
             }
           />
           <SapSolutionsCard
-            image={SapHanaImage}
+            image={""}
             title={"SAP BTP Integration"}
             content={
               "Serviço de gerenciamento de documentos dentro do SCP, desenvolvido a fim de controlar acessos e versionamento de arquivos por meio de APIs seguras."
@@ -168,7 +171,18 @@ export default function WhatWeDo() {
       <section className="mt-20">
         <div className="grid grid-cols-2 gap-[6.5625rem] items-center max-md:flex max-md:flex-col-reverse max-md:gap-0">
           <div className="max-md:w-[20rem] max-md:h-[8.75rem] max-md:mt-16">
-            <TeamCarrousel />
+            <TeamCarrousel
+              imageContent={{
+                imgContent1: true,
+                imgContent2: true,
+                imgContent3: true,
+              }}
+              imageUrl={{
+                img1: Image1,
+                img2: Image2,
+                img3: Image3,
+              }}
+            />
           </div>
           <div>
             <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300">

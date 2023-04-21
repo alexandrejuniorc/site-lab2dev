@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 // import required modules
 import { EffectFlip, Pagination, Navigation } from "swiper";
 
+import TrophieHackaton2 from "../../../public/bg-trophies-2.png";
 import TrophieHackaton from "../../../public/bg-trophies.png";
 import { CardTrophie } from "../CardTrophie";
 
@@ -28,17 +29,22 @@ export default function CardTrophieMobile() {
           className="mySwiper"
         >
           <SwiperSlide className="flex justify-center pb-6">
-            <div className="flex justify-center">
+            <div className="flex justify-center pb-5">
               <CardTrophie
                 image={TrophieHackaton}
-                content="Hackaton Odebrecht"
+                content="Hackaton Odebrecht 2019"
+                title={"1° Lugar"}
               />
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
             <div className="flex justify-center pb-6">
-              <CardTrophie image={TrophieHackaton} content="Hackaoec 2019" />
+              <CardTrophie
+                image={TrophieHackaton2}
+                content="Innovation Hackaton 2019"
+                title={"2° Lugar"}
+              />
             </div>
           </SwiperSlide>
         </Swiper>

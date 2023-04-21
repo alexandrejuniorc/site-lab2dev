@@ -10,6 +10,7 @@ import {
 import BackgroundFooter from "../../public/bg-footer.png";
 import SapPartner from "../../public/bg-partner-sap-footer.png";
 import TwoFooter from "../../public/bg-two-footer.svg";
+import { Button } from "./Button";
 
 export const Footer = () => {
   return (
@@ -20,9 +21,7 @@ export const Footer = () => {
             <p className="font-normal text-16 leading-7 not-italic">
               Se identifica com nossos ideais?
             </p>
-            <button className="font-normal text-18 leading-6 not-italic bg-white text-purple-300 py-3 px-14 rounded-md mt-3 hover:bg-gray-400 transition-colors">
-              Trabalhe conosco
-            </button>
+            <Button color="white" content="Trabalhe conosco" url={""} />
             <p className="font-normal text-14 leading-7 not-italic mt-3 max-md:mt-5">
               Av. Hilário Pereira de Souza, 406, 8° andar,
               <br />
