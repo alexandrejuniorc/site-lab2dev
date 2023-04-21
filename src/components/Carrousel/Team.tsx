@@ -40,7 +40,13 @@ export function TeamCarrousel({ imageContent, imageUrl }: TeamCarrouselProps) {
             style={{ height: "initial", display: "flex" }}
             className="pb-6"
           >
-            <Image className="object-cover" src={imageUrl.img1} alt="" />
+            <Image
+              priority
+              width={660}
+              className="object-cover"
+              src={imageUrl.img1}
+              alt=""
+            />
           </SwiperSlide>
         )}
 
@@ -49,7 +55,13 @@ export function TeamCarrousel({ imageContent, imageUrl }: TeamCarrouselProps) {
             style={{ height: "initial", display: "flex" }}
             className="pb-6"
           >
-            <Image className="object-cover" src={imageUrl.img2} alt="" />
+            <Image
+              priority
+              width={660}
+              className="object-cover"
+              src={imageUrl.img2}
+              alt=""
+            />
           </SwiperSlide>
         )}
         {imageContent.imgContent3 && (
@@ -57,7 +69,13 @@ export function TeamCarrousel({ imageContent, imageUrl }: TeamCarrouselProps) {
             style={{ height: "initial", display: "flex" }}
             className="pb-6"
           >
-            <Image className="object-cover" src={imageUrl.img3} alt="" />
+            <Image
+              priority
+              width={660}
+              className="object-cover"
+              src={imageUrl.img3}
+              alt=""
+            />
           </SwiperSlide>
         )}
 
@@ -66,7 +84,13 @@ export function TeamCarrousel({ imageContent, imageUrl }: TeamCarrouselProps) {
             style={{ height: "initial", display: "flex" }}
             className="pb-6"
           >
-            <Image className="object-cover" src={imageUrl.img4} alt="" />
+            <Image
+              priority
+              width={660}
+              className="object-cover"
+              src={imageUrl.img4}
+              alt=""
+            />
           </SwiperSlide>
         )}
       </Swiper>
