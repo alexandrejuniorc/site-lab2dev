@@ -18,11 +18,11 @@ export const Footer = () => {
       <div className="container">
         <div className="grid grid-cols-3 gap-x-7 m-auto p-0 pt-20 pb-10 max-md:flex max-md:flex-col">
           <div className="max-md:text-center">
-            <p className="font-normal text-16 leading-7 not-italic">
+            <p className="font-normal text-16 leading-7 not-italic text-white">
               Se identifica com nossos ideais?
             </p>
             <Button color="white" content="Trabalhe conosco" url={""} />
-            <p className="font-normal text-14 leading-7 not-italic mt-3 max-md:mt-5">
+            <p className="font-normal text-14 leading-7 not-italic mt-3 max-md:mt-5 text-white">
               Av. Hilário Pereira de Souza, 406, 8° andar,
               <br />
               Torre 01, Osasco - SP
@@ -35,15 +35,24 @@ export const Footer = () => {
             </p>
 
             <div className="flex mt-3 max-md:justify-center">
-              <Link className="hover:text-gray-400" href="">
+              <Link
+                className="hover:bg-white hover:text-purple-300 transition-colors rounded-md text-white"
+                href="https://www.linkedin.com/company/lab2dev/mycompany/"
+              >
                 <AiOutlineLinkedin size={40} />
               </Link>
 
-              <Link className="hover:text-gray-400" href="">
+              <Link
+                className="hover:bg-white hover:text-purple-300 hover:rounded-md transition-colors rounded-md text-white"
+                href="https://www.instagram.com/lab2dev/"
+              >
                 <AiOutlineInstagram size={40} />
               </Link>
 
-              <Link className="hover:text-gray-400" href="">
+              <Link
+                className="hover:bg-white hover:text-purple-300 hover:rounded-md transition-colors rounded-md text-white"
+                href="https://www.facebook.com/lab2dev"
+              >
                 <AiOutlineFacebook size={40} />
               </Link>
             </div>
@@ -54,13 +63,13 @@ export const Footer = () => {
               </p>
               <Link
                 href="mailto:teste@teste.com"
-                className="font-normal text-14 leading-7 not-italic hover:underline underline-offset-4"
+                className="font-normal text-14 leading-7 not-italic hover:underline underline-offset-4 text-white"
               >
                 contato@lab2dev.com
               </Link>
               <Link
                 href="tel:+551136814552"
-                className="font-normal text-14 leading-7 not-italic hover:underline underline-offset-4"
+                className="font-normal text-14 leading-7 not-italic hover:underline underline-offset-4 text-white"
               >
                 (11) 3681-4552
               </Link>

@@ -167,7 +167,7 @@ export default function WhatWeDo() {
 
       <section className="mt-20">
         <div className="grid grid-cols-2 gap-[6.5625rem] items-center max-md:flex max-md:flex-col-reverse max-md:gap-0">
-          <div className="max-md:w-[20rem] max-md:h-[8.75rem] max-md:mt-16">
+          <div className="max-md:w-[20rem] max-md:mt-16">
             <TeamCarrousel
               imageContent={{
                 imgContent1: true,
