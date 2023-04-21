@@ -72,7 +72,7 @@ export const Header = () => {
           </Link>
         </div>
 
-        <div className="hidden max-md:flex ">
+        <div className="hidden max-md:flex rounded-md border-2 border-[transparent] transition-colors hover:border-purple-300 mb-3">
           <Menubar />
         </div>
       </div>
