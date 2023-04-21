@@ -21,7 +21,7 @@ export default function ClientFeedbackMobile() {
           className="mySwiper"
         >
           <SwiperSlide className="pb-7">
-            <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6 m-auto mt-5 mb-5">
+            <div className="rounded-md shadow-md w-80 flex justify-around items-center flex-col p-6 m-auto mt-5 mb-5 bg-white">
               {/* <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200 m-auto">
                 <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">
                   <Image src={TrophieHackaton} alt="" />
@@ -52,7 +52,7 @@ export default function ClientFeedbackMobile() {
           </SwiperSlide>
 
           <SwiperSlide className="pb-7">
-            <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6 m-auto mt-5 mb-5">
+            <div className="rounded-md shadow-md w-80 flex justify-around items-center flex-col p-6 m-auto mt-5 mb-5 bg-white">
               {/* <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200 m-auto">
                 <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">
                   <Image src={TrophieHackaton} alt="" />
@@ -83,7 +83,7 @@ export default function ClientFeedbackMobile() {
           </SwiperSlide>
 
           <SwiperSlide className="pb-7">
-            <div className="rounded-md shadow-md w-80 h-72 flex justify-around items-center flex-col p-6 m-auto mt-5 mb-5">
+            <div className="rounded-md shadow-md w-80 flex justify-around items-center flex-col p-6 m-auto mt-5 mb-5 bg-white">
               {/* <div className="rounded-[50%] w-20 h-20 border-8 border-purple-200 m-auto">
                 <div className="bg-purple-100 h-full flex items-center justify-center rounded-[50%]">
                   <Image src={TrophieHackaton} alt="" />
