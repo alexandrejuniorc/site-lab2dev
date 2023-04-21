@@ -41,7 +41,6 @@ export function TeamCarrousel({ imageContent, imageUrl }: TeamCarrouselProps) {
             className="pb-6"
           >
             <Image
-              priority
               width={660}
               className="object-cover"
               src={imageUrl.img1}
