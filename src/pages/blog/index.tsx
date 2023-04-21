@@ -29,10 +29,10 @@ export default function WhoWeAre() {
 
       <section className="mt-20">
         <div className="grid grid-cols-4 gap-5">
-          <Button color="purple" content="HANA" />
-          <Button color="purple" content="React" />
-          <Button color="purple" content="Fiori" />
-          <Button color="purple" content="UI/UX" />
+          <Button color="purple" content="HANA" url={""} />
+          <Button color="purple" content="React" url={""} />
+          <Button color="purple" content="Fiori" url={""} />
+          <Button color="purple" content="UI/UX" url={""} />
         </div>
 
         <div className="grid grid-cols-3 gap-7 mt-20">
