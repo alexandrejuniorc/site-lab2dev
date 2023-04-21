@@ -4,10 +4,10 @@ import { Button } from "@/components/Button";
 import { TeamCarrousel } from "@/components/Carrousel/Team";
 import { MissionCard } from "@/components/MissionCard";
 
-import Image1 from "../../../public/carrousel-1/IMG_0735-min.png";
-import Image2 from "../../../public/carrousel-1/IMG_6595-min.png";
-import Image3 from "../../../public/carrousel-1/IMG_6600-min.png";
-import Image4 from "../../../public/carrousel-1/IMG_6602-min.png";
+import Image1 from "../../../public/carrousel-1/IMG_0735.jpeg";
+import Image2 from "../../../public/carrousel-1/IMG_6595.jpeg";
+import Image3 from "../../../public/carrousel-1/IMG_6600.jpeg";
+import Image4 from "../../../public/carrousel-1/IMG_6602.jpeg";
 
 export default function WhoWeAre() {
   return (

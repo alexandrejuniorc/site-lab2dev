@@ -7,8 +7,6 @@ import Image from "next/image";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import Team from "../../../public/bg-team.png";
-
 interface TeamCarrouselProps {
   imageUrl: {
     img1?: string | any;

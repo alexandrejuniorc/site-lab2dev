@@ -7,15 +7,12 @@ import { OtherSolutionsCard } from "@/components/OtherSolutionsCard";
 import { SapSolutionsCard } from "@/components/SapSolutionsCard";
 
 import SapPartnerImage from "../../../public/bg-partner-sap.png";
-import Image1 from "../../../public/carrousel-2/20230420_152412-min.png";
-import Image2 from "../../../public/carrousel-2/IMG_6609-min.png";
-import Image3 from "../../../public/carrousel-2/IMG_731-min.png";
+import Image1 from "../../../public/carrousel-2/20230420_152412.jpeg";
+import Image3 from "../../../public/carrousel-2/IMG_0730.jpeg";
+import Image2 from "../../../public/carrousel-2/IMG_6609.jpeg";
 import FigmaImage from "../../../public/icons/bg-icon-figma.svg";
-import SapFioriImage from "../../../public/icons/bg-icon-fiori.svg";
 import NextJsImage from "../../../public/icons/bg-icon-nextjs.svg";
 import ReactNativeImage from "../../../public/icons/bg-icon-react-native.svg";
-import SapBuildImage from "../../../public/icons/bg-icon-sap-build.svg";
-import SapHanaImage from "../../../public/icons/bg-icon-sap-hana.svg";
 import Ui5Image from "../../../public/icons/bg-icon-ui5.svg";
 
 export default function WhatWeDo() {
