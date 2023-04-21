@@ -46,19 +46,18 @@ export default function SwipeableTemporaryDrawer() {
         <Link
           className={
             router.pathname === "/"
-              ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-2 transition-colors"
-              : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-2 transition-colors hover:text-white hover:bg-purple-300"
+              ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
+              : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
           href="/"
         >
-          {/*  */}
           Home
         </Link>
         <Link
           className={
             router.pathname === "/quem-somos"
-              ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-2 transition-colors"
-              : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-2 transition-colors hover:text-white hover:bg-purple-300"
+              ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
+              : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
           href="quem-somos"
         >
@@ -67,8 +66,8 @@ export default function SwipeableTemporaryDrawer() {
         <Link
           className={
             router.pathname === "/o-que-fazemos"
-              ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-2 transition-colors"
-              : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-2 transition-colors hover:text-white hover:bg-purple-300"
+              ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
+              : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
           href="o-que-fazemos"
         >
@@ -77,8 +76,8 @@ export default function SwipeableTemporaryDrawer() {
         <Link
           className={
             router.pathname === "/btp"
-              ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-2 transition-colors"
-              : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-2 transition-colors hover:text-white hover:bg-purple-300"
+              ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
+              : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
           href="btp"
         >
@@ -87,8 +86,8 @@ export default function SwipeableTemporaryDrawer() {
         <Link
           className={
             router.pathname === "/ams"
-              ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-2 transition-colors"
-              : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-2 transition-colors hover:text-white hover:bg-purple-300"
+              ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
+              : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
           href="ams"
         >
