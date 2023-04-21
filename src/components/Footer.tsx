@@ -116,14 +116,14 @@ export const Footer = () => {
       </div>
 
       <div>
-        <div className="absolute right-0">
+        <div className="">
           <Image
-            className="w-[10.3125rem] h-[14.6875rem] absolute right-0"
+            className="w-[10.3125rem] absolute right-0 bottom-0"
             src={TwoFooter}
             alt=""
           />
         </div>
-        <Image className="w-full" src={BackgroundFooter} alt="" />
+        <Image className="w-full absolute" src={BackgroundFooter} alt="" />
       </div>
     </footer>
   );

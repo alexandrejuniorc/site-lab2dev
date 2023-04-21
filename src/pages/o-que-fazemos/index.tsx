@@ -6,7 +6,10 @@ import { InfosCard } from "@/components/InfosCard";
 import { OtherSolutionsCard } from "@/components/OtherSolutionsCard";
 import { SapSolutionsCard } from "@/components/SapSolutionsCard";
 
+import JavascriptImage from "../../../public/bg-javascript.svg";
 import SapPartnerImage from "../../../public/bg-partner-sap.png";
+import PythonImage from "../../../public/bg-python.svg";
+import SapLogoImage from "../../../public/bg-sap-logo.svg";
 import Image1 from "../../../public/carrousel-2/20230420_152412.jpeg";
 import Image3 from "../../../public/carrousel-2/IMG_0730.jpeg";
 import Image2 from "../../../public/carrousel-2/IMG_6609.jpeg";
@@ -18,6 +21,12 @@ import Ui5Image from "../../../public/icons/bg-icon-ui5.svg";
 export default function WhatWeDo() {
   return (
     <>
+      <Image
+        className="absolute top-0 right-0 -z-10 max-md:h-[9rem] max-md:w-auto max-sm:h-[7rem]"
+        src={SapLogoImage}
+        alt=""
+      />
+
       <section>
         <div className="flex  flex-col">
           <p className="not-italic font-normal text-14 leading-4 text-blue-200">
@@ -132,6 +141,12 @@ export default function WhatWeDo() {
             </p>
           </div>
 
+          <Image
+            className="absolute right-0 -z-10 top-[130%] max-lg:top-[150%] max-md:hidden"
+            src={PythonImage}
+            alt=""
+          />
+
           <div className="flex flex-col gap-8 items-end max-md:justify-center max-md:items-center max-md:mt-7">
             <OtherSolutionsCard
               title={"SAP UI5"}
@@ -160,6 +175,12 @@ export default function WhatWeDo() {
               content={
                 "UI trata dos elementos com os quais o usuário interage, ao passo que o UX procura entender os comportamentos e emoções dessas pessoas no uso do produto."
               }
+            />
+
+            <Image
+              className="absolute left-0 -z-10 top-[187%] max-xl:top-[197%] max-md:hidden"
+              src={JavascriptImage}
+              alt=""
             />
           </div>
         </div>

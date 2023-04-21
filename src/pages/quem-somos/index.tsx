@@ -4,6 +4,8 @@ import { Button } from "@/components/Button";
 import { TeamCarrousel } from "@/components/Carrousel/Team";
 import { MissionCard } from "@/components/MissionCard";
 
+import Mind from "../../../public/bg-mind.svg";
+import Two from "../../../public/bg-two.svg";
 import Image1 from "../../../public/carrousel-1/IMG_0735.jpeg";
 import Image2 from "../../../public/carrousel-1/IMG_6595.jpeg";
 import Image3 from "../../../public/carrousel-1/IMG_6600.jpeg";
@@ -12,6 +14,12 @@ import Image4 from "../../../public/carrousel-1/IMG_6602.jpeg";
 export default function WhoWeAre() {
   return (
     <>
+      <Image
+        className="absolute top-0 left-0 -z-10 max-md:h-[11.25rem] max-md:w-auto"
+        src={Two}
+        alt=""
+      />
+
       <section className="grid grid-cols-2 gap-5 max-md:flex max-md:flex-col">
         <div className="flex flex-col">
           <h1 className="text-purple-300 leading-10 text-30 font-normal not-italic uppercase">
@@ -56,6 +64,12 @@ export default function WhoWeAre() {
         <MissionCard
           title="VALORES"
           content="Inovação, Criatividade, Paixão, Ética, Honestidade, Empatia, Amizade, Comprometimento e respeito com nossos colaboradores e clientes"
+        />
+
+        <Image
+          className="absolute right-0 -z-10 top-[70%] max-lg:top-[80%] max-md:hidden"
+          src={Mind}
+          alt=""
         />
       </section>
 

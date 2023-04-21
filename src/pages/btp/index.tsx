@@ -1,8 +1,9 @@
+import Image from "next/image";
 import React from "react";
 
-import { CardBlog } from "@/components/CardBlog";
 import { CardTeam } from "@/components/CardTeam";
 
+import SapBtpImage from "../../../public/bg-sap-btp.svg";
 import ArchitectImage from "../../../public/icons/bg-icon-architect.svg";
 import ConsultantImage from "../../../public/icons/bg-icon-consultant.svg";
 import DataAnalystImage from "../../../public/icons/bg-icon-data-analyst.svg";
@@ -80,6 +81,12 @@ export default function WhoWeAre() {
             }}
           />
         </div>
+
+        <Image
+          className="absolute left-0 -z-10 top-[80%] max-xl:top-[90%] md:top-[90%] max-md:hidden"
+          src={SapBtpImage}
+          alt=""
+        />
       </section>
 
       <section className="mt-20">

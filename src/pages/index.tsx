@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import { Button } from "@/components/Button";
-import { CardBlog } from "@/components/CardBlog";
 import { CardTrophie } from "@/components/CardTrophie";
 import CardTrophieMobile from "@/components/Carrousel/CardTrophieMobile";
 import { ClientFeedback } from "@/components/Carrousel/ClientFeedback";
@@ -9,6 +8,7 @@ import ClientFeedbackMobile from "@/components/Carrousel/ClientFeedbackMobile";
 import { Clients } from "@/components/Carrousel/Clients";
 import ClientsMobile from "@/components/Carrousel/ClientsMobile";
 
+import Country from "../../public/bg-country.svg";
 import PartnerSAPImage from "../../public/bg-partner-sap.png";
 import RealTimeImage from "../../public/bg-real-time.png";
 import TrophieHackaton2 from "../../public/bg-trophies-2.png";
@@ -97,6 +97,8 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col items-center text-center mt-20">
+        <Image className="absolute left-0 -z-10" src={Country} alt="" />
+
         <div>
           <h1 className="not-italic font-normal text-purple-300 leading-10 text-30 uppercase">
             Nossos clientes
