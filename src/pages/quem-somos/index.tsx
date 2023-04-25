@@ -22,10 +22,10 @@ export default function WhoWeAre() {
 
       <section className="grid grid-cols-2 gap-5 max-md:flex max-md:flex-col">
         <div className="flex flex-col">
-          <h1 className="text-purple-300 leading-10 text-30 font-normal not-italic uppercase">
+          <h1 className="text-purple-300 leading-10 text-30 font-normal not-italic uppercase max-md:text-center">
             nossa história
           </h1>
-          <p className="text-gray-800 text-16 leading-7 font-normal not-italic mt-7">
+          <p className="text-gray-800 text-16 leading-7 font-normal not-italic mt-7 max-md:text-center">
             Fundada em 2018, a Lab2Dev é a primeira startup brasileira focada em
             inovação por meio do SAP BTP (Business Technology Platform). Somos
             especialistas em criar soluções, utilizando o que há de mais
@@ -33,7 +33,7 @@ export default function WhoWeAre() {
             nossos clientes.
           </p>
 
-          <p className="text-gray-800 text-16 leading-7 font-normal not-italic mt-2">
+          <p className="text-gray-800 text-16 leading-7 font-normal not-italic mt-2 max-md:text-center">
             Temos no nosso DNA a agilidade, inovação e paixão por desenvolver
             sistemas para transformar empresas e, consequentemente, pessoas.
           </p>
@@ -103,10 +103,10 @@ export default function WhoWeAre() {
       </section>
 
       <section className="max-md:flex max-md:flex-col">
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-20">
+        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-20 max-md:text-center">
           em que acreditamos
         </h1>
-        <p className="not-italic font-normal text-16 leading-7 text-gray-800  mt-5 text-left">
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800  mt-5 text-left max-md:text-center">
           Queremos questionar o óbvio e prover novas possibilidades para que
           equipes e clientes SAP possam usufruir o que há de mais atual em
           termos de tecnologia e metodologias. Acreditamos que essa adoção pode
@@ -118,8 +118,12 @@ export default function WhoWeAre() {
           Se identifica com nossos ideais?
         </p>
 
-        <div className="mt-11">
-          <Button color="purple" content="Trabalhe conosco" url={""} />
+        <div className="mt-11 max-md:flex max-md:justify-center">
+          <Button
+            color="purple"
+            content="Trabalhe conosco"
+            url={"https://jobs.quickin.io/lab2dev/jobs"}
+          />
         </div>
       </section>
     </>

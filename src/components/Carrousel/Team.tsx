@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import "swiper/css";
 // import "./styles.css";
 import "swiper/css/pagination";

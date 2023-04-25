@@ -4,11 +4,16 @@ import React from "react";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import GerdauImage from "../../../public/client-gerdau.png";
-import MercedesImage from "../../../public/client-mercedes.png";
-import TranspetroImage from "../../../public/client-transpetro.png";
-import UolImage from "../../../public/client-uol.png";
-import WhirlpoolImage from "../../../public/client-whirlpool.png";
+import AtvosImage from "../../../public/clients/atvos.png";
+import DexcoImage from "../../../public/clients/dexco.png";
+import EuroFarmaImage from "../../../public/clients/eurofarma.png";
+import GerdauImage from "../../../public/clients/gerdau.png";
+import HidroviasImage from "../../../public/clients/hidrovias.png";
+import PiracanjubaImage from "../../../public/clients/piracanjuba.png";
+import SwiftImage from "../../../public/clients/swift.png";
+import TranspetroImage from "../../../public/clients/transpetro.png";
+import UolImage from "../../../public/clients/uol.png";
+import VotorantimImage from "../../../public/clients/votorantim.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -50,20 +55,64 @@ export function Clients() {
           modules={[Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <Image src={WhirlpoolImage} alt="Whirlpool" />
+          <SwiperSlide className="">
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={TranspetroImage} alt="Transpetro" />
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <Image src={MercedesImage} alt="Mercedes" />
+
+          <SwiperSlide className="">
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={GerdauImage} alt="Gerdau" />
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <Image src={TranspetroImage} alt="Transpetro" />
+
+          <SwiperSlide className="">
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={UolImage} alt="Uol" />
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <Image src={GerdauImage} alt="Gerdau" />
+
+          <SwiperSlide className="">
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={SwiftImage} alt="Uol" />
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <Image src={UolImage} alt="Uol" />
+
+          <SwiperSlide className="">
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={AtvosImage} alt="Uol" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="">
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={DexcoImage} alt="Uol" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="">
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={EuroFarmaImage} alt="Uol" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="">
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={HidroviasImage} alt="Uol" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="">
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={PiracanjubaImage} alt="Uol" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="">
+            <div className="m-auto p-6 mt-5 mb-5 flex justify-center">
+              <Image src={VotorantimImage} alt="Uol" />
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>

@@ -75,21 +75,21 @@ export default function SwipeableTemporaryDrawer() {
         </Link>
         <Link
           className={
-            router.pathname === "/btp"
+            router.pathname === "/sap-btp"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
               : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
-          href="btp"
+          href="sap-btp"
         >
           BTP
         </Link>
         <Link
           className={
-            router.pathname === "/ams"
+            router.pathname === "/sap-ams"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
               : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
-          href="ams"
+          href="sap-ams"
         >
           AMS
         </Link>

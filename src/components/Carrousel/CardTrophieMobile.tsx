@@ -1,6 +1,5 @@
-import React, { useRef, useState } from "react";
-
 // Import Swiper React components
+import { EffectFlip, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -10,7 +9,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { EffectFlip, Pagination, Navigation } from "swiper";
 
 import TrophieHackaton2 from "../../../public/bg-trophies-2.png";
 import TrophieHackaton from "../../../public/bg-trophies.png";
@@ -32,7 +30,7 @@ export default function CardTrophieMobile() {
             <div className="flex justify-center pb-5">
               <CardTrophie
                 image={TrophieHackaton}
-                content="Hackaton Odebrecht 2019"
+                content="Hackathon de Inovação Grupo Odebrecht"
                 title={"1° Lugar"}
               />
             </div>
@@ -42,7 +40,7 @@ export default function CardTrophieMobile() {
             <div className="flex justify-center pb-6">
               <CardTrophie
                 image={TrophieHackaton2}
-                content="Innovation Hackaton 2019"
+                content="SAP Innovation Hackathon"
                 title={"2° Lugar"}
               />
             </div>

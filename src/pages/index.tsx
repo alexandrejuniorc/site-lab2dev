@@ -23,7 +23,7 @@ export default function Home() {
             Inovação e Tecnologia através do sap btp
           </h1>
 
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 pt-8 max-md:text-left">
+          <p className="not-italic font-normal text-16 leading-7 text-gray-800 pt-8 max-md:text-center">
             A Lab2Dev é a primeira startup brasileira focada em inovação por
             meio do SAP BTP (Business Technology Platform). Através de soluções
             inteligentes, apoiamos a sua empresa na jornada da transformação
@@ -50,7 +50,7 @@ export default function Home() {
             Somos parceiros Gold SAP!
           </h1>
 
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 pt-8 max-lg:text-left">
+          <p className="not-italic font-normal text-16 leading-7 text-gray-800 pt-8 max-lg:text-left max-md:text-center">
             Para se tornar um parceiro Gold SAP, a empresa parceira precisa
             atender a certos requisitos estabelecidos pela SAP, como demonstrar
             um alto nível de competência técnica e de negócios, ter um bom
@@ -60,7 +60,7 @@ export default function Home() {
           </p>
 
           <div className="mt-14">
-            <Button color="purple" content="Saiba mais" url={"btp"} />
+            <Button color="purple" content="Saiba mais" url={"sap-btp"} />
           </div>
         </div>
       </section>
@@ -70,7 +70,7 @@ export default function Home() {
           <h1 className="font-normal text-purple-300 leading-10 text-30 uppercase">
             Somos premiados
           </h1>
-          <p className="font-normal text-16 leading-7 text-gray-800 pt-8 not-italic max-lg:text-left">
+          <p className="font-normal text-16 leading-7 text-gray-800 pt-8 not-italic max-lg:text-left max-md:text-center">
             Ao longo de nossa jornada, tivemos o privilégio de receber diversos
             prêmios que reconhecem a qualidade de nossos produtos e serviços.
             Essas conquistas nos motivam a continuar trabalhando com excelência
@@ -82,12 +82,12 @@ export default function Home() {
           <div className="lg:flex lg:gap-5 max-lg:hidden">
             <CardTrophie
               image={TrophieHackaton}
-              content={"Hackaoec 2019"}
+              content={"Hackathon de Inovação Grupo Odebrecht"}
               title={"1° Lugar"}
             />
             <CardTrophie
               image={TrophieHackaton2}
-              content="Innovation Hackaton 2019"
+              content="SAP Innovation Hackathon"
               title={"2° Lugar"}
             />
           </div>
@@ -116,14 +116,32 @@ export default function Home() {
         <div className="mt-11">
           <p className="font-normal text-16 leading-7 text-gray-800 mt-14 not-italic">
             Veja também alguns dos depoimentos deixados por representantes dos
-            nossos
-            <br /> clientes.
+            nossos clientes.
           </p>
         </div>
 
-        <div className="w-full mt-8 ">
-          <ClientFeedback />
-          <ClientFeedbackMobile />
+        <div className="w-full mt-8 flex justify-center">
+          <div className="rounded-md shadow-md w-80 flex justify-around items-center flex-col p-6 bg-white">
+            <h1 className="font-normal text-20 leading-7 text-purple-300 not-italic">
+              Anderson Carrio
+            </h1>
+            <p className="font-normal text-14 leading-7 text-purple-300 not-italic">
+              Gerente Executivo de Tecnologia - Dexco
+            </p>
+
+            <p className="font-normal text-12 leading-4 text-gray-800 not-italic">
+              {`"`}Trabalhar com a equipe da Lab2Dev tem sido uma experiência
+              muito positiva. Eles demonstraram um profundo conhecimento e
+              experiência no SAP BTP e CPI, e foram capazes de nos orientar de
+              forma clara e precisa durante todo o nosso processo. Além disso, a
+              equipe é extremamente prestativa, ágil e comprometida em entregar
+              resultados de alta qualidade. Estou muito satisfeito com o
+              trabalho realizado pela Lab2Dev e recomendo seus serviços aos que
+              procuram soluções confiáveis e eficientes em tecnologia.{`"`}
+            </p>
+          </div>
+          {/*  <ClientFeedback />
+          <ClientFeedbackMobile /> */}
         </div>
       </section>
     </>

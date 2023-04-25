@@ -37,7 +37,7 @@ export const AccordionSap = ({ content, title }: AccordionSapProps) => (
       <AccordionItem value="item-1">
         <div className="mt-2 mb-2">
           <AccordionTrigger>
-            <p className="text-left">{title.title1}</p>
+            <p className="text-left max-md:text-center">{title.title1}</p>
           </AccordionTrigger>
         </div>
         <AccordionContent>{content.content1}</AccordionContent>
@@ -48,7 +48,7 @@ export const AccordionSap = ({ content, title }: AccordionSapProps) => (
       <AccordionItem value="item-2">
         <div className="mt-2 mb-2">
           <AccordionTrigger>
-            <p className="text-left">{title.title2}</p>
+            <p className="text-left max-md:text-center">{title.title2}</p>
           </AccordionTrigger>
         </div>
         <AccordionContent>{content.content2}</AccordionContent>
@@ -59,7 +59,7 @@ export const AccordionSap = ({ content, title }: AccordionSapProps) => (
       <AccordionItem value="item-3">
         <div className="mt-2 mb-2">
           <AccordionTrigger>
-            <p className="text-left">{title.title3}</p>
+            <p className="text-left max-md:text-center">{title.title3}</p>
           </AccordionTrigger>
         </div>
         <AccordionContent>{content.content3}</AccordionContent>
@@ -70,7 +70,7 @@ export const AccordionSap = ({ content, title }: AccordionSapProps) => (
       <AccordionItem value="item-4">
         <div className="mt-2 mb-2">
           <AccordionTrigger>
-            <p className="text-left">{title.title4}</p>
+            <p className="text-left max-md:text-center">{title.title4}</p>
           </AccordionTrigger>
         </div>
         <AccordionContent>{content.content4}</AccordionContent>
@@ -81,7 +81,7 @@ export const AccordionSap = ({ content, title }: AccordionSapProps) => (
       <AccordionItem value="item-5">
         <div className="mt-2 mb-2">
           <AccordionTrigger>
-            <p className="text-left">{title.title5}</p>
+            <p className="text-left max-md:text-center">{title.title5}</p>
           </AccordionTrigger>
         </div>
         <AccordionContent>{content.content5}</AccordionContent>
@@ -90,9 +90,9 @@ export const AccordionSap = ({ content, title }: AccordionSapProps) => (
 
     {title.title6 && content.content6 && (
       <AccordionItem value="item-6">
-        <div className="mt-2 mb-2">
+        <div className="mt-2 mb-2 ">
           <AccordionTrigger>
-            <p className="text-left">{title.title6}</p>
+            <p className="text-left max-md:text-center">{title.title6}</p>
           </AccordionTrigger>
         </div>
         <AccordionContent>{content.content6}</AccordionContent>
@@ -103,7 +103,7 @@ export const AccordionSap = ({ content, title }: AccordionSapProps) => (
       <AccordionItem value="item-7">
         <div className="mt-2 mb-2">
           <AccordionTrigger>
-            <p className="text-left">{title.title7}</p>
+            <p className="text-left max-md:text-center">{title.title7}</p>
           </AccordionTrigger>
         </div>
         <AccordionContent>{content.content7}</AccordionContent>
@@ -132,7 +132,7 @@ const AccordionTrigger = React.forwardRef(
     <Accordion.Header className="flex">
       <Accordion.Trigger
         className={classNames(
-          "text-purple-300 bg-white group flex h-[45px] flex-1 cursor-default items-center justify-between px-5 text-16 leading-7 outline-none",
+          "text-purple-300 bg-white group flex h-[45px] flex-1 cursor-default items-center justify-between px-5 text-16 leading-7 outline-none max-md:text-center",
           className
         )}
         {...props}
@@ -152,7 +152,7 @@ const AccordionContent = React.forwardRef(
   ({ children, className, ...props }: any, forwardedRef) => (
     <Accordion.Content
       className={classNames(
-        "text-gray-800 bg-gray-50 hover:bg-mauve3 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden text-16 leading-7",
+        "text-gray-800 bg-gray-50 hover:bg-mauve3 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden text-16 leading-7 max-md:text-center",
         className
       )}
       {...props}

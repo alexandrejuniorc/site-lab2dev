@@ -52,21 +52,21 @@ export const Header = () => {
           </Link>
           <Link
             className={
-              router.pathname === "/btp"
+              router.pathname === "/sap-btp"
                 ? "font-normal text-16 leading-6 not-italic text-purple-300 pr-8 "
                 : "font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
             }
-            href="btp"
+            href="sap-btp"
           >
             BTP
           </Link>
           <Link
             className={
-              router.pathname === "/ams"
+              router.pathname === "/sap-ams"
                 ? "font-normal text-16 leading-6 not-italic text-purple-300 pr-8 "
                 : "font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
             }
-            href="ams"
+            href="sap-ams"
           >
             AMS
           </Link>

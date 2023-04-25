@@ -21,7 +21,11 @@ export const Footer = () => {
             <p className="font-normal text-16 leading-7 not-italic text-white">
               Se identifica com nossos ideais?
             </p>
-            <Button color="white" content="Trabalhe conosco" url={""} />
+            <Button
+              color="white"
+              content="Trabalhe conosco"
+              url={"https://jobs.quickin.io/lab2dev/jobs"}
+            />
             <p className="font-normal text-14 leading-7 not-italic mt-3 max-md:mt-5 text-white">
               Av. Hilário Pereira de Souza, 406, 8° andar,
               <br />

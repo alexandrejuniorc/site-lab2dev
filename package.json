@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export && mkdir out/_next && cp -a .next/static out/_next && mv out/404.html out/404/index.html",
     "start": "next start",
     "lint": "eslint src --fix --max-warnings=0"
   },
