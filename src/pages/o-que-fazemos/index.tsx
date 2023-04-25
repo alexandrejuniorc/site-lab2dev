@@ -248,7 +248,7 @@ export default function WhatWeDo() {
           />
           <InfosCard
             title={"DEDICAÇÃO"}
-            info={"+160"}
+            info={"+140"}
             content={"colaboradores"}
           />
           <InfosCard
