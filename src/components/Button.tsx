@@ -9,7 +9,7 @@ interface ButtonProps {
 
 export const Button = ({ content, color, url }: ButtonProps) => {
   return (
-    <Link href={url}>
+    <Link href={url} target="_blank">
       <button
         className={
           color === "purple"

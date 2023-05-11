@@ -42,6 +42,7 @@ export const Footer = () => {
               <Link
                 className="hover:bg-white hover:text-purple-300 transition-colors rounded-md text-white"
                 href="https://www.linkedin.com/company/lab2dev/mycompany/"
+                target="_blank"
               >
                 <AiOutlineLinkedin size={40} />
               </Link>
@@ -49,6 +50,7 @@ export const Footer = () => {
               <Link
                 className="hover:bg-white hover:text-purple-300 hover:rounded-md transition-colors rounded-md text-white"
                 href="https://www.instagram.com/lab2dev/"
+                target="_blank"
               >
                 <AiOutlineInstagram size={40} />
               </Link>
@@ -56,6 +58,7 @@ export const Footer = () => {
               <Link
                 className="hover:bg-white hover:text-purple-300 hover:rounded-md transition-colors rounded-md text-white"
                 href="https://www.facebook.com/lab2dev"
+                target="_blank"
               >
                 <AiOutlineFacebook size={40} />
               </Link>
@@ -66,7 +69,7 @@ export const Footer = () => {
                 Alguma dúvida? Fale com a gente!
               </p>
               <Link
-                href="mailto:teste@teste.com"
+                href="mailto:contato@lab2dev.com"
                 className="font-normal text-14 leading-7 not-italic hover:underline underline-offset-4 text-white"
               >
                 contato@lab2dev.com

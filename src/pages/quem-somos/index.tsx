@@ -42,7 +42,7 @@ export default function WhoWeAre() {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/jcsZGBnBlIo"
+            src="https://www.youtube.com/embed/kvrRC1S2noE"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -112,7 +112,7 @@ export default function WhoWeAre() {
           termos de tecnologia e metodologias. Acreditamos que essa adoção pode
           ocorrer de maneira ágil e simplificada a partir do momento que se tem
           uma plataforma preparada e que acompanhe as novidades tecnológicas
-          como o SAP BTO (Business Technology Platform). Por essa razão, ele é o
+          como o SAP BTP (Business Technology Platform). Por essa razão, ele é o
           centro de nossos estudos e dedicação. <br />
           <br />
           Se identifica com nossos ideais?
