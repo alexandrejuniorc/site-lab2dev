@@ -3,10 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/Button";
 import { CardTrophie } from "@/components/CardTrophie";
 import CardTrophieMobile from "@/components/Carrousel/CardTrophieMobile";
-import { ClientFeedback } from "@/components/Carrousel/ClientFeedback";
-import ClientFeedbackMobile from "@/components/Carrousel/ClientFeedbackMobile";
 import { Clients } from "@/components/Carrousel/Clients";
-import ClientsMobile from "@/components/Carrousel/ClientsMobile";
 
 import Country from "../../public/bg-country.svg";
 import PartnerSAPImage from "../../public/bg-partner-sap.png";
@@ -110,7 +107,6 @@ export default function Home() {
 
         <div className="mt-16 block w-full max-lg:mt-6">
           <Clients />
-          <ClientsMobile />
         </div>
 
         <div className="mt-11">
@@ -140,7 +136,7 @@ export default function Home() {
               procuram soluções confiáveis e eficientes em tecnologia.{`"`}
             </p>
           </div>
-          {/*  <ClientFeedback />
+          {/*   <ClientFeedback />
           <ClientFeedbackMobile /> */}
         </div>
       </section>

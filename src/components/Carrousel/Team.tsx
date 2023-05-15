@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 
 import Image from "next/image";
 
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 interface TeamCarrouselProps {
@@ -31,7 +31,11 @@ export function TeamCarrousel({ imageContent, imageUrl }: TeamCarrouselProps) {
         pagination={{
           dynamicBullets: true,
         }}
-        modules={[Pagination]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
         {imageContent.imgContent1 && (
