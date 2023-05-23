@@ -11,13 +11,11 @@ import JavascriptImage from "../../../public/bg-javascript.svg";
 import SapPartnerImage from "../../../public/bg-partner-sap.png";
 import PythonImage from "../../../public/bg-python.svg";
 import SapLogoImage from "../../../public/bg-sap-logo.svg";
-import Image1 from "../../../public/carrousel-2/20230420_152412.jpeg";
-import Image3 from "../../../public/carrousel-2/IMG_0730.jpeg";
-import Image2 from "../../../public/carrousel-2/IMG_6609.jpeg";
 import FigmaImage from "../../../public/icons/bg-icon-figma.svg";
 import NextJsImage from "../../../public/icons/bg-icon-nextjs.svg";
 import ReactNativeImage from "../../../public/icons/bg-icon-react-native.svg";
 import Ui5Image from "../../../public/icons/bg-icon-ui5.svg";
+import { imagesCarrousel2Mocky } from "../../mocky/carrousel-2";
 
 export default function WhatWeDo() {
   return (
@@ -210,18 +208,14 @@ export default function WhatWeDo() {
 
       <section className="mt-20">
         <div className="grid grid-cols-2 gap-[6.5625rem] items-center max-md:flex max-md:flex-col-reverse max-md:gap-0">
-          <div className="max-md:w-[20rem] max-md:mt-16">
+          <div>
+            {/*  className="max-md:w-[20rem] max-md:mt-16" */}
             <TeamCarrousel
-              imageContent={{
-                imgContent1: true,
-                imgContent2: true,
-                imgContent3: true,
-              }}
-              imageUrl={{
-                img1: Image1,
-                img2: Image2,
-                img3: Image3,
-              }}
+              dataImages={imagesCarrousel2Mocky}
+              height={"228px"}
+              width={"405px"}
+              object="cover"
+              classSwiperSlide={"pb-6"}
             />
           </div>
           <div>

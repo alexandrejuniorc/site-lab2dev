@@ -3,13 +3,10 @@ import Image from "next/image";
 import { Button } from "@/components/Button";
 import { TeamCarrousel } from "@/components/Carrousel/Team";
 import { MissionCard } from "@/components/MissionCard";
+import { imagesCarrouselMocky } from "@/mocky/carrousel-1";
 
 import Mind from "../../../public/bg-mind.svg";
 import Two from "../../../public/bg-two.svg";
-import Image1 from "../../../public/carrousel-1/IMG_0735.jpeg";
-import Image2 from "../../../public/carrousel-1/IMG_6595.jpeg";
-import Image3 from "../../../public/carrousel-1/IMG_6600.jpeg";
-import Image4 from "../../../public/carrousel-1/IMG_6602.jpeg";
 
 export default function WhoWeAre() {
   return (
@@ -86,18 +83,11 @@ export default function WhoWeAre() {
 
         <div className="w-[41.25rem] mt-16 max-md:w-[20rem]">
           <TeamCarrousel
-            imageContent={{
-              imgContent1: true,
-              imgContent2: true,
-              imgContent3: true,
-              imgContent4: true,
-            }}
-            imageUrl={{
-              img1: Image1,
-              img2: Image2,
-              img3: Image3,
-              img4: Image4,
-            }}
+            dataImages={imagesCarrouselMocky}
+            height={"371px"}
+            width={"660px"}
+            object="cover"
+            classSwiperSlide={"pb-6"}
           />
         </div>
       </section>

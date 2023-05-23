@@ -9,93 +9,48 @@ import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 interface TeamCarrouselProps {
-  imageUrl: {
-    img1?: string | any;
-    img2?: string | any;
-    img3?: string | any;
-    img4?: string | any;
-  };
-
-  imageContent: {
-    imgContent1?: boolean;
-    imgContent2?: boolean;
-    imgContent3?: boolean;
-    imgContent4?: boolean;
-  };
+  dataImages: any[];
+  width?: number | string;
+  height?: number | string;
+  object?: string;
+  classSwiperSlide: string;
 }
 
-export function TeamCarrousel({ imageContent, imageUrl }: TeamCarrouselProps) {
+export function TeamCarrousel({
+  dataImages,
+  height,
+  width,
+  object,
+  classSwiperSlide,
+}: TeamCarrouselProps) {
   return (
-    <>
-      <Swiper
-        pagination={{
-          dynamicBullets: true,
-        }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Pagination, Autoplay]}
-        className="mySwiper"
-      >
-        {imageContent.imgContent1 && (
-          <SwiperSlide
-            style={{ height: "initial", display: "flex" }}
-            className="pb-6"
-          >
-            <Image
-              width={660}
-              className="object-cover"
-              src={imageUrl.img1}
-              alt=""
-            />
-          </SwiperSlide>
-        )}
-
-        {imageContent.imgContent2 && (
-          <SwiperSlide
-            style={{ height: "initial", display: "flex" }}
-            className="pb-6"
-          >
-            <Image
-              priority
-              width={660}
-              className="object-cover"
-              src={imageUrl.img2}
-              alt=""
-            />
-          </SwiperSlide>
-        )}
-        {imageContent.imgContent3 && (
-          <SwiperSlide
-            style={{ height: "initial", display: "flex" }}
-            className="pb-6"
-          >
-            <Image
-              priority
-              width={660}
-              className="object-cover"
-              src={imageUrl.img3}
-              alt=""
-            />
-          </SwiperSlide>
-        )}
-
-        {imageContent.imgContent4 && (
-          <SwiperSlide
-            style={{ height: "initial", display: "flex" }}
-            className="pb-6"
-          >
-            <Image
-              priority
-              width={660}
-              className="object-cover"
-              src={imageUrl.img4}
-              alt=""
-            />
-          </SwiperSlide>
-        )}
-      </Swiper>
-    </>
+    <Swiper
+      pagination={{
+        dynamicBullets: true,
+      }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      modules={[Pagination, Autoplay]}
+      className="mySwiper"
+    >
+      {dataImages &&
+        dataImages.map((image: any) => {
+          return (
+            <SwiperSlide
+              style={{ height: "initial", display: "flex" }}
+              className={`${classSwiperSlide} w-[${width}]`}
+              key={image.id}
+            >
+              <Image
+                className={`h-[${height}] object-${object}`}
+                src={image.src}
+                alt={image.alt}
+              />
+            </SwiperSlide>
+          );
+        })}
+    </Swiper>
   );
 }
