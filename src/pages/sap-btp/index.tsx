@@ -97,7 +97,7 @@ export default function WhoWeAre() {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-5 max-md:grid-cols-2 max-sm:flex max-sm:flex-col max-sm:items-center mt-14">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {teamAreas.map((team, index) => (
             <CardTeam
               key={index}
