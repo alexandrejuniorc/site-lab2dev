@@ -6,15 +6,15 @@ import { TeamCarrousel } from "@/components/Carrousel/Team";
 import { InfosCard } from "@/components/InfosCard";
 import { OtherSolutionsCard } from "@/components/OtherSolutionsCard";
 import { SapSolutionsCard } from "@/components/SapSolutionsCard";
+import { cardSupport } from "@/mocky/card-support";
+import { infoCard } from "@/mocky/info-card";
+import { sapSolutionsCard } from "@/mocky/sap-solutions-card";
+import { stacks } from "@/mocky/stacks";
 
 import JavascriptImage from "../../../public/bg-javascript.svg";
 import SapPartnerImage from "../../../public/bg-partner-sap.png";
 import PythonImage from "../../../public/bg-python.svg";
 import SapLogoImage from "../../../public/bg-sap-logo.svg";
-import FigmaImage from "../../../public/icons/bg-icon-figma.svg";
-import NextJsImage from "../../../public/icons/bg-icon-nextjs.svg";
-import ReactNativeImage from "../../../public/icons/bg-icon-react-native.svg";
-import Ui5Image from "../../../public/icons/bg-icon-ui5.svg";
 import { imagesCarrousel2Mocky } from "../../mocky/carrousel-2";
 
 export default function WhatWeDo() {
@@ -43,62 +43,14 @@ export default function WhatWeDo() {
         </div>
 
         <div className="grid grid-cols-4 gap-5 mt-16 max-md:grid-cols-2">
-          <SapSolutionsCard
-            image={""}
-            title={"SAP Build"}
-            content={
-              "Acreditamos em uma UX renovada! Trazemos o usuário para construir a aplicação juntamente com o time de desenvolvedores, afinal, ninguém melhor do que ele para desenhar a UX da solução."
-            }
-          />
-          <SapSolutionsCard
-            image={""}
-            title={"SAP Hana"}
-            content={
-              "Com uma base sólida e rápida, a solução é escalável e conta com tudo que o HANA tem a oferecer. Trabalhamos com o que há de inovador na plataforma para prover a melhor solução."
-            }
-          />
-          <SapSolutionsCard
-            image={""}
-            title={"SAP Fiori"}
-            content={
-              "Com mais de 12 mil horas e 28 projetos entregues pelo nosso time, acreditamos que o SAP Fiori será a tecnologia central de todas as interfaces de produtos da SAP, trazendo intuitividade, robustez e flexibilidade para aplicações SAP por meio da poderosa linguagem SAPUI5."
-            }
-          />
-          <SapSolutionsCard
-            image={""}
-            title={"SAP BTP Workflow"}
-            content={
-              "Serviço de Workflow Cloud da SAP, que visa a comunicação de toda a cadeia de sistemas da empresa, permitindo uma gestão dos processos de negócio unificada e visual."
-            }
-          />
-          <SapSolutionsCard
-            image={""}
-            title={"SAP Business Rules Cloud"}
-            content={
-              "Serviço de Business Rules Cloud da SAP, que visa a criação de lógica de aprovação, alçadas, regras de negócio e inteligência para tomada de decisões sem a necessidade de conhecimento em codificação. O próprio usuário é capaz de criar as regras de negócio."
-            }
-          />
-          <SapSolutionsCard
-            image={""}
-            title={"SAP Document Service"}
-            content={
-              "Serviço de gerenciamento de documentos dentro do SCP, desenvolvido a fim de controlar acessos e versionamento de arquivos por meio de APIs seguras."
-            }
-          />
-          <SapSolutionsCard
-            image={""}
-            title={"SAP API Management"}
-            content={
-              "Serviço que permite publicar, desenvolver e gerenciar APIs em um ambiente seguro e escalável de forma fácil e intuitiva."
-            }
-          />
-          <SapSolutionsCard
-            image={""}
-            title={"SAP BTP Integration"}
-            content={
-              "Serviço de gerenciamento de documentos dentro do SCP, desenvolvido a fim de controlar acessos e versionamento de arquivos por meio de APIs seguras."
-            }
-          />
+          {sapSolutionsCard.map((card) => (
+            <SapSolutionsCard
+              key={card.title}
+              image={card.img}
+              title={card.title}
+              content={card.content}
+            />
+          ))}
         </div>
       </section>
 
@@ -126,22 +78,13 @@ export default function WhatWeDo() {
 
       <section className="mt-20">
         <div className="grid grid-cols-4 gap-5 max-md:grid-cols-2 max-md:gap-2 max-sm:flex max-sm:flex-col max-sm:items-center">
-          <CardSupport
-            title="Comprovação de habilidades"
-            content="A empresa deve demonstrar um alto nível de habilidade na implementação de soluções SAP em várias áreas, como ERP, CRM, gestão da cadeia de suprimentos, analytics, entre outras."
-          />
-          <CardSupport
-            title="Satisfação do cliente"
-            content="A empresa deve ter um histórico comprovado de satisfação do cliente, atendendo ou superando as expectativas dos clientes em termos de qualidade, tempo de entrega e orçamento."
-          />
-          <CardSupport
-            title="Certificação e treinamento"
-            content="A empresa deve ter uma equipe altamente treinada e certificada em várias áreas de soluções SAP, incluindo certificações para consultores e especialistas."
-          />
-          <CardSupport
-            title="nº de projetos bem-sucedidos"
-            content="A empresa deve ter concluído um número significativo de projetos SAP bem-sucedidos, o que indica sua experiência e capacidade de fornecer soluções SAP de alta qualidade."
-          />
+          {cardSupport.map((card) => (
+            <CardSupport
+              key={card.title}
+              title={card.title}
+              content={card.content}
+            />
+          ))}
         </div>
       </section>
 
@@ -168,34 +111,14 @@ export default function WhatWeDo() {
           />
 
           <div className="flex flex-col gap-8 items-end max-md:justify-center max-md:items-center max-md:mt-7">
-            <OtherSolutionsCard
-              title={"SAP UI5"}
-              image={Ui5Image}
-              content={
-                "O OpenUI5 é uma estrutura de aplicativo JavaScript projetada para criar aplicativos prontos para a empresa, compatíveis com várias plataformas."
-              }
-            />
-            <OtherSolutionsCard
-              title={"Next.js"}
-              image={NextJsImage}
-              content={
-                "Next.js é uma estrutura da web de desenvolvimento front-end React criada por Vercel que permite funcionalidades como renderização do lado do servidor e sites estáticos."
-              }
-            />
-            <OtherSolutionsCard
-              title={"React Native"}
-              image={ReactNativeImage}
-              content={
-                "React Native é uma biblioteca Javascript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa."
-              }
-            />
-            <OtherSolutionsCard
-              title={"UI/UX Design"}
-              image={FigmaImage}
-              content={
-                "UI trata dos elementos com os quais o usuário interage, ao passo que o UX procura entender os comportamentos e emoções dessas pessoas no uso do produto."
-              }
-            />
+            {stacks.map((stack) => (
+              <OtherSolutionsCard
+                key={stack.title}
+                title={stack.title}
+                image={stack.img}
+                content={stack.content}
+              />
+            ))}
 
             <Image
               className="absolute left-0 -z-10 max-md:hidden max-lg:pt-[46%] lg:pt-[36%] xl:pt-[33%]"
@@ -235,21 +158,14 @@ export default function WhatWeDo() {
 
       <section className="mt-20">
         <div className="grid grid-cols-3 gap-5 max-md:flex max-md:flex-col">
-          <InfosCard
-            title={"PRESENÇA"}
-            info={"+40"}
-            content={"clientes atendidos"}
-          />
-          <InfosCard
-            title={"DEDICAÇÃO"}
-            info={"+140"}
-            content={"colaboradores"}
-          />
-          <InfosCard
-            title={"EXPERIÊNCIA"}
-            info={"+750k horas"}
-            content={"em projetos de inovação"}
-          />
+          {infoCard.map((card) => (
+            <InfosCard
+              key={card.title}
+              title={card.title}
+              info={card.info}
+              content={card.content}
+            />
+          ))}
         </div>
       </section>
     </>

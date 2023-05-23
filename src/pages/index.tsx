@@ -4,12 +4,11 @@ import { Button } from "@/components/Button";
 import { CardTrophie } from "@/components/CardTrophie";
 import CardTrophieMobile from "@/components/Carrousel/CardTrophieMobile";
 import { Clients } from "@/components/Carrousel/Clients";
+import { trophieCard } from "@/mocky/trophie-card";
 
 import Country from "../../public/bg-country.svg";
 import PartnerSAPImage from "../../public/bg-partner-sap.png";
 import RealTimeImage from "../../public/bg-real-time.png";
-import TrophieHackaton2 from "../../public/bg-trophies-2.png";
-import TrophieHackaton from "../../public/bg-trophies.png";
 
 export default function Home() {
   return (
@@ -77,16 +76,14 @@ export default function Home() {
 
         <div className="max-lg:mt-7">
           <div className="lg:flex lg:gap-5 max-lg:hidden">
-            <CardTrophie
-              image={TrophieHackaton}
-              content={"Hackathon de Inovação Grupo Odebrecht"}
-              title={"1° Lugar"}
-            />
-            <CardTrophie
-              image={TrophieHackaton2}
-              content="SAP Innovation Hackathon"
-              title={"2° Lugar"}
-            />
+            {trophieCard.map((card) => (
+              <CardTrophie
+                key={card.title}
+                image={card.img}
+                title={card.title}
+                content={card.content}
+              />
+            ))}
           </div>
 
           <CardTrophieMobile />

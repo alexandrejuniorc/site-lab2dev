@@ -4,6 +4,7 @@ import { Button } from "@/components/Button";
 import { TeamCarrousel } from "@/components/Carrousel/Team";
 import { MissionCard } from "@/components/MissionCard";
 import { imagesCarrouselMocky } from "@/mocky/carrousel-1";
+import { missionCard } from "@/mocky/mission-card";
 
 import Mind from "../../../public/bg-mind.svg";
 import Two from "../../../public/bg-two.svg";
@@ -50,18 +51,13 @@ export default function WhoWeAre() {
       </section>
 
       <section className="grid grid-cols-3 gap-5 mt-20 max-md:flex max-md:flex-col items-center">
-        <MissionCard
-          title="MISSÃO"
-          content="Maximizar o resultado dos nossos clientes, criando soluções inteligentes, auxiliando na jornada de transformação digital."
-        />
-        <MissionCard
-          title="VISÃO"
-          content="Ser reconhecido como o principal parceiro de inovação de nossos clientes."
-        />
-        <MissionCard
-          title="VALORES"
-          content="Inovação, Criatividade, Paixão, Ética, Honestidade, Empatia, Amizade, Comprometimento e respeito com nossos colaboradores e clientes"
-        />
+        {missionCard.map((card) => (
+          <MissionCard
+            key={card.title}
+            title={card.title}
+            content={card.content}
+          />
+        ))}
 
         <Image
           className="absolute right-0 -z-10 top-[70%] max-lg:top-[80%] max-md:hidden"
