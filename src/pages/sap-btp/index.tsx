@@ -2,12 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 import { CardTeam } from "@/components/CardTeam";
+import { teamAreas } from "@/mocky/team-areas";
 
 import SapBtpImage from "../../../public/bg-sap-btp.svg";
-import ArchitectImage from "../../../public/icons/bg-icon-architect.svg";
-import ConsultantImage from "../../../public/icons/bg-icon-consultant.svg";
-import DataAnalystImage from "../../../public/icons/bg-icon-data-analyst.svg";
-import DeveloperImage from "../../../public/icons/bg-icon-developer.svg";
 import { AccordionSap } from "../../components/Accordion";
 
 export default function WhoWeAre() {
@@ -101,34 +98,14 @@ export default function WhoWeAre() {
         </div>
 
         <div className="grid grid-cols-4 gap-5 max-md:grid-cols-2 max-sm:flex max-sm:flex-col max-sm:items-center mt-14">
-          <CardTeam
-            title={"Consultores"}
-            content={
-              "Profissionais que têm conhecimento em várias soluções oferecidas pela plataforma SAP BTP, como integração, analytics, internet das coisas (IoT), inteligência artificial (IA), entre outras."
-            }
-            image={ConsultantImage}
-          />
-          <CardTeam
-            title={"Desenvolvedores"}
-            content={
-              "Profissionais que trabalham com as tecnologias e ferramentas de desenvolvimento disponíveis na plataforma SAP BTP, incluindo desenvolvimento de aplicativos, construções de bancos de dados, microsserviços, entre outros."
-            }
-            image={DeveloperImage}
-          />
-          <CardTeam
-            title={"Arquitetos"}
-            content={
-              "Profissionais que desenham e projetam soluções personalizadas usando diferentes serviços da plataforma SAP BTP para atender às necessidades dos clientes."
-            }
-            image={ArchitectImage}
-          />
-          <CardTeam
-            title={"Analista de dados"}
-            content={
-              "Profissionais que possuem conhecimentos em soluções de análise de dados oferecidas pela plataforma SAP BTP, como SAP Data Intelligence (antigo Data Hub), SAP Data Warehouse Cloud (DWC) e SAP Analytics Cloud (SAC)."
-            }
-            image={DataAnalystImage}
-          />
+          {teamAreas.map((team, index) => (
+            <CardTeam
+              key={index}
+              title={team.title}
+              content={team.content}
+              image={team.img}
+            />
+          ))}
         </div>
       </section>
     </>
