@@ -8,16 +8,20 @@ interface InfosCardProps {
 
 export const InfosCard = ({ content, info, title }: InfosCardProps) => {
   return (
-    <div className="bg-blue-200 rounded p-6 pb-10 h-[10.125rem] flex justify-between flex-col items-center">
-      <h1 className="not-italic font-normal text-16 leading-7 text-white">
+    <div className="bg-blue-200 rounded p-6">
+      <h1 className="not-italic font-normal text-20 leading-7 text-white text-center">
         {title}
       </h1>
-      <strong className="not-italic font-normal text-30 leading-4 text-white w-max">
-        {info}
-      </strong>
-      <p className="not-italic font-normal text-14 leading-4 text-white">
-        {content}
-      </p>
+
+      <div className="flex flex-col text-center mt-5">
+        <strong className="not-italic font-normal text-30 leading-4 text-white">
+          {info}
+        </strong>
+
+        <p className="not-italic font-normal text-16 leading-4 text-white pt-2">
+          {content}
+        </p>
+      </div>
     </div>
   );
 };

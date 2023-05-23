@@ -7,11 +7,12 @@ interface MissionCardProps {
 
 export const MissionCard = ({ title, content }: MissionCardProps) => {
   return (
-    <div className="bg-blue-200 rounded-md p-6 h-[10.1800rem] text-center items-center md:w-auto md:h-full">
-      <h1 className="text-16 font-normal leading-7 not-italic text-white">
+    <div className="bg-blue-200 rounded-md p-6">
+      <h1 className="not-italic font-normal text-20 leading-7 text-white text-center">
         {title}
       </h1>
-      <p className="text-14 font-normal leading-4 not-itali mt-5 text-white text-left">
+
+      <p className="not-italic font-normal text-16 leading-7 text-white text-left mt-5">
         {content}
       </p>
     </div>

@@ -153,7 +153,7 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-3 gap-5 max-md:flex max-md:flex-col">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
           {infoCard.map((card) => (
             <InfosCard
               key={card.title}

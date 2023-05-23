@@ -50,7 +50,7 @@ export default function WhoWeAre() {
         </div>
       </section>
 
-      <section className="grid grid-cols-3 gap-5 mt-20 max-md:flex max-md:flex-col items-center">
+      <section className="grid grid-cols-1 gap-5 mt-20 md:grid-cols-3">
         {missionCard.map((card) => (
           <MissionCard
             key={card.title}
