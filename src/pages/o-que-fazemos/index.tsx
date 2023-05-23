@@ -46,7 +46,6 @@ export default function WhatWeDo() {
           {sapSolutionsCard.map((card) => (
             <SapSolutionsCard
               key={card.title}
-              image={card.img}
               title={card.title}
               content={card.content}
             />
@@ -134,11 +133,8 @@ export default function WhatWeDo() {
           <div>
             {/*  className="max-md:w-[20rem] max-md:mt-16" */}
             <TeamCarrousel
+              typeCard="o-que-fazemos"
               dataImages={imagesCarrousel2Mocky}
-              height={"228px"}
-              width={"405px"}
-              object="cover"
-              classSwiperSlide={"pb-6"}
             />
           </div>
           <div>

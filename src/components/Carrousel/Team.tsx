@@ -10,29 +10,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 interface TeamCarrouselProps {
   dataImages: any[];
-  width?: number | string;
-  height?: number | string;
+  typeCard?: "quem-somos" | "o-que-fazemos";
   object?: string;
-  classSwiperSlide: string;
 }
 
 export function TeamCarrousel({
   dataImages,
-  height,
-  width,
+  typeCard,
   object,
-  classSwiperSlide,
 }: TeamCarrouselProps) {
   return (
     <Swiper
       pagination={{
         dynamicBullets: true,
       }}
-      autoplay={{
+      /*  autoplay={{
         delay: 2500,
         disableOnInteraction: false,
-      }}
-      modules={[Pagination, Autoplay]}
+      }} */
+      modules={[Pagination /* , Autoplay */]}
       className="mySwiper"
     >
       {dataImages &&
@@ -40,11 +36,15 @@ export function TeamCarrousel({
           return (
             <SwiperSlide
               style={{ height: "initial", display: "flex" }}
-              className={`${classSwiperSlide} w-[${width}]`}
+              className={"pb-6"}
               key={image.id}
             >
               <Image
-                className={`h-[${height}] object-${object}`}
+                className={`${
+                  typeCard === "o-que-fazemos"
+                    ? "w-[25.3125rem] h-[14.25rem] object-cover"
+                    : "w-[41.25rem] h-[23.1875rem] object-cover"
+                }`}
                 src={image.src}
                 alt={image.alt}
               />

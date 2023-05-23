@@ -77,13 +77,10 @@ export default function WhoWeAre() {
           empresas que buscam melhorar seus processos de negócios.
         </p>
 
-        <div className="w-[41.25rem] mt-16 max-md:w-[20rem]">
+        <div className="max-w-[41.25rem] mt-16">
           <TeamCarrousel
             dataImages={imagesCarrouselMocky}
-            height={"371px"}
-            width={"660px"}
-            object="cover"
-            classSwiperSlide={"pb-6"}
+            typeCard="quem-somos"
           />
         </div>
       </section>
