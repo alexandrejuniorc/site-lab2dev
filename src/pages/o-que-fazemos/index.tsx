@@ -42,7 +42,7 @@ export default function WhatWeDo() {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-5 mt-16 max-md:grid-cols-2">
+        <div className="grid grid-cols-2 gap-5 max-sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-14">
           {sapSolutionsCard.map((card) => (
             <SapSolutionsCard
               key={card.title}
@@ -76,7 +76,7 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-4 gap-5 max-md:grid-cols-2 max-md:gap-2 max-sm:flex max-sm:flex-col max-sm:items-center">
+        <div className="grid grid-cols-2 gap-5 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-14">
           {cardSupport.map((card) => (
             <CardSupport
               key={card.title}
@@ -129,25 +129,25 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-2 gap-[6.5625rem] items-center max-md:flex max-md:flex-col-reverse max-md:gap-0">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <div>
-            {/*  className="max-md:w-[20rem] max-md:mt-16" */}
-            <TeamCarrousel
-              typeCard="o-que-fazemos"
-              dataImages={imagesCarrousel2Mocky}
-            />
-          </div>
-          <div>
-            <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 max-md:text-center">
+            <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 text-center lg:text-left">
               equipe lab2dev
             </h1>
-            <p className="not-italic font-normal text-16 leading-7 text-gray-800 max-md:text-center">
+            <p className="not-italic font-normal text-16 leading-7 text-gray-800 text-center lg:text-left mt-7">
               Nossa equipe, composta por consultores, arquitetos de solução,
               desenvolvedores, UX Designers e Integradores, é altamente
               qualificada e experiente em fornecer soluções personalizadas de
               software para empresas que buscam melhorar seus processos de
               negócios.
             </p>
+          </div>
+
+          <div className="lg:order-first">
+            <TeamCarrousel
+              typeCard="o-que-fazemos"
+              dataImages={imagesCarrousel2Mocky}
+            />
           </div>
         </div>
       </section>

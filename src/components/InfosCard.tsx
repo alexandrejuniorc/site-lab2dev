@@ -14,7 +14,7 @@ export const InfosCard = ({ content, info, title }: InfosCardProps) => {
       </h1>
 
       <div className="flex flex-col text-center mt-5">
-        <strong className="not-italic font-normal text-30 leading-4 text-white">
+        <strong className="not-italic font-normal text-30 leading-6 text-white">
           {info}
         </strong>
 
