@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Button } from "@/components/Button";
+import { CardClientTestimonial } from "@/components/CardClientTestimonial";
 import CardTrophieMobile from "@/components/Carrousel/CardTrophieMobile";
 import { Clients } from "@/components/Carrousel/Clients";
 
@@ -111,25 +112,7 @@ export default function Home() {
         </div>
 
         <div className="w-full mt-8 flex justify-center">
-          <div className="rounded-md shadow-md w-80 flex justify-around items-center flex-col p-6 bg-white">
-            <h1 className="font-normal text-20 leading-7 text-purple-300 not-italic">
-              Anderson Carrio
-            </h1>
-            <p className="font-normal text-14 leading-7 text-purple-300 not-italic">
-              Gerente Executivo de Tecnologia - Dexco
-            </p>
-
-            <p className="font-normal text-12 leading-4 text-gray-800 not-italic">
-              {`"`}Trabalhar com a equipe da Lab2Dev tem sido uma experiência
-              muito positiva. Eles demonstraram um profundo conhecimento e
-              experiência no SAP BTP e CPI, e foram capazes de nos orientar de
-              forma clara e precisa durante todo o nosso processo. Além disso, a
-              equipe é extremamente prestativa, ágil e comprometida em entregar
-              resultados de alta qualidade. Estou muito satisfeito com o
-              trabalho realizado pela Lab2Dev e recomendo seus serviços aos que
-              procuram soluções confiáveis e eficientes em tecnologia.{`"`}
-            </p>
-          </div>
+          <CardClientTestimonial />
           {/*   <ClientFeedback />
           <ClientFeedbackMobile /> */}
         </div>
