@@ -35,17 +35,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-2 items-center justify-center mt-20 max-md:flex max-md:flex-col max-md:text-center">
-        <div className="flex w-full h-max max-md:justify-center">
-          <Image src={PartnerSAPImage} alt="" />
+      {/* className="grid grid-cols-2 items-center justify-center mt-20 max-md:flex max-md:flex-col max-md:text-center" */}
+      <section className="grid grid-cols-1 mt-20 md:grid-cols-2">
+        <div className="w-full flex justify-center md:justify-start items-center">
+          <Image
+            className="w-[20rem] h-[15.5rem]"
+            src={PartnerSAPImage}
+            alt=""
+          />
         </div>
 
         <div>
-          <h1 className="not-italic font-normal text-purple-300 leading-10 text-30 uppercase max-md:mt-7">
+          <h1 className="not-italic font-normal text-purple-300 leading-10 text-30 uppercase mt-7 md:mt-0">
             Somos parceiros Gold SAP!
           </h1>
 
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 pt-8 max-lg:text-left max-md:text-center">
+          <p className="not-italic font-normal text-16 leading-7 text-gray-800 pt-8 text-center md:text-left">
             Para se tornar um parceiro Gold SAP, a empresa parceira precisa
             atender a certos requisitos estabelecidos pela SAP, como demonstrar
             um alto nível de competência técnica e de negócios, ter um bom
@@ -54,7 +59,7 @@ export default function Home() {
             metas de vendas e receita.
           </p>
 
-          <div className="mt-14">
+          <div className="mt-14 flex justify-center md:justify-start">
             <Button color="purple" content="Saiba mais" url={"sap-btp"} />
           </div>
         </div>
@@ -90,7 +95,7 @@ export default function Home() {
             Nossos clientes
           </h1>
           <p className="font-normal text-16 leading-7 text-gray-800 mt-5 not-italic">
-            Atendemos no Brasil, na América Latina e na Ásia
+            Atendemos no Brasil, na América Latina, Ásia e nos EUA
           </p>
         </div>
 

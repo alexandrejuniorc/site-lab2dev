@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 
 import BackgroundFooter from "../../public/bg-footer.png";
-import SapPartner from "../../public/bg-partner-sap-footer.png";
+import SapPartner from "../../public/bg-partner-sap.png";
 import TwoFooter from "../../public/bg-two-footer.svg";
 import { Button } from "./Button";
 
@@ -108,7 +108,11 @@ export const Footer = () => {
             </div>
 
             <div className="mt-7">
-              <Image src={SapPartner} alt="Sap Partner" />
+              <Image
+                className="w-[5.25rem] h-[5.25rem] object-contain bg-white rounded-md"
+                src={SapPartner}
+                alt="Sap Partner"
+              />
             </div>
           </div>
         </div>
