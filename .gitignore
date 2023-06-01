@@ -15,6 +15,7 @@ out.zip
 
 # production
 /build
+bkp
 
 # misc
 .DS_Store
