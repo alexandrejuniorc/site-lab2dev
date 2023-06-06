@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
-import CardTrophie1 from "../../public/card-trophie-1.jpeg";
-import CardTrophie2 from "../../public/card-trophie-2.jpeg";
+import CardTrophie1 from "../../public/card-trophie-1.svg";
+import CardTrophie2 from "../../public/card-trophie-2.svg";
 interface CardTrophieProps {
   image?: string | any;
   title?: string;

@@ -3,12 +3,12 @@ import Image from "next/image";
 import React from "react";
 
 import { CardSupport } from "@/components/CardSupport";
+import { CardTrophie } from "@/components/CardTrophie";
+import CardTrophieMobile from "@/components/Carrousel/CardTrophieMobile";
 import { TeamCarrousel } from "@/components/Carrousel/Team";
-import { InfosCard } from "@/components/InfosCard";
 import { OtherSolutionsCard } from "@/components/OtherSolutionsCard";
 import { SapSolutionsCard } from "@/components/SapSolutionsCard";
 import { cardSupport } from "@/mocky/card-support";
-import { infoCard } from "@/mocky/info-card";
 import { sapSolutionsCard } from "@/mocky/sap-solutions-card";
 import { stacks } from "@/mocky/stacks";
 
@@ -29,13 +29,10 @@ export default function WhatWeDo() {
 
       <section>
         <div className="flex  flex-col">
-          <p className="not-italic font-normal text-14 leading-4 text-blue-200">
-            SAP
-          </p>
-          <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase mt-9 max-md:text-center">
+          <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase max-md:text-center">
             Nossas soluções SAP
           </h1>
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5 max-md:text-center">
+          <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5 text-justify max-md:text-center">
             Nossa atuação é focada no mercado SAP. Trazemos inovação e
             tendências tecnológicas dentro do portfólio de produtos SAP e também
             trabalhamos na simplificação das integrações de outros sistemas
@@ -55,16 +52,20 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-2 text-left max-md:flex max-md:flex-col max-md:text-center">
-          <div className="max-md:flex max-md:justify-center max-md:items-center">
-            <Image src={SapPartnerImage} alt="" />
+        <div className="grid grid-cols-[max-content_1fr] gap-[6.5625rem] text-left max-md:flex max-md:flex-col max-md:text-center">
+          <div className="max-md:flex max-md:justify-center items-center">
+            <Image
+              className="w-[20rem] h-[15.5rem]"
+              src={SapPartnerImage}
+              alt=""
+            />
           </div>
 
           <div className="flex flex-col">
             <h1 className="font-normal not-italic text-30 leading-10 text-purple-300 mt-7 max-md:text-center">
               SOMOS PARCEIROS GOLD SAP
             </h1>
-            <p className="font-normal not-italic text-16 leading-7 text-gray-800 mt-8 max-md:text-center">
+            <p className="font-normal not-italic text-16 leading-7 text-justify text-gray-800 mt-8 max-md:text-center">
               Para se tornar um parceiro Gold SAP, a empresa parceira precisa
               atender a certos requisitos estabelecidos pela SAP, como
               demonstrar um alto nível de competência técnica e de negócios, ter
@@ -89,15 +90,13 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-2 max-md:flex max-md:flex-col">
+        <div className="flex flex-col">
           <div className="flex flex-col">
-            <p className="not-italic font-normal text-14 leading-4 text-blue-200 uppercase">
-              Expertise
-            </p>
             <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase mt-9 max-md:text-center">
               Outras soluções
             </h1>
-            <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5 max-md:text-center">
+
+            <p className="not-italic font-normal text-16 leading-7 text-justify text-gray-800 mt-5 max-md:text-center">
               Nosso principal foco sempre foi SAP, somos líder e referências no
               mercado. Porém isso não significa que não somos os melhores nas
               outras tecnologias também.
@@ -110,7 +109,8 @@ export default function WhatWeDo() {
             alt=""
           />
 
-          <div className="flex flex-col gap-8 items-end max-md:justify-center max-md:items-center max-md:mt-7">
+          {/* className="flex flex-col gap-8 items-end max-md:justify-center max-md:items-center max-md:mt-7" */}
+          <div className="grid grid-cols-2 gap-5 mt-20">
             {stacks.map((stack) => (
               <OtherSolutionsCard
                 key={stack.title}
@@ -135,7 +135,7 @@ export default function WhatWeDo() {
             <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 text-center lg:text-left">
               equipe lab2dev
             </h1>
-            <p className="not-italic font-normal text-16 leading-7 text-gray-800 text-center lg:text-left mt-7">
+            <p className="not-italic font-normal text-16 leading-7 text-gray-800 text-center lg:text-justify mt-7">
               Nossa equipe, composta por consultores, arquitetos de solução,
               desenvolvedores, UX Designers e Integradores, é altamente
               qualificada e experiente em fornecer soluções personalizadas de
@@ -146,7 +146,7 @@ export default function WhatWeDo() {
 
           <div className="lg:order-first">
             <TeamCarrousel
-              typeCard="o-que-fazemos"
+              typeCard="quem-somos"
               dataImages={imagesCarrousel2Mocky}
             />
           </div>
@@ -154,15 +154,27 @@ export default function WhatWeDo() {
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
-          {infoCard.map((card) => (
-            <InfosCard
-              key={card.title}
-              title={card.title}
-              info={card.info}
-              content={card.content}
-            />
-          ))}
+        <div className="grid grid-cols-2">
+          <div className="mr-28 lg:mr-0 max-lg:text-center max-lg:m-0">
+            <h1 className="font-normal text-purple-300 leading-10 text-30 uppercase">
+              Somos premiados
+            </h1>
+            <p className="font-normal text-16 leading-7 text-gray-800 pt-8 not-italic lg:text-justify max-md:text-center">
+              Ao longo de nossa jornada, tivemos o privilégio de receber
+              diversos prêmios que reconhecem a qualidade de nossos produtos e
+              serviços. Essas conquistas nos motivam a continuar trabalhando com
+              excelência e comprometimento, em busca da satisfação de nossos
+              clientes.
+            </p>
+          </div>
+
+          <div className="max-lg:mt-7">
+            <div className="lg:flex lg:gap-5 max-lg:hidden">
+              <CardTrophie />
+            </div>
+
+            <CardTrophieMobile />
+          </div>
         </div>
       </section>
     </>

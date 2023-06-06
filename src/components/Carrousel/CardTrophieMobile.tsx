@@ -8,8 +8,8 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import CardTrophie1 from "../../../public/card-trophie-1.jpeg";
-import CardTrophie2 from "../../../public/card-trophie-2.jpeg";
+import CardTrophie1 from "../../../public/card-trophie-1.svg";
+import CardTrophie2 from "../../../public/card-trophie-2.svg";
 
 export default function CardTrophieMobile() {
   return (

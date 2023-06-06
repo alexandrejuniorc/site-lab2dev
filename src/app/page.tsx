@@ -88,25 +88,6 @@ export default function Home() {
             content={card.content}
           />
         ))}
-        {/*   <div className="mr-28 lg:mr-0 max-lg:text-center max-lg:m-0">
-          <h1 className="font-normal text-purple-300 leading-10 text-30 uppercase">
-            Somos premiados
-          </h1>
-          <p className="font-normal text-16 leading-7 text-gray-800 pt-8 not-italic max-lg:text-left max-md:text-center">
-            Ao longo de nossa jornada, tivemos o privilégio de receber diversos
-            prêmios que reconhecem a qualidade de nossos produtos e serviços.
-            Essas conquistas nos motivam a continuar trabalhando com excelência
-            e comprometimento, em busca da satisfação de nossos clientes.
-          </p>
-        </div>
-
-        <div className="max-lg:mt-7">
-          <div className="lg:flex lg:gap-5 max-lg:hidden">
-            <CardTrophie />
-          </div>
-
-          <CardTrophieMobile />
-        </div> */}
       </section>
 
       <section className="flex flex-col items-center text-center mt-20">

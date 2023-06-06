@@ -1,50 +1,50 @@
 export const sapSolutionsCard = [
   {
     img: "",
-    title: "SAP Build",
+    title: "Desenvolvimento de Apps low-code",
     content:
-      "Acreditamos em uma UX renovada! Trazemos o usuário para construir a aplicação juntamente com o time de desenvolvedores, afinal, ninguém melhor do que ele para desenhar a UX da solução.",
+      "Através do SAP Build, uma plataforma de desenvolvimento de low-code que permite criar aplicativos de forma rápida e intuitiva no SAP BTP.",
   },
   {
     img: "",
-    title: "SAP Hana",
+    title: "Alta performance",
     content:
-      "Com uma base sólida e rápida, a solução é escalável e conta com tudo que o HANA tem a oferecer. Trabalhamos com o que há de inovador na plataforma para prover a melhor solução.",
+      "Com a possibilidade de  processamento ultra rápido e análise em tempo real do banco de dados SAP HANA.",
   },
   {
     img: "",
-    title: "SAP Fiori",
+    title: "Criação de Apps (Web e Mobile)",
     content:
-      "Com mais de 12 mil horas e 28 projetos entregues pelo nosso time, acreditamos que o SAP Fiori será a tecnologia central de todas as interfaces de produtos da SAP, trazendo intuitividade, robustez e flexibilidade para aplicações SAP por meio da poderosa linguagem SAPUI5.",
+      "Com centenas de Apps desenvolvidos pelo nosso time com o SAP Fiori, simplificamos a vida de milhares de usuários SAP, adicionando facilidade e fluidez na utilização de apps SAP.",
   },
   {
     img: "",
-    title: "SAP BTP Workflow",
+    title: "Workflow entre diversos sistemas",
     content:
-      "Serviço de Workflow Cloud da SAP, que visa a comunicação de toda a cadeia de sistemas da empresa, permitindo uma gestão dos processos de negócio unificada e visual.",
+      "Utilizando o SAP BTP Workflow que automatiza e gerencia fluxos de atividades, permitindo a coordenação eficiente de tarefas e a tomada de decisões em processos de negócios envolvendo diversos sistemas.",
   },
   {
     img: "",
-    title: "SAP Business Rules Cloud",
+    title: "Gerenciamento e análise de dados",
     content:
-      "Serviço de Business Rules Cloud da SAP, que visa a criação de lógica de aprovação, alçadas, regras de negócio e inteligência para tomada de decisões sem a necessidade de conhecimento em codificação. O próprio usuário é capaz de criar as regras de negócio.",
+      "Organize e modele seus dados em larga escala com o  SAP Data Sphere, uma solução flexível, escalável e econômica para gerenciamento e análise de dados.",
   },
   {
     img: "",
-    title: "SAP Document Service",
+    title: "Extração de dados S/4HANA e ECC",
     content:
-      "Serviço de gerenciamento de documentos dentro do SCP, desenvolvido a fim de controlar acessos e versionamento de arquivos por meio de APIs seguras.",
+      "Através do SAP Data Intelligence,  uma plataforma unificada que facilita o gerenciamento, integração e extração de grandes volumes de dados seguindo a governança da SAP (eliminando preocupações de acesso indireto).",
   },
   {
     img: "",
-    title: "SAP API Management",
+    title: "Gerenciamento robusto de APIs",
     content:
-      "Serviço que permite publicar, desenvolver e gerenciar APIs em um ambiente seguro e escalável de forma fácil e intuitiva.",
+      "Adicionando aspectos de Segurança e governança em todas às APIs com possibilidade de catalogação de APIS SAP e aplicação de DevOps (integrando ferramentas como Azure Devops, Jenkins e demais softwares).",
   },
   {
     img: "",
-    title: "SAP BTP Integration",
+    title: "Integração de processos e sistemas",
     content:
-      "Serviço de gerenciamento de documentos dentro do SCP, desenvolvido a fim de controlar acessos e versionamento de arquivos por meio de APIs seguras.",
+      "Utilizando o SAP Integration Suite, plataforma líder no Gartner e que facilita a integração de processos e dados entre aplicativos SAP e não-SAP na nuvem ou localmente.",
   },
 ];
