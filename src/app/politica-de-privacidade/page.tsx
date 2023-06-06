@@ -5,7 +5,7 @@ const Policy = () => {
   return (
     <>
       <section>
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300">
+        <h1 className="font-normal text-30 leading-10 uppercase text-purple-300">
           1. Definições Gerais
         </h1>
         <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5">
@@ -32,7 +32,7 @@ const Policy = () => {
       </section>
 
       <section className="mt-5">
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
+        <h1 className="font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
           2. Diretrizes e Definições
         </h1>
 
@@ -107,7 +107,7 @@ const Policy = () => {
           empregado.
         </p>
 
-        <strong className="mt-3">
+        <strong className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           Ao acessar e/ou utilizar o site Lab2dev, o Usuário declara estar
           fornecendo informações próprias e verdadeiras, bem como, ter no mínimo
           18 (dezoito) anos com capacidade plena e expressa para a aceitação dos
@@ -115,7 +115,7 @@ const Policy = () => {
           os fins de direito.
         </strong>
 
-        <p className="mt-3">
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           Caso o Usuário não se enquadre na descrição acima e/ou não concorde,
           ainda que em parte, com os termos e condições contidos nesta Política
           de Privacidade, não deverá acessar e/ou utilizar quaisquer serviços
@@ -131,7 +131,7 @@ const Policy = () => {
       </section>
 
       <section className="mt-5">
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
+        <h1 className="font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
           3. Coleta e tratamento de dados
         </h1>
 
@@ -170,7 +170,10 @@ const Policy = () => {
           escrito, exceto quando:
         </p>
 
-        <ol type="I">
+        <ol
+          className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3"
+          type="I"
+        >
           <li>
             (I) for geralmente conhecida pelo público no momento da divulgação
             ou se tornou de domínio público sem nenhum ato ilícito por parte da
@@ -191,14 +194,14 @@ const Policy = () => {
           </li>
         </ol>
 
-        <p className="mt-3">
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           Os Dados Pessoais coletados não serão utilizados para envio de
           qualquer tipo de SPAM ou outro fim que não o aqui exposto.
         </p>
       </section>
 
       <section className="mt-5">
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
+        <h1 className="font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
           4. Armazenamento de Dados
         </h1>
 
@@ -223,7 +226,10 @@ const Policy = () => {
           forma, adota as seguintes precauções:
         </p>
 
-        <ol type="I">
+        <ol
+          className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3"
+          type="I"
+        >
           <li>
             I. Quando necessário a Lab2dev utiliza os métodos de padrão de
             mercado para criptografar e anonimizar os dados coletados;
@@ -247,7 +253,7 @@ const Policy = () => {
           </li>
         </ol>
 
-        <u>
+        <u className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <br />A Lab2dev adota os melhores esforços, no sentido de preservar a
           privacidade dos dados dos Usuários. Entretanto, nenhum site é
           totalmente seguro e a Lab2dev não pode garantir integralmente que
@@ -257,7 +263,7 @@ const Policy = () => {
           sequestro de dados.
         </u>
 
-        <p>
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800">
           <br />
           Por esse motivo, nós incentivamos os Usuários a tomarem as medidas
           apropriadas para se protegerem, como, por exemplo, mantendo
@@ -266,7 +272,7 @@ const Policy = () => {
       </section>
 
       <section className="mt-5">
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
+        <h1 className="font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
           5. Compartilhamento de dados e hipóteses legais
         </h1>
 
@@ -275,7 +281,10 @@ const Policy = () => {
           nas seguintes situações e nos limites autorizados pela lei:
         </p>
 
-        <ol type="I">
+        <ol
+          className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3"
+          type="I"
+        >
           <li>
             I. Para propósitos administrativos como: pesquisa, planejamento,
             desenvolvimento de serviços, segurança e gerenciamento de risco;
@@ -290,7 +299,7 @@ const Policy = () => {
           </li>
         </ol>
 
-        <p>
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <br />
           Em alguns casos, a Lab2dev poderá divulgar os Dados Pessoais coletados
           com o objetivo de cumprir a legislação aplicável ou por meio de ordem
@@ -298,7 +307,10 @@ const Policy = () => {
           feita para:
         </p>
 
-        <ol type="I">
+        <ol
+          className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3"
+          type="I"
+        >
           <li>I. Cumprir com a legislação;</li>
           <li>
             II. investigar, impedir ou tomar medidas relacionadas a cooperação
@@ -308,7 +320,7 @@ const Policy = () => {
           <li>IV. Proteção da segurança ou integridade dos serviços.</li>
         </ol>
 
-        <p>
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <br />
           Dessa forma, para cada situação, um dado poderá ser compartilhado com
           Terceiro, como por exemplo, em casos de parcerias, contato adquirido
@@ -327,7 +339,7 @@ const Policy = () => {
       </section>
 
       <section className="mt-5">
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
+        <h1 className="font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
           6. Direitos do Titular
         </h1>
 
@@ -338,7 +350,10 @@ const Policy = () => {
           baseadas nos seguintes direitos:
         </p>
 
-        <ol type="I">
+        <ol
+          className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3"
+          type="I"
+        >
           <li>I. a confirmação da existência de tratamento;</li>
           <li>II. o acesso aos dados;</li>
           <li>
@@ -373,14 +388,14 @@ const Policy = () => {
           </li>
         </ol>
 
-        <p>
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <br />
           Ainda, conforme o disposto no art. 15, 1 da GDPR, o Usuário tem o
           direito de obter acesso às informações sobre:
           <br />
         </p>
 
-        <ol>
+        <ol className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <li>{"a)"} as finalidades do processamento;</li>
           <li>{"b)"} as categorias de dados pessoais em questão;</li>
           <li>
@@ -402,7 +417,7 @@ const Policy = () => {
           </li>
         </ol>
 
-        <p>
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <br />
           Para tanto, é necessária a identificação e o interesse legítimo do
           Titular, sendo assim, a Lab2dev poderá solicitar a confirmação de
@@ -437,9 +452,10 @@ const Policy = () => {
       </section>
 
       <section className="mt-5">
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
+        <h1 className="font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
           7. Cookies
         </h1>
+
         <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5">
           Em linhas gerais, um Cookie é um pequeno arquivo de texto que armazena
           informações em seu dispositivo eletrônico, como por exemplo, no seu
@@ -468,10 +484,10 @@ const Policy = () => {
           <strong>Tipos de Cookies</strong>
         </p>
 
-        <ul>
+        <ul className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <li>
             <strong>I. Necessários:</strong>
-            <p>
+            <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
               Esses cookies nos ajudam a entender como os visitantes interagem
               com as Páginas da Lab2dev, fornecendo informações sobre as áreas
               visitadas, o tempo de visita ao site e quaisquer problemas
@@ -481,7 +497,7 @@ const Policy = () => {
 
           <li>
             <strong>II. Desempenhos:</strong>
-            <p>
+            <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
               São aqueles que nos auxiliam a entender como o Usuário interage
               com Sites, suas páginas e Aplicativos, os seus respectivos
               produtos e serviços, apresentando dados sobre áreas visitas, tempo
@@ -491,7 +507,7 @@ const Policy = () => {
 
           <li>
             <strong>III. Funcionais:</strong>
-            <p>
+            <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
               Esses cookies permitem que as Páginas da Lab2dev se lembrem de
               suas escolhas, para proporcionar uma experiência mais
               personalizada.
@@ -500,7 +516,7 @@ const Policy = () => {
 
           <li>
             <strong>IV. Marketing:</strong>
-            <p>
+            <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
               Esses cookies são utilizados para fornecer conteúdo relevante e do
               interesse dos Usuários. Podem ser utilizados para apresentar
               publicidade melhor direcionada e também permitem a medição da
@@ -509,7 +525,7 @@ const Policy = () => {
           </li>
         </ul>
 
-        <p>
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <br />
           essa armazenará um cookie em seu dispositivo para lembrar disso na
           próxima sessão.
@@ -523,7 +539,7 @@ const Policy = () => {
           cookies nos navegadores:
         </p>
 
-        <ol>
+        <ol className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <li>• Internet Explorer (inserir Links)</li>
           <li>• Mozilla Firefox</li>
           <li>• Google Chrome</li>
@@ -531,7 +547,7 @@ const Policy = () => {
           <li>• Microsoft Edge</li>
         </ol>
 
-        <p>
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <br />
           Por fim, lembramos que,
           <strong>
@@ -545,9 +561,10 @@ const Policy = () => {
       </section>
 
       <section className="mt-5">
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
+        <h1 className="font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
           8. Segurança
         </h1>
+
         <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5">
           As informações e dados coletados serão armazenados em observância aos
           rigorosos padrões de segurança e confiabilidade, através de medidas
@@ -557,7 +574,7 @@ const Policy = () => {
           Adicionalmente, é importante a ciência dos Usuários de que:
         </p>
 
-        <ol>
+        <ol className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <li>
             I. Utilizamos robusta e atual tecnologia Microsoft e Google para,
             quando necessário, adotar processos técnicos de criptografia e
@@ -579,7 +596,7 @@ const Policy = () => {
           </li>
         </ol>
 
-        <p>
+        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-3">
           <br />
           De qualquer maneira, a Lab2dev zela pela segurança da informação e
           tecnologia adequada para tanto, dessa forma, sempre armazenará as
@@ -606,9 +623,10 @@ const Policy = () => {
       </section>
 
       <section className="mt-5">
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
+        <h1 className="font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
           9. Contato e foro de eleição/legislação
         </h1>
+
         <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5">
           A Labdev se coloca à disposição para solução de quaisquer dúvidas ou
           solicitações dos titulares de dados pelo endereço de e-mail{" "}
@@ -628,7 +646,7 @@ const Policy = () => {
       </section>
 
       <section className="mt-5">
-        <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
+        <h1 className="font-normal text-30 leading-10 uppercase text-purple-300 mt-5">
           10. Atualizações
         </h1>
 
