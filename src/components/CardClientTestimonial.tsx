@@ -1,15 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-import AndersonCarrio from "../../public/clients/testimonial-clients/anderson-carrio.jpeg";
-
 export const CardClientTestimonial = () => {
   return (
     <div className="rounded-md drop-shadow-[0_0_4px_rgba(134,133,133,0.5)] w-80 flex justify-around items-center flex-col p-6 bg-white">
-      <div className="bg-purple-100 w-[4.375rem] h-[4.375rem] border-8 border-purple-200/50 rounded-full">
-        <Image className="rounded-full" src={AndersonCarrio} alt="" />
-      </div>
-
       <div className="flex flex-col">
         <h1 className="font-normal text-20 leading-7 text-purple-300 not-italic mt-5">
           Anderson Carrio
