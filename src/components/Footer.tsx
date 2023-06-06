@@ -14,7 +14,7 @@ import { Button } from "./Button";
 
 export const Footer = () => {
   return (
-    <footer className="bg-purple-300 text mt-20 relative">
+    <footer className="bg-purple-300 text relative">
       <div className="container">
         <div className="grid grid-cols-3 gap-x-7 m-auto p-0 pt-20 pb-10 max-md:flex max-md:flex-col">
           <div className="max-md:text-center">
@@ -121,7 +121,7 @@ export const Footer = () => {
       <div className="max-md:mt-5">
         <div className="flex justify-center py-5">
           <p className="font-normal text-10/px leading-4 not-italic text-white">
-            © 2023 Lab2Dev. Todos os direitos reservados.
+            © 2023 Lab2dev. Todos os direitos reservados.
           </p>
         </div>
       </div>

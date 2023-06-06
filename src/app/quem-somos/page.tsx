@@ -25,7 +25,7 @@ export default function WhoWeAre() {
             nossa história
           </h1>
           <p className="text-gray-800 text-16 leading-7 font-normal not-italic mt-7 max-md:text-center">
-            Fundada em 2018, a Lab2Dev é a primeira startup brasileira focada em
+            Fundada em 2018, a Lab2dev é a primeira startup brasileira focada em
             inovação por meio do SAP BTP (Business Technology Platform). Somos
             especialistas em criar soluções, utilizando o que há de mais
             avançado em tecnologia para apoiar a transformação digital dos

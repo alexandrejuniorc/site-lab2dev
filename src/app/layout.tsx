@@ -1,10 +1,13 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Varela_Round } from "next/font/google";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const varelaRound = Varela_Round({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata = {
   title: "Lab2dev",
@@ -18,7 +21,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={varelaRound.className}>
         <Header />
         <main className="py-24 container">{children}</main>
         <Footer />

@@ -19,7 +19,7 @@ export const Header = () => {
           </Link>
         </div>
 
-        <div className="mb-24 flex items-center whitespace-nowrap max-md:hidden">
+        <div className=" flex items-center max-md:hidden">
           <Link
             className={
               pathname === "/"
@@ -73,9 +73,10 @@ export const Header = () => {
           </Link>
         </div>
 
-        <div className="hidden max-md:flex rounded-md border-2 border-[transparent] transition-colors hover:border-purple-300 mb-3">
-          {/* <Menubar /> */}
+        {/* <div className="hidden max-md:flex rounded-md border-2 border-[transparent] transition-colors hover:border-purple-300 mb-3">
+          <Menubar />
         </div>
+        */}
       </div>
     </header>
   );
