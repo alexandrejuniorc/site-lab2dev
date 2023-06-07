@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import * as React from "react";
 
 import { Menu } from "@mui/icons-material";
@@ -18,7 +18,7 @@ export default function SwipeableTemporaryDrawer() {
     right: false,
   });
 
-  const router = useRouter();
+  const pathname = usePathname();
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -45,7 +45,7 @@ export default function SwipeableTemporaryDrawer() {
       <List style={{ padding: 0 }} className="flex flex-col text-right">
         <Link
           className={
-            router.pathname === "/"
+            pathname === "/"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
               : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
@@ -55,7 +55,7 @@ export default function SwipeableTemporaryDrawer() {
         </Link>
         <Link
           className={
-            router.pathname === "/quem-somos"
+            pathname === "/quem-somos"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
               : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
@@ -65,7 +65,7 @@ export default function SwipeableTemporaryDrawer() {
         </Link>
         <Link
           className={
-            router.pathname === "/o-que-fazemos"
+            pathname === "/o-que-fazemos"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
               : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
@@ -75,7 +75,7 @@ export default function SwipeableTemporaryDrawer() {
         </Link>
         <Link
           className={
-            router.pathname === "/sap-btp"
+            pathname === "/sap-btp"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
               : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
@@ -85,7 +85,7 @@ export default function SwipeableTemporaryDrawer() {
         </Link>
         <Link
           className={
-            router.pathname === "/sap-ams"
+            pathname === "/sap-ams"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
               : "font-normal text-16 leading-6 not-italic bg-white text-purple-300 py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors hover:text-white hover:bg-purple-300"
           }
