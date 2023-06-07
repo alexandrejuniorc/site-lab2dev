@@ -4,9 +4,9 @@ import Image from "next/image";
 import { Button } from "@/components/Button";
 import { TeamCarrousel } from "@/components/Carrousel/Team";
 import { MissionCard } from "@/components/MissionCard";
-import { imagesCarrouselMocky } from "@/mocky/carrousel-1";
-import { imagesCarrousel2Mocky } from "@/mocky/carrousel-2";
-import { missionCard } from "@/mocky/mission-card";
+import { imagesCarrouselMocky } from "@/mock/carrousel-1";
+import { imagesCarrousel2Mocky } from "@/mock/carrousel-2";
+import { missionCard } from "@/mock/mission-card";
 
 import Mind from "../../../public/bg-mind.svg";
 import Two from "../../../public/bg-two.svg";

@@ -8,15 +8,15 @@ import CardTrophieMobile from "@/components/Carrousel/CardTrophieMobile";
 import { TeamCarrousel } from "@/components/Carrousel/Team";
 import { OtherSolutionsCard } from "@/components/OtherSolutionsCard";
 import { SapSolutionsCard } from "@/components/SapSolutionsCard";
-import { cardSupport } from "@/mocky/card-support";
-import { sapSolutionsCard } from "@/mocky/sap-solutions-card";
-import { stacks } from "@/mocky/stacks";
+import { cardSupport } from "@/mock/card-support";
+import { sapSolutionsCard } from "@/mock/sap-solutions-card";
+import { stacks } from "@/mock/stacks";
 
 import JavascriptImage from "../../../public/bg-javascript.svg";
 import SapPartnerImage from "../../../public/bg-partner-sap.png";
 import PythonImage from "../../../public/bg-python.svg";
 import SapLogoImage from "../../../public/bg-sap-logo.svg";
-import { imagesCarrousel2Mocky } from "../../mocky/carrousel-2";
+import { imagesCarrousel2Mocky } from "../../mock/carrousel-2";
 
 export default function WhatWeDo() {
   return (

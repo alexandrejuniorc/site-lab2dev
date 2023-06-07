@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { CardClientTestimonial } from "@/components/CardClientTestimonial";
 import { Clients } from "@/components/Carrousel/Clients";
 import { InfosCard } from "@/components/InfosCard";
-import { infoCard } from "@/mocky/info-card";
+import { infoCard } from "@/mock/info-card";
 
 import Country from "../../public/bg-country.svg";
 import PartnerSAPImage from "../../public/bg-partner-sap.png";

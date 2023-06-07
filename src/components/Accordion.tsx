@@ -6,110 +6,34 @@ import * as Accordion from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import classNames from "classnames";
 
+type AccordionData = {
+  title: string;
+  content: string;
+  id: number;
+};
 interface AccordionSapProps {
-  title: {
-    title1?: string;
-    title2?: string;
-    title3?: string;
-    title4?: string;
-    title5?: string;
-    title6?: string;
-    title7?: string;
-  };
-  content: {
-    content1?: string;
-    content2?: string;
-    content3?: string;
-    content4?: string;
-    content5?: string;
-    content6?: string;
-    content7?: string;
-  };
+  data: AccordionData[];
 }
 
-export const AccordionSap = ({ content, title }: AccordionSapProps) => (
+export const AccordionSap = ({ data }: AccordionSapProps) => (
   <Accordion.Root
-    className="shadow-md rounded-lg text-left "
+    className="shadow-[0_0_4px_rgba(134,133,133,0.5)] rounded-lg text-left "
     type="single"
     defaultValue="item-1"
     collapsible
   >
-    {title.title1 && content.content1 && (
-      <AccordionItem value="item-1">
-        <div className="mt-2 mb-2">
-          <AccordionTrigger>
-            <p className="text-left max-md:text-center">{title.title1}</p>
-          </AccordionTrigger>
-        </div>
-        <AccordionContent>{content.content1}</AccordionContent>
-      </AccordionItem>
-    )}
-
-    {title.title2 && content.content2 && (
-      <AccordionItem value="item-2">
-        <div className="mt-2 mb-2">
-          <AccordionTrigger>
-            <p className="text-left max-md:text-center">{title.title2}</p>
-          </AccordionTrigger>
-        </div>
-        <AccordionContent>{content.content2}</AccordionContent>
-      </AccordionItem>
-    )}
-
-    {title.title3 && content.content3 && (
-      <AccordionItem value="item-3">
-        <div className="mt-2 mb-2">
-          <AccordionTrigger>
-            <p className="text-left max-md:text-center">{title.title3}</p>
-          </AccordionTrigger>
-        </div>
-        <AccordionContent>{content.content3}</AccordionContent>
-      </AccordionItem>
-    )}
-
-    {title.title4 && content.content4 && (
-      <AccordionItem value="item-4">
-        <div className="mt-2 mb-2">
-          <AccordionTrigger>
-            <p className="text-left max-md:text-center">{title.title4}</p>
-          </AccordionTrigger>
-        </div>
-        <AccordionContent>{content.content4}</AccordionContent>
-      </AccordionItem>
-    )}
-
-    {title.title5 && content.content5 && (
-      <AccordionItem value="item-5">
-        <div className="mt-2 mb-2">
-          <AccordionTrigger>
-            <p className="text-left max-md:text-center">{title.title5}</p>
-          </AccordionTrigger>
-        </div>
-        <AccordionContent>{content.content5}</AccordionContent>
-      </AccordionItem>
-    )}
-
-    {title.title6 && content.content6 && (
-      <AccordionItem value="item-6">
-        <div className="mt-2 mb-2 ">
-          <AccordionTrigger>
-            <p className="text-left max-md:text-center">{title.title6}</p>
-          </AccordionTrigger>
-        </div>
-        <AccordionContent>{content.content6}</AccordionContent>
-      </AccordionItem>
-    )}
-
-    {title.title7 && content.content7 && (
-      <AccordionItem value="item-7">
-        <div className="mt-2 mb-2">
-          <AccordionTrigger>
-            <p className="text-left max-md:text-center">{title.title7}</p>
-          </AccordionTrigger>
-        </div>
-        <AccordionContent>{content.content7}</AccordionContent>
-      </AccordionItem>
-    )}
+    {data.map(({ title, content, id }: AccordionData) => {
+      return (
+        <AccordionItem value={`item-${id}`} key={id}>
+          <div className="mt-2 mb-2">
+            <AccordionTrigger>
+              <p className="text-justify">{title}</p>
+            </AccordionTrigger>
+          </div>
+          <AccordionContent>{content}</AccordionContent>
+        </AccordionItem>
+      );
+    })}
   </Accordion.Root>
 );
 
