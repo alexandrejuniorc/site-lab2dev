@@ -7,7 +7,6 @@ import { sapBTPBenefits } from "@/mock/sap-btp-benefits";
 import { teamAreas } from "@/mock/team-areas";
 
 import SapPoweringSapBtp from "../../../public/bg-powering-sap-btp.svg";
-import SapBtpImage from "../../../public/bg-sap-btp.svg";
 import SapBuildImage from "../../../public/bg-sap-build.svg";
 import { AccordionSap } from "../../components/Accordion";
 
