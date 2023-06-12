@@ -20,7 +20,7 @@ export default function WhoWeAre() {
         alt=""
       />
 
-      <section className="grid grid-cols-2 gap-5 max-md:flex max-md:flex-col">
+      <section className="grid grid-cols-1 gap-[3.25rem] md:gap-[6.5625rem] md:grid-cols-2">
         <div className="flex flex-col">
           <h1 className="text-purple-300 leading-10 text-30 font-normal not-italic uppercase max-md:text-center">
             nossa história
@@ -38,11 +38,15 @@ export default function WhoWeAre() {
             sistemas para transformar empresas e, consequentemente, pessoas.
           </p>
         </div>
-        <div className="">
-          <TeamCarrousel
-            typeCard="quem-somos"
-            dataImages={imagesCarrousel2Mocky}
-          />
+
+        <div className="flex justify-center">
+          <div className="w-full h-full lg:w-[25.3125rem] md:h-[14.25rem]">
+            <TeamCarrousel
+              width={25.3125}
+              height={14.25}
+              dataImages={imagesCarrousel2Mocky}
+            />
+          </div>
         </div>
       </section>
 
@@ -73,10 +77,11 @@ export default function WhoWeAre() {
           empresas que buscam melhorar seus processos de negócios.
         </p>
 
-        <div className="max-w-[41.25rem] mt-16">
+        <div className=" mt-16 w-full h-full md:w-[41.25rem] md:h-[23.1875rem]">
           <TeamCarrousel
             dataImages={imagesCarrouselMocky}
-            typeCard="second-quem-somos"
+            width={41.25}
+            height={23.1875}
           />
         </div>
       </section>
@@ -85,7 +90,7 @@ export default function WhoWeAre() {
         <h1 className="not-italic font-normal text-30 leading-10 uppercase text-purple-300 mt-20 max-md:text-center">
           em que acreditamos
         </h1>
-        <p className="not-italic font-normal text-16 text-justify leading-7 text-gray-800  mt-5 text-left max-md:text-center">
+        <p className="not-italic font-normal text-16 text-justify leading-7 text-gray-800  mt-5 max-md:text-center">
           Queremos questionar o óbvio e prover novas possibilidades para que
           equipes e clientes SAP possam usufruir o que há de mais atual em
           termos de tecnologia e metodologias. Acreditamos que essa adoção pode

@@ -64,8 +64,8 @@ export const Header = () => {
           <Link
             className={
               pathname === "/sap-ams"
-                ? "font-normal text-16 leading-6 not-italic text-purple-300 pr-8 "
-                : "font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
+                ? "font-normal text-16 leading-6 not-italic text-purple-300"
+                : "font-normal text-16 leading-6 not-italic text-gray-600 hover:text-purple-300"
             }
             href="sap-ams"
           >

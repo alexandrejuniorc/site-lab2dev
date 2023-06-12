@@ -10,10 +10,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 interface TeamCarrouselProps {
   dataImages: any[];
-  typeCard?: "quem-somos" | "o-que-fazemos" | "second-quem-somos";
+  width: number;
+  height: number;
 }
 
-export function TeamCarrousel({ dataImages, typeCard }: TeamCarrouselProps) {
+export function TeamCarrousel({
+  dataImages,
+  height,
+  width,
+}: TeamCarrouselProps) {
   return (
     <Swiper
       pagination={{
@@ -30,22 +35,19 @@ export function TeamCarrousel({ dataImages, typeCard }: TeamCarrouselProps) {
         dataImages.map((image: any) => {
           return (
             <SwiperSlide
-              style={{ height: "initial", display: "flex" }}
-              className="pb-6 justify-center"
+              style={{
+                display: "flex",
+                position: "relative",
+                width: `${width}rem`,
+                height: `${height}rem`,
+              }}
               key={image.id}
             >
               <Image
-                className={`${
-                  typeCard === "o-que-fazemos"
-                    ? "w-[25.3125rem] h-[14.25rem] max-md:justify-center object-cover"
-                    : "w-[41.25rem] h-[23.1875rem] object-cover"
-                } ${
-                  typeCard === "quem-somos"
-                    ? "w-[30.625rem] h-[15.75rem] object-cover"
-                    : "w-[41.25rem] h-[23.1875rem] object-cover"
-                }`}
+                fill={true}
                 src={image.src}
                 alt={image.alt}
+                style={{ objectFit: "cover", paddingBottom: "24px" }}
               />
             </SwiperSlide>
           );

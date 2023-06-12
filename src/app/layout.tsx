@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 const varelaRound = Varela_Round({
   subsets: ["latin"],
   weight: "400",
+  style: "normal",
 });
 
 export const metadata = {
