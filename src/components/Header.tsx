@@ -11,9 +11,9 @@ export const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="flex pt-10 justify-center container text">
-      <div className="flex justify-between w-full max-md:justify-end md:justify-center lg:justify-between">
-        <div className="pr-36 max-md:hidden max-lg:pr-3">
+    <header className="pt-10 container">
+      <div className="flex justify-between">
+        <div className="pr-36  max-lg:pr-3">
           <Link href="/">
             <Image src={Logo} alt="Logo Lab2dev" />
           </Link>
@@ -73,7 +73,7 @@ export const Header = () => {
           </Link>
         </div>
 
-        <div className="hidden max-md:flex rounded-md border-2 border-[transparent] transition-colors hover:border-purple-300 mb-3">
+        <div className="flex md:hidden rounded-md border-2 border-[transparent] transition-colors hover:border-purple-300 mb-3">
           <Menubar />
         </div>
       </div>

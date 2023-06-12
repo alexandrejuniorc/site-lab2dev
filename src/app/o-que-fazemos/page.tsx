@@ -144,17 +144,18 @@ export default function WhatWeDo() {
             </p>
           </div>
 
-          <div className="lg:order-first">
+          <div className="w-full h-full lg:w-[25.3125rem] md:h-[14.25rem] lg:order-first">
             <TeamCarrousel
-              typeCard="quem-somos"
               dataImages={imagesCarrousel2Mocky}
+              width={25.3125}
+              height={14.25}
             />
           </div>
         </div>
       </section>
 
       <section className="mt-20">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="mr-28 lg:mr-0 max-lg:text-center max-lg:m-0">
             <h1 className="font-normal text-purple-300 leading-10 text-30 uppercase">
               Somos premiados
@@ -169,11 +170,11 @@ export default function WhatWeDo() {
           </div>
 
           <div className="max-lg:mt-7">
-            <div className="lg:flex lg:gap-5 max-lg:hidden">
+            <div className="flex lg:gap-5">
               <CardTrophie />
             </div>
 
-            <CardTrophieMobile />
+            {/* <CardTrophieMobile /> */}
           </div>
         </div>
       </section>
