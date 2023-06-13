@@ -1,10 +1,8 @@
-"use client";
 import Image from "next/image";
 import React from "react";
 
 import { CardSupport } from "@/components/CardSupport";
 import { CardTrophie } from "@/components/CardTrophie";
-import CardTrophieMobile from "@/components/Carrousel/CardTrophieMobile";
 import { TeamCarrousel } from "@/components/Carrousel/Team";
 import { OtherSolutionsCard } from "@/components/OtherSolutionsCard";
 import { SapSolutionsCard } from "@/components/SapSolutionsCard";

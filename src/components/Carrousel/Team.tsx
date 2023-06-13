@@ -1,15 +1,13 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+"use client";
 import "swiper/css";
-// import "./styles.css";
 import "swiper/css/pagination";
-
 import Image from "next/image";
 
 import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 interface TeamCarrouselProps {
-  dataImages: any[];
+  dataImages: unknown[];
   width: number;
   height: number;
 }
@@ -49,6 +47,7 @@ export function TeamCarrousel({
                 alt={image.alt}
                 style={{ objectFit: "cover", paddingBottom: "24px" }}
                 priority={true}
+                quality={100}
               />
             </SwiperSlide>
           );
