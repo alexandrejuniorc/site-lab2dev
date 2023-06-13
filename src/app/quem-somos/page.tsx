@@ -7,15 +7,14 @@ import { imagesCarrouselMocky } from "@/mock/carrousel-1";
 import { imagesCarrousel2Mocky } from "@/mock/carrousel-2";
 import { missionCard } from "@/mock/mission-card";
 
-import Mind from "../../../public/bg-mind.svg";
-import Two from "../../../public/bg-two.svg";
-
 export default function WhoWeAre() {
   return (
     <>
       <Image
         className="absolute top-0 left-0 -z-10 max-md:h-[11.25rem] max-md:w-auto"
-        src={Two}
+        src="/bg-two.svg"
+        width={348}
+        height={475}
         alt=""
       />
 
@@ -38,11 +37,11 @@ export default function WhoWeAre() {
           </p>
         </div>
 
-        <div className="flex justify-center">
-          <div className="w-full h-full lg:w-[25.3125rem] md:h-[14.25rem]">
+        <div className="flex flex-1">
+          <div className="w-full h-full lg:w-full md:h-[17rem]">
             <TeamCarrousel
               width={25.3125}
-              height={14.25}
+              height={17}
               dataImages={imagesCarrousel2Mocky}
             />
           </div>
@@ -60,8 +59,10 @@ export default function WhoWeAre() {
 
         <Image
           className="absolute right-0 -z-10 top-[70%] max-lg:top-[80%] max-md:hidden"
-          src={Mind}
+          src="/bg-mind.svg"
           alt=""
+          width={434}
+          height={281}
         />
       </section>
 

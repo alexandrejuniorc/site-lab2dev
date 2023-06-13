@@ -47,7 +47,6 @@ export function TeamCarrousel({
                 alt={image.alt}
                 style={{ objectFit: "cover", paddingBottom: "24px" }}
                 quality={100}
-                placeholder="blur"
               />
             </SwiperSlide>
           );

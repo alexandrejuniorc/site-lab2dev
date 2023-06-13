@@ -10,10 +10,6 @@ import { cardSupport } from "@/mock/card-support";
 import { sapSolutionsCard } from "@/mock/sap-solutions-card";
 import { stacks } from "@/mock/stacks";
 
-import JavascriptImage from "../../../public/bg-javascript.svg";
-import SapPartnerImage from "../../../public/bg-partner-sap.png";
-import PythonImage from "../../../public/bg-python.svg";
-import SapLogoImage from "../../../public/bg-sap-logo.svg";
 import { imagesCarrousel2Mocky } from "../../mock/carrousel-2";
 
 export default function WhatWeDo() {
@@ -21,8 +17,10 @@ export default function WhatWeDo() {
     <>
       <Image
         className="absolute top-0 right-0 -z-10 max-md:h-[9rem] max-md:w-auto max-sm:h-[7rem]"
-        src={SapLogoImage}
+        src="/bg-sap-logo.svg"
         alt=""
+        width={512}
+        height={225}
       />
 
       <section>
@@ -54,8 +52,10 @@ export default function WhatWeDo() {
           <div className="max-md:flex max-md:justify-center items-center">
             <Image
               className="w-[20rem] h-[15.5rem]"
-              src={SapPartnerImage}
+              src="/bg-partner-sap.png"
               alt=""
+              width={800}
+              height={600}
             />
           </div>
 
@@ -103,8 +103,10 @@ export default function WhatWeDo() {
 
           <Image
             className="absolute right-0 -z-10 max-md:hidden"
-            src={PythonImage}
+            src="/bg-python.svg"
             alt=""
+            width={212}
+            height={211}
           />
 
           {/* className="flex flex-col gap-8 items-end max-md:justify-center max-md:items-center max-md:mt-7" */}
@@ -120,8 +122,10 @@ export default function WhatWeDo() {
 
             <Image
               className="absolute left-0 -z-10 max-md:hidden max-lg:pt-[46%] lg:pt-[36%] xl:pt-[33%]"
-              src={JavascriptImage}
+              src="/bg-javascript.svg"
               alt=""
+              width={416}
+              height={416}
             />
           </div>
         </div>

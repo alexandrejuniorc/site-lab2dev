@@ -9,7 +9,7 @@ export default function SapAMS() {
   return (
     <>
       <section>
-        <div className="grid grid-cols-2 md:gap-[6.5625rem]">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[6.5625rem]">
           <div>
             <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase text-center md:text-left">
               ams btp - Application Management Services for Business Technology
@@ -20,7 +20,10 @@ export default function SapAMS() {
               Oferecemos o AMS BTP (Application Management Services for Business
               Technology Platform) para ajudar as empresas a gerenciar, manter e
               otimizar seus aplicativos e soluções desenvolvidos no{" "}
-              <Link href="https://www.sap.com/brazil/products/technology-platform.html">
+              <Link
+                target="_blank"
+                href="https://www.sap.com/brazil/products/technology-platform.html"
+              >
                 <u className="text-purple-300 hover:text-purple-100">
                   SAP BTP (SAP Business Technology Platform)
                 </u>
@@ -29,7 +32,7 @@ export default function SapAMS() {
             </p>
           </div>
 
-          <div className="flex max-md:hidden">
+          <div className="flex justify-center my-5">
             <iframe
               width="560"
               height="315"
@@ -50,7 +53,7 @@ export default function SapAMS() {
           desempenho, atualizações de software e gerenciamento de alterações.
         </p>
 
-        <div className="mt-7">
+        <div className="mt-7 flex justify-center md:justify-start">
           <Button
             color="purple"
             content="Fale conosco"
@@ -59,7 +62,7 @@ export default function SapAMS() {
         </div>
       </section>
 
-      <section className="mt-20 grid grid-cols-1 gap-[3.25rem] md:grid-cols-2 md:gap-[105px]">
+      <section className="mt-16 grid grid-cols-1 gap-[3.25rem] md:mt-20 md:grid-cols-2 md:gap-[105px]">
         <div>
           <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase max-md:text-center">
             SAP BTP

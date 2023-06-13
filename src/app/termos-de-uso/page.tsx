@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React from "react";
 
-import TermsImage from "../../../public/bg-terms.png";
-
 export default function TermsOfUse() {
   return (
     <>
@@ -26,7 +24,7 @@ export default function TermsOfUse() {
           </div>
 
           <div className="flex justify-center">
-            <Image src={TermsImage} alt="" />
+            <Image src="/bg-terms.png" alt="" />
           </div>
         </div>
       </section>

@@ -5,8 +5,6 @@ import { CardTeam } from "@/components/CardTeam";
 import { sapBTPBenefits } from "@/mock/sap-btp-benefits";
 import { teamAreas } from "@/mock/team-areas";
 
-import SapPoweringSapBtp from "../../../public/bg-powering-sap-btp.svg";
-import SapBuildImage from "../../../public/bg-sap-build.svg";
 import { AccordionSap } from "../../components/Accordion";
 
 export default function SapBTP() {
@@ -42,7 +40,7 @@ export default function SapBTP() {
         </p>
 
         <div className="flex justify-center mt-20">
-          <Image src={SapBuildImage} alt="" />
+          <Image src="/bg-sap-build.svg" alt="" />
         </div>
       </section>
 
@@ -63,7 +61,7 @@ export default function SapBTP() {
 
         <Image
           className="absolute left-0 -z-10 pt-[40%] md:pt-[15%] max-md:hidden"
-          src={SapPoweringSapBtp}
+          src="/bg-powering-sap-btp.svg"
           alt=""
         />
       </section>

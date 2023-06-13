@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
@@ -44,6 +45,7 @@ export default function SwipeableTemporaryDrawer() {
     >
       <List style={{ padding: 0 }} className="flex flex-col text-right">
         <Link
+          prefetch={true}
           className={
             pathname === "/"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
@@ -54,6 +56,7 @@ export default function SwipeableTemporaryDrawer() {
           Home
         </Link>
         <Link
+          prefetch={true}
           className={
             pathname === "/quem-somos"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
@@ -64,6 +67,7 @@ export default function SwipeableTemporaryDrawer() {
           Quem somos
         </Link>
         <Link
+          prefetch={true}
           className={
             pathname === "/o-que-fazemos"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
@@ -74,6 +78,7 @@ export default function SwipeableTemporaryDrawer() {
           O que fazemos
         </Link>
         <Link
+          prefetch={true}
           className={
             pathname === "/sap-btp"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
@@ -84,6 +89,7 @@ export default function SwipeableTemporaryDrawer() {
           BTP
         </Link>
         <Link
+          prefetch={true}
           className={
             pathname === "/sap-ams"
               ? "font-normal text-16 leading-6 not-italic bg-purple-100 text-white py-2 pr-2 border-b-purple-100/20 border-b-[1px] transition-colors"
