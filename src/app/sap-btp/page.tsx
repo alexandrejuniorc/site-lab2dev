@@ -86,6 +86,8 @@ export default function SapBTP() {
               title={team.title}
               content={team.content}
               image={team.img}
+              width={50}
+              height={50}
             />
           ))}
         </div>
