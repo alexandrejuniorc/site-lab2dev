@@ -24,7 +24,7 @@ export default function TermsOfUse() {
           </div>
 
           <div className="flex justify-center">
-            <Image src="/bg-terms.png" alt="" />
+            <Image src="/bg-terms.png" alt="" width={405} height={292} />
           </div>
         </div>
       </section>

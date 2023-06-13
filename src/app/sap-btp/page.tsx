@@ -40,7 +40,7 @@ export default function SapBTP() {
         </p>
 
         <div className="flex justify-center mt-20">
-          <Image src="/bg-sap-build.svg" alt="" />
+          <Image src="/bg-sap-build.svg" alt="" width={660} height={460} />
         </div>
       </section>
 
@@ -63,6 +63,8 @@ export default function SapBTP() {
           className="absolute left-0 -z-10 pt-[40%] md:pt-[15%] max-md:hidden"
           src="/bg-powering-sap-btp.svg"
           alt=""
+          width={375}
+          height={375}
         />
       </section>
 
