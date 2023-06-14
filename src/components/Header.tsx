@@ -132,11 +132,11 @@ export const Header = () => {
               <div className="block md:hidden">
                 {(["right"] as const).map((anchor) => (
                   <React.Fragment key={anchor}>
-                    <Button
-                      className="rounded bg-purple-100/90 p-2 text-white transition hover:text-gray-600/75"
-                      onClick={toggleDrawer(anchor, true)}
-                    >
-                      <MenuIcon />
+                    <Button onClick={toggleDrawer(anchor, true)}>
+                      <MenuIcon
+                        fontSize="large"
+                        className="rounded bg-purple-100/90 p-2 text-white transition hover:text-gray-600/75"
+                      />
                     </Button>
                     <Drawer
                       anchor={anchor}
