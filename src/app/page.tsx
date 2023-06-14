@@ -13,21 +13,21 @@ import PartnerSAPImage from "../../public/bg-partner-sap.png";
 export default function Home() {
   return (
     <>
-      <section className="grid grid-cols-2 gap-5 items-center justify-center max-md:flex max-md:flex-col max-md:text-center">
+      <section className="grid grid-cols-2 gap-5 items-center justify-center max-md:flex max-md:flex-col">
         <div>
-          <h1 className=" not-italic font-normal text-purple-300 leading-10 text-30 uppercase">
+          <h1 className="text-purple-300 leading-10 text-30 text-center md:text-left uppercase">
             Inovação e Tecnologia através do sap btp
           </h1>
 
-          <div>
-            <p className="not-italic font-normal text-justify text-16 leading-7 text-gray-800 pt-7 max-md:text-center">
+          <div className="">
+            <p className="text-justify text-16 leading-7 text-gray-800 pt-7">
               A Lab2dev é a primeira startup brasileira focada em inovação por
               meio do SAP BTP (Business Technology Platform). Através de
               soluções inteligentes, apoiamos a sua empresa na jornada da
               transformação digital.
             </p>
 
-            <div className="mt-14">
+            <div className="mt-14 flex justify-center md:justify-start">
               <Button
                 color="purple"
                 content="Saiba mais"
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex max-md:hidden">
+        <div className="flex w-full">
           <iframe
             width="560"
             height="315"
@@ -46,6 +46,7 @@ export default function Home() {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
+            className="w-full"
           ></iframe>
         </div>
       </section>

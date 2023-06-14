@@ -11,17 +11,17 @@ export default function SapBTP() {
   return (
     <>
       <section>
-        <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase max-md:text-center">
+        <h1 className="text-30 leading-10 text-purple-300 uppercase text-center md:text-left">
           sap btp - Business Technology Platform
         </h1>
-        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-8 text-justify max-md:text-center">
+        <p className="text-16 leading-7 text-gray-800 mt-8 text-justify">
           SAP BTP (SAP Business Technology Platform) é uma plataforma de
           negócios baseada em nuvem da SAP, que oferece serviços de
           desenvolvimento, integração e análise de dados para ajudar as empresas
           a construir aplicativos e soluções personalizadas.
         </p>
 
-        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-8 text-justify max-md:text-center">
+        <p className="text-16 leading-7 text-gray-800 mt-8 text-justify">
           A plataforma é projetada para ajudar as empresas a criar experiências
           de usuário personalizadas, conectar-se a várias fontes de dados e
           integrar processos de negócios existentes em uma plataforma
@@ -30,7 +30,7 @@ export default function SapBTP() {
           das coisas (IoT), analytics, segurança e muito mais.
         </p>
 
-        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-8 text-justify max-md:text-center">
+        <p className="text-16 leading-7 text-gray-800 mt-8 text-justify">
           A SAP BTP permite que os usuários desenvolvam e implementem
           aplicativos em várias linguagens de programação, como Java, Node.js e
           Python, e também fornece uma ampla gama de recursos de plataforma,
@@ -46,10 +46,10 @@ export default function SapBTP() {
 
       <section className="mt-20 grid grid-cols-1 gap-[3.25rem] md:grid-cols-2 md:gap-[6.5625rem]">
         <div>
-          <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase max-md:text-center">
+          <h1 className="text-30 leading-10 text-purple-300 uppercase">
             benefícios sap btp
           </h1>
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5 text-justify max-md:text-center">
+          <p className="text-16 leading-7 text-gray-800 mt-5 text-justify">
             Existem vários benefícios que as empresas podem obter ao usar o SAP
             BTP (SAP Business Technology Platform), incluindo:
           </p>
@@ -70,10 +70,10 @@ export default function SapBTP() {
 
       <section className="mt-20">
         <div className="flex flex-col items-center text-center">
-          <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase">
+          <h1 className="text-30 leading-10 text-purple-300 uppercase">
             Equipe Lab2dev para SAP BTP
           </h1>
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 text-justify  mt-5">
+          <p className="text-16 leading-7 text-gray-800 text-justify mt-5">
             Somos referência em implementação e criação de soluções dentro do
             SAP Business Technology Platform (BTP). Nossa equipe conta com:
           </p>

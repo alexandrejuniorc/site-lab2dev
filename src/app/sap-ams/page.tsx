@@ -11,12 +11,12 @@ export default function SapAMS() {
       <section>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[6.5625rem]">
           <div>
-            <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase text-center md:text-left">
+            <h1 className="text-30 leading-10 text-purple-300 uppercase text-center md:text-left">
               ams btp - Application Management Services for Business Technology
               Platform
             </h1>
 
-            <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-7 max-md:text-center">
+            <p className="text-16 leading-7 text-gray-800 mt-7 text-justify">
               Oferecemos o AMS BTP (Application Management Services for Business
               Technology Platform) para ajudar as empresas a gerenciar, manter e
               otimizar seus aplicativos e soluções desenvolvidos no{" "}
@@ -45,7 +45,7 @@ export default function SapAMS() {
           </div>
         </div>
 
-        <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5 text-center md:text-justify">
+        <p className="text-16 leading-7 text-gray-800 mt-5 text-justify">
           Os serviços de AMS BTP são projetados para permitir que as empresas
           aproveitem ao máximo suas soluções SAP BTP, fornecendo suporte
           contínuo para garantir que os aplicativos sejam mantidos e executados
@@ -64,11 +64,11 @@ export default function SapAMS() {
 
       <section className="mt-16 grid grid-cols-1 gap-[3.25rem] md:mt-20 md:grid-cols-2 md:gap-[105px]">
         <div>
-          <h1 className="not-italic font-normal text-30 leading-10 text-purple-300 uppercase max-md:text-center">
+          <h1 className="text-30 leading-10 text-purple-300 uppercase text-center md:text-left">
             SAP BTP
           </h1>
 
-          <p className="not-italic font-normal text-16 leading-7 text-gray-800 mt-5 text-center md:text-justify">
+          <p className="text-16 leading-7 text-gray-800 mt-5 text-justify">
             Ao contratar os serviços de AMS BTP, as empresas podem se concentrar
             em seus principais negócios, enquanto cuidamos da manutenção,
             atualização e otimização contínuas de seus aplicativos e soluções

@@ -77,7 +77,7 @@ const AccordionContent = React.forwardRef(
   ({ children, className, ...props }: any, forwardedRef) => (
     <Accordion.Content
       className={classNames(
-        "text-gray-800 bg-gray-50 hover:bg-mauve3 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden text-16 leading-7 max-md:text-center",
+        "text-gray-800 bg-gray-50 hover:bg-mauve3 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden text-16 leading-7 text-justify",
         className
       )}
       {...props}
