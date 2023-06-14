@@ -22,7 +22,7 @@ export const CardTeam = ({
         <Image src={image} alt="" width={width} height={height} />
       </div>
 
-      <h1 className="text-18 leading-7 text-purple-300 uppercase text-justify mt-7">
+      <h1 className="text-18 leading-7 text-purple-300 uppercase text-left mt-7">
         {title}
       </h1>
 

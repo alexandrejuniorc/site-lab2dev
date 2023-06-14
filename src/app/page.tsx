@@ -61,7 +61,7 @@ export default function Home() {
         </div>
 
         <div>
-          <h1 className="not-italic font-normal text-purple-300 leading-10 text-30 uppercase mt-7 md:mt-0">
+          <h1 className="not-italic font-normal text-purple-300 leading-10 text-30 uppercase text-center md:text-left mt-7 md:mt-0">
             Somos parceiros Gold SAP!
           </h1>
 

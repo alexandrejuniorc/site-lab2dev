@@ -13,90 +13,6 @@ import List from "@mui/material/List";
 
 type Anchor = "top" | "left" | "bottom" | "right";
 
-// export const Header = () => {
-
-//   return (
-//     <header className="container">
-//       <div className="flex justify-between">
-//         <div>
-//           <Link href="/" prefetch={true}>
-//             <Image
-//               style={{ objectFit: "contain" }}
-//               src="/logo.png"
-//               alt="Logo Lab2dev"
-//               width={128}
-//               height={30}
-//               quality={100}
-//             />
-//           </Link>
-//         </div>
-
-//         <div className=" flex items-center max-md:hidden">
-//           <Link
-//             prefetch={true}
-//             className={
-//               pathname === "/"
-//                 ? "font-normal text-16 leading-6 not-italic text-purple-300 pr-8 "
-//                 : "font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
-//             }
-//             href="/"
-//           >
-//             {/*  */}
-//             Home
-//           </Link>
-//           <Link
-//             prefetch={true}
-//             className={
-//               pathname === "/quem-somos"
-//                 ? "font-normal text-16 leading-6 not-italic text-purple-300 pr-8 "
-//                 : "font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
-//             }
-//             href="quem-somos"
-//           >
-//             Quem somos
-//           </Link>
-//           <Link
-//             prefetch={true}
-//             className={
-//               pathname === "/o-que-fazemos"
-//                 ? "font-normal text-16 leading-6 not-italic text-purple-300 pr-8 "
-//                 : "font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
-//             }
-//             href="o-que-fazemos"
-//           >
-//             O que fazemos
-//           </Link>
-//           <Link
-//             prefetch={true}
-//             className={
-//               pathname === "/sap-btp"
-//                 ? "font-normal text-16 leading-6 not-italic text-purple-300 pr-8 "
-//                 : "font-normal text-16 leading-6 not-italic text-gray-600 pr-8 hover:text-purple-300"
-//             }
-//             href="sap-btp"
-//           >
-//             BTP
-//           </Link>
-//           <Link
-//             prefetch={true}
-//             className={
-//               pathname === "/sap-ams"
-//                 ? "font-normal text-16 leading-6 not-italic text-purple-300"
-//                 : "font-normal text-16 leading-6 not-italic text-gray-600 hover:text-purple-300"
-//             }
-//             href="sap-ams"
-//           >
-//             AMS
-//           </Link>
-//         </div>
-
-//         <div className="flex items-center md:hidden rounded-md border-2 border-[transparent] transition-colors hover:border-purple-300 mb-3">
-//           <Menubar />
-//         </div>
-//       </div>
-//     </header>
-//   );
-// };
 export const Header = () => {
   const [state, setState] = React.useState({
     top: false,
@@ -133,12 +49,14 @@ export const Header = () => {
         <div className="flex h-screen flex-col justify-between border-e bg-purple-100">
           <div className="px-4 py-6">
             <div className="flex justify-center">
-              <span className="grid h-10 w-32 place-content-center rounded-lg bg-purple-200 text-xs text-gray-600">
+              <span className="grid place-content-center rounded-lg bg-purple-200 text-xs text-gray-600">
                 <Image
                   src="/logo-menu-mobile.png"
                   alt=""
                   width={128}
                   height={40}
+                  quality={100}
+                  priority={true}
                 />
               </span>
             </div>
@@ -181,6 +99,7 @@ export const Header = () => {
                 width={128}
                 height={30}
                 quality={100}
+                priority={true}
               />
             </Link>
           </div>

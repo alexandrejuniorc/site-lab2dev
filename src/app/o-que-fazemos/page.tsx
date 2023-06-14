@@ -109,7 +109,7 @@ export default function WhatWeDo() {
             height={211}
           />
 
-          <div className="grid grid-cols-2 gap-5 mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-20">
             {stacks.map((stack) => (
               <OtherSolutionsCard
                 key={stack.title}
