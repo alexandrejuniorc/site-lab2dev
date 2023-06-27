@@ -12,6 +12,10 @@ const varelaRound = Varela_Round({
 
 export const metadata = {
   title: "Lab2dev",
+  description: `A Lab2dev é a primeira startup brasileira focada em inovação por
+  meio do SAP BTP (Business Technology Platform). Através de
+  soluções inteligentes, apoiamos a sua empresa na jornada da
+  transformação digital.`,
 };
 
 interface RootLayoutProps {
